@@ -97,7 +97,7 @@ more_mountaineers = {
         }
 	}
     ai_strategy = { type = role_ratio          id = mountaineers       value = 5}
-    ai_strategy = { type = role_ratio          id = infantry           value = -5}
+    ai_strategy = { type = role_ratio          id = infantry           value = -10}
 }
 
 
@@ -138,7 +138,7 @@ ger_plan_z = {
     ai_strategy = { type = equipment_production_factor id = carrier		 		value = 15}
 	ai_strategy = { type = equipment_production_factor id = capital_ship 		value = 25}
 	ai_strategy = { type = equipment_production_factor id = screen_ship 		value = 40}	
-	ai_strategy = { type = equipment_production_factor id = submarine 			value = -50}
+	ai_strategy = { type = equipment_production_factor id = submarine 			value = -100}
 }
 
 
@@ -169,7 +169,7 @@ ger_u_boat = {
     ai_strategy = { type = unit_ratio          id = capital_ship                value = -20}
     ai_strategy = { type = unit_ratio          id = submarine                   value = 25}
     ai_strategy = { type = unit_ratio          id = screen_ship                 value = -20}
-    ai_strategy = { type = equipment_production_factor id = carrier		 		value = -5}
+    ai_strategy = { type = equipment_production_factor id = carrier		 		value = -10}
 	ai_strategy = { type = equipment_production_factor id = capital_ship 		value = -10}
 	ai_strategy = { type = equipment_production_factor id = screen_ship 		value = -15}	
 	ai_strategy = { type = equipment_production_factor id = submarine 			value = 15}
@@ -228,7 +228,12 @@ infantry_limit = {
 			}
 		}
 	}
-	ai_strategy = { type = build_army id = infantry                              value = -5 }
+	ai_strategy = { type = build_army id = infantry                              value = -10 }
+	ai_strategy = { type = build_army id = cavalry                               value = -10 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -10 }
+	ai_strategy = { type = build_army id = marines                          	 value = -10 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
 }
 
 armor_light_limit = {
@@ -247,7 +252,7 @@ armor_light_limit = {
 			}
 		}
 	}
-	ai_strategy = { type = build_army id = light_armor                              value = -5 }
+	ai_strategy = { type = build_army id = light_armor                              value = -10 }
 }
 
 armor_medium_limit = {
@@ -266,7 +271,7 @@ armor_medium_limit = {
 			}
 		}
 	}
-	ai_strategy = { type = build_army id = medium_armor                              value = -5 }
+	ai_strategy = { type = build_army id = medium_armor                              value = -10 }
 }
 
 armor_heavy_limit = {
@@ -285,7 +290,7 @@ armor_heavy_limit = {
 			}
 		}
 	}
-	ai_strategy = { type = build_army id = heavy_armor                              value = -5 }
+	ai_strategy = { type = build_army id = heavy_armor                              value = -10 }
 }
 
 armor_modern_limit = {
@@ -304,5 +309,5 @@ armor_modern_limit = {
 			}
 		}
 	}
-	ai_strategy = { type = build_army id = modern_armor                              value = -5 }
+	ai_strategy = { type = build_army id = modern_armor                              value = -10 }
 }

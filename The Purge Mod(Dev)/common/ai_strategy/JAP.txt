@@ -789,7 +789,6 @@ first_stop_indochina = {
         AND = {
             original_tag = JAP
             has_war_with = FRA
-			has_completed_focus = JAP_strike_south_doctrine
         }
 		
 	}
@@ -849,38 +848,40 @@ second_stop_malaya = {
 				has_war_with = ENG
 			}
             
-			has_completed_focus = JAP_strike_south_doctrine
+			OR = {
+				NOT = { has_war_with = FRA }
+				AND = {
+					OR = {
+						JAP = { controls_state = 671 }
+						any_country = {
+							is_in_faction_with = JAP
+							controls_state = 671
+						}
+					}
+					OR = {
+						JAP = { controls_state = 670 }
+						any_country = {
+							is_in_faction_with = JAP
+							controls_state = 670
+						}
+					}
+					OR = {
+						JAP = { controls_state = 286 }
+						any_country = {
+							is_in_faction_with = JAP
+							controls_state = 286
+						}
+					}
+					OR = {
+						JAP = { controls_state = 741 }
+						any_country = {
+							is_in_faction_with = JAP
+							controls_state = 741
+						}
+					}
+				}
+			}
             
-            AND = {
-                OR = {
-                    JAP = { controls_state = 671 }
-                    any_country = {
-                        is_in_faction_with = JAP
-                        controls_state = 671
-                    }
-                }
-                OR = {
-                    JAP = { controls_state = 670 }
-                    any_country = {
-                        is_in_faction_with = JAP
-                        controls_state = 670
-                    }
-                }
-                OR = {
-                    JAP = { controls_state = 286 }
-                    any_country = {
-                        is_in_faction_with = JAP
-                        controls_state = 286
-                    }
-                }
-                OR = {
-                    JAP = { controls_state = 741 }
-                    any_country = {
-                        is_in_faction_with = JAP
-                        controls_state = 741
-                    }
-                }
-            }
         }
 		
 	}
