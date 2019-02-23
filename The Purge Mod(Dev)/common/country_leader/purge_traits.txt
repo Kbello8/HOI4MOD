@@ -1,0 +1,441 @@
+leader_traits = {
+
+    generic_p_medium_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.15 soft_attack = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    generic_quality_inf_manufacturer = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				defense = 0.2 breakthrough = 0.2 build_cost_ic = 0.1
+			}	
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    generic_cheap_inf_manufacturer = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				reliability = -0.05 build_cost_ic = -0.2
+			}		
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    generic_reliable_art_manufacturer = {
+		random = no
+		equipment_bonus = {
+			artillery_equipment = {
+				reliability = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    generic_powerful_art_manufacturer = {
+		random = no
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = 0.2 soft_attack = 0.1
+			}
+			anti_tank_equipment = {
+				build_cost_ic = 0.2 hard_attack = 0.1
+			}
+			anti_air_equipment = {
+				build_cost_ic = 0.2 air_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    generic_light_art_manufacturer = {
+		random = no
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.2 soft_attack = -0.1
+			}
+			anti_tank_equipment = {
+				build_cost_ic = -0.2 hard_attack = -0.1
+			}
+			anti_air_equipment = {
+				build_cost_ic = -0.2 air_attack = -0.1
+			}			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    generic_reliable_mot_manufacturer = {
+		random = no
+		equipment_bonus = {
+			motorized_equipment = {
+				reliability = 0.2
+			}
+            mechanized_equipment = {
+                reliability = 0.2
+            }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    generic_heavy_mot_manufacturer = {
+		random = no
+		equipment_bonus = {
+			motorized_equipment = {
+				hardness = 0.5
+                maximum_speed = -0.2
+			}
+            mechanized_equipment = {
+                armor_value = 0.1
+                maximum_speed = -0.2
+            }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_light_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	generic_light_aircraft_manufacturer_2 = { 
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	generic_CAS_manufacturer = {
+		random = no
+		equipment_bonus = {
+			CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.1
+			}
+			cv_CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.1
+			}		
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_medium_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			heavy_fighter_equipment = {
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	generic_fuel_efficient_aircraft_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_range = 0.1
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_heavy_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+
+			strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_naval_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			# TODO: how about we boost all carrier plane versions here a bit?
+			nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			cv_nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_fast_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.2 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_medium_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.1 soft_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_heavy_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.1 hard_attack = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_tank_manufacturer = {
+		random = no
+		#generic
+
+		equipment_bonus = {
+			armor = {
+				reliability = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_pacific_fleet_naval_manufacturer = { #longer ranged, CVs favor larger hangers over armor
+		random = no
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.25 armor_value = -0.15 naval_range = 0.25
+			}
+			capital_ship = {
+				naval_range = 0.25 armor_value = -0.10 fire_range = 0.1  naval_speed = 0.1
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_atlantic_fleet_naval_manufacturer = { #armored carriers, slightly buffed cap ships
+		random = no
+		equipment_bonus = {
+			carrier = {
+				armor_value = 0.5 
+			}
+			capital_ship = {
+				armor_value = 0.1 attack = 0.1
+			}
+			#screen_ship = {
+			#	
+			#}
+			#submarine = {
+			#	
+			#}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	generic_battlefleet_designer = { #armored carriers, slightly buffed cap ships
+		random = no
+		equipment_bonus = {
+			capital_ship = {
+				armor_value = 0.15 
+				attack = 0.15
+			}
+			screen_ship = {
+				torpedo_attack = 0.25
+				sub_detection = -0.25
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_raiding_fleet_naval_manufacturer = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				surface_visibility = -0.15 naval_speed = 0.1 carrier_size = -0.1
+			}
+			capital_ship = {
+				surface_visibility = -0.15 naval_speed = 0.1 attack = -0.1
+			}
+			screen_ship = {
+				surface_visibility = -0.1 naval_speed = 0.1 torpedo_attack = 0.1
+			}
+			submarine = {
+				sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_convoy_escort_naval_manufacturer = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = -0.1 anti_air_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_coastal_defence_naval_manufacturer = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				build_cost_ic = -0.4 carrier_size = -0.2 naval_range = -0.5
+			}
+			capital_ship = {
+				build_cost_ic = -0.4 armor_value = -0.2 attack = -0.2 naval_range = -0.5
+			}
+			screen_ship = {
+				build_cost_ic = -0.4 naval_range = -0.5
+			}
+			submarine = {
+				build_cost_ic = -0.4 naval_range = -0.5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_industrial_concern = {
+		random = no
+                
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	generic_construction_company = {
+		random = no
+
+		production_speed_infrastructure_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	generic_refinery_concern = {
+		random = no
+        
+		local_resources_factor = 0.05
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

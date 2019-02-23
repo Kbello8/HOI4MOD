@@ -1,0 +1,150 @@
+##North America
+
+usa_default_template_prio = {
+	enable = {
+        original_tag = USA
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 15}
+	ai_strategy = { type = template_prio          id = marines            value = 0}
+    ai_strategy = { type = template_prio          id = motorized         value = 15}
+    ai_strategy = { type = template_prio          id = light_armor        value = 4}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 35}
+}
+
+eng_default_template_prio = {
+	enable = {
+        original_tag = ENG
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 10}
+	ai_strategy = { type = template_prio          id = motorized         value = 10}
+	ai_strategy = { type = template_prio          id = marines            value = 0}
+    ai_strategy = { type = template_prio          id = light_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 20}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 0}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
+}
+
+
+##Default
+all_default_template_prio = {
+	enable = {
+        NOT = {
+            OR = {
+                original_tag = SOV
+                original_tag = GER
+				original_tag = ENG
+				original_tag = USA
+            }
+        }
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 0}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = motorized         value = 15}
+    ai_strategy = { type = template_prio          id = light_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 0}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
+}
+
+more_Marines = {
+	enable = {
+        OR = {
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = ENG
+			original_tag = USA
+		}
+	}
+    ai_strategy = { type = template_prio          id = marines            value = 20}
+	ai_strategy = { type = template_prio          id = infantry       	  value = -20}
+}
+
+##Base Germany
+ger_default_template_prio = {
+	enable = {
+        original_tag = GER
+	}
+    abort = { 
+		has_tech = basic_medium_tank
+	}
+
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 0}
+	ai_strategy = { type = template_prio          id = motorized         value = 20}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = light_armor        value = 30}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 0}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 15}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 40}
+}
+
+ger_default_template_prio2 = {
+	enable = {
+        original_tag = GER
+        has_tech = basic_medium_tank
+    }
+
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 5}
+	ai_strategy = { type = template_prio          id = motorized         value = 15}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = light_armor        value = 0}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 30}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 15}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 40}
+}
+
+modern_template_prio = {
+	enable = {
+        has_tech = main_battle_tank
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = heavy_armor       value = -5}
+    ai_strategy = { type = template_prio          id = medium_armor      value = -30}
+	ai_strategy = { type = template_prio          id = light_armor       value = -1000}
+    ai_strategy = { type = template_prio          id = modern_armor      value = 35}
+}
+
+
+sov_default_template_prio = {
+	enable = {
+        original_tag = SOV
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+
+    ai_strategy = { type = template_prio          id = mechanized        value = 5}
+	ai_strategy = { type = template_prio          id = motorized         value = 15}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = light_armor        value = 5}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 20}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
+}

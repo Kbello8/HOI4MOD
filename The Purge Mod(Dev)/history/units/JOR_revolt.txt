@@ -1,0 +1,104 @@
+﻿division_template = {
+	name = "Rebel Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Rebel Calvary"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 1 y = 0 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1. Rebel Infantry"
+		location = 7151
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Rebel Infantry"
+		location = 7151
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "3. Rebel Infantry"
+		location = 7151
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "4. Rebel Infantry"
+		location = 7151
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "5. Rebel Calvary"
+		location = 7151
+		division_template = "Rebel Calvary"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "6. Rebel Infantry"
+		location = 4017
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "7. Rebel Infantry"
+		location = 7151
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "8. Rebel Infantry"
+		location = 4115
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "9. Rebel Infantry"
+		location = 10089
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "10. Rebel Infantry"
+		location = 7170
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "11. Rebel Calvary"
+		location = 7170
+		division_template = "Rebel Calvary"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "12. Rebel Calvary"
+		location = 4115
+		division_template = "Rebel Calvary"
+        start_experience_factor = 0.1
+	}
+}

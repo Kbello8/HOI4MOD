@@ -1,0 +1,34 @@
+ideas = {
+
+    country = {
+        
+        
+        reorganize_military = {
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			
+			allowed = { always = no}
+		
+			modifier = {
+				consumer_goods_factor = 0.30
+                army_org_Factor = -0.2
+                stability_factor = -0.2
+			}
+		} 
+        
+        
+        syrian_empire = {
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			
+			allowed = { always = no}
+		
+			modifier = {
+				conscription = 0.03
+                land_reinforce_rate = 0.02
+                generate_wargoal_tension = -0.4
+                neutrality_drift = 0.4
+			}
+		}       
+    }
+}

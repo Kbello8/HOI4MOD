@@ -1,0 +1,850 @@
+Purge Mod Change Log
+
+Mods from Workshop:
+
+No Mans Land
+Expanded Industry
+No Fog of War
+Better Terrain View
+More Nato symbols
+Star and Crescent
+Lords of Winter - Finland Focuses
+Flavor Names Extended
+Strategic View Adjustments
+
+0.1 - Zan - HOI4 v 1.0.0.19987 (8899) Jun 4. 2016 (Jun.16)
+    Added mods "No Mans Land", "Expanded Industry", "no fog of war", "better terrain view"
+    Edited "No Mans Land" to include four states in Khartoum to cut Africa in half. (This prevents Germans from crossing into Ethiopia. In theory.) Also shuffled a province in West Africa for a neater border.
+    Edited Expanded Industry to only include steel mills and the technology.
+    
+0.2 - Zan - HOI4 v1.01. (f680) Jun 10. 2016 (Jun.16)
+    Increased manpower gained from non-core population.
+    Reduced base aggression for airwings
+    Reduced planning bonus by 15%
+    Reduced experience needed to design divisions
+    Changed end date to 1969.
+    Added specific national focus tree for Persia including national ideas
+
+0.2.1 - Zan - HOI4 v1.01. (f680) Jun 10. 2016 (Jun.16)
+    Lowered some values with the Persian Focus Tree
+    Buffed non-fascist ideologies for generic countries
+    
+0.2.2 & 0.2.3 - Zan - HOI4 v1.01 (f680) Jun 10. 2016 (Jun.17)
+    Focus tree balancing
+    
+0.3 - 0.3.2 - Zan - HOI4 v1.01 (f680) Jun 10. 2016 (Jun.23)
+    More resources
+    Fix Persia's political tree
+    Fix Poland's political tree
+    Implement Vlad's regional generic tree modifications
+    Fix Light Cruisers
+    Release colonial countries (Egypt, Nigeria, Syria) as puppets
+    Add 5 more specific national focii (Argentina, Australia, Egypt, Nigeria, Japan)
+    Fix some Air Zone borders
+    Make Himalayas impassable
+    Fix Denmark
+    Make Mass Assault viable for non-Asians. 
+    
+0.3.3 - Zan - HOI4 v1.01 (f680) Jun 10. 2016 (Jun.28)
+
+    Added custom focus and events for Japan and Argentina.
+    Custom events for Peru. (Includes 3 events for Germany , UK. Cameo from the commonwealth.)
+    Fixed bugs in trees and events.
+    Nat China has no commie tree.
+    Com China has no democratic or fascist tree. Or advisors.
+    
+0.3.4 - Zan - HOI4 v1.1 (5d33) Jun 30. 2016 (Jul.1)
+
+    Compatible with patch 1.1.0
+    
+0.4 - Zan - HOI4 v1.1 (5d33) Jun 30. 2016 (Jul.4)
+
+    Fix Neutrality Focus and Interventionist focus are not mutually exclusive in generic trees
+    Fix Japan National Focus ( Gulf of Thailand event + southern expansion )
+    Persia Tree fixes to Egy / Syria
+        Make Persia's tree refer to Egypt / Syria instead of ENG / FRA
+    Fix French State in West Africa
+        Balkanize it.
+    Fix Indian Focus for Japan
+        Make it similar to Argentina / Bolivia.
+        Modifiers depending on how allies are doing.
+    Fix Japanese / Australian Alliance Events
+        Require Japan be leader of a faction.
+    Double check bypass focuses for generic trees   
+    Fix civil wars for puppets    
+    Division Templates for NIG SYR EGY    
+    Fall of France fix for Syria (No loss of Syrian territory, may join Vichy, remove puppet status, become neutral, or remove puppet + stay in allies )
+        -Custom fall of France for NIG (Potential West African Territory if not yet taken)
+        -Custom fall of England for NIG / EGY ( May remove puppet, leave allies, become neutral, or join whoever took london )
+    Fix Egypt and SAF leaders not taking pictures
+    From Steam Workshop - 
+        Update map graphics 
+        Update country equipment flavor
+        Include Finland national focus tree
+        Include Denmark national focus tree
+        Include Turkey national focus tree
+        Nato Symbols
+        
+0.4.1 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.7)
+    -Hotfix revolters
+    -Add 2 artilleries to all majors
+        -Only 1 for Japan. (mountains in china)
+    
+0.4.2 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.8)
+    -Write new event chain for puppet revolters
+    -Fixed civil war spam
+    -Implemented Nigeria, and Egypt focus trees & events.
+    -Added South African focus tree and events
+    -West African regions made rural.
+    -Fix Turkish references to Syria
+    -Fix Turkish focus tree
+    -Turkish leader picture
+    -Denmark claim Estonia -> core Finland
+    -Denmark has 5 research slots at max.
+    -Localization for Air regions & Argentina
+    -Pax Americana delayed until November 1937
+    -Fix tech sharing loop
+    -Fix non-historical German murdering itself
+    -AST, TUR can create factions
+    -AST now changes between fascist New Guard or Centre Party depending on the election choice.
+    -ARG has Latin League focuses.
+    -Total Mobilization dependent on servicebyrequirement and onward
+    -Made Veteran mode balanced for majors (thanks Zouji)
+    -Fixed ctd due to regional tree and boats.
+    -Fixed double advisors
+    -Added resources to Syria
+    -Strategic redeploy reduced back to 8.
+    -Added relations to Germany/Soviet/USA/ENG depending on national focus.
+    -SAF localization fix.
+    -Changed event pictures
+    -Egyptian generals are now middle eastern, not african.
+    -FRA back to vanilla oob.
+    -ENG loses 1 artillery in oob.
+    -AUS loses 1 artillery in oob.
+    -USA loses 1 artillery in oob.
+
+0.4.3 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.8)
+    -Added bypass for Bolivian focuses in Argentina tree
+    -Attack the USSR focus requires Paris
+    -Removed Central Sahara as a requirement for Nigerian Unification
+    -Buffed Dispersed Industry again. Made the difference between dispersed and concentrated more along the lines of military factory vs civilian factory, specialization vs diversification.
+    -Fixed Liberia annexation
+    -Lotta Svard for Finland no longer bypasses due to static AA
+    -German General Staff 5% - > 15% org
+    -Germans given heavy tank brigade design. It is tiny, but this way they may build it. 
+    -9 total Synth factories given to Germany. (Industrial 1, Industrial 2, Rhineland)
+    -Germany can ONLY use limited exports or closed economy.
+    -Added SA-German Pact to Argentinas delayed event route. (-5% consumer goods.)
+    -South African event localization
+    -Austria given artillery to base divisions (Germany uses these after annex) Gave them starting artillery tech.
+    -England brought back to no line artillery in base division. (I gave them support artillery instead)
+    -Soviets back to vanilla. (No line artillery, 1 support artillery)
+    -Australia changed the 1 line artillery to support artillery.
+    -Nerf Artillery
+        -10% SA
+    Buff Infantry
+        +10% SA
+    Buff AT
+        +5 HA
+    Buff AA unit (Support AA will now beat CAS, Line AA with upgrades can beat Tac. Both only sprinkle vs strat bombers )
+        -increased soft attack
+        -increased air attack
+        -lowered production cost
+        -support aa has more air attack
+        -support aa has less soft attack
+        
+        
+0.4.4 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.8)
+    -Majors have their line artillery back in.
+    -German Tiger Division is scary. Dont fight this.
+    -Turkish leaders took their pictures
+    -Pax Americana 1/1/1937
+    -Nerf Artillery (includes motorised variants)
+        -10% SA (Total of -20% from vanilla)
+        
+0.4.5 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.8)
+    -Fixed Bolivian Coup focus for Argentina
+    -Removed getting stuck on focuses
+    -Fixed cancel if invalid = no
+    -Fixed PRC Total Mobilization
+    -Egypt can no longer fire off revolts unless at 0% surrender progress
+    -Egyptian revolters cannot join factions for 2 yrs
+    -No Coups for Spain
+    -Peace Deals more expensive without the territory
+    --2x more pts to puppet
+    --2x more pts to liberate
+    --4x more pts to annex uncontrolled states
+    -Game will autopause everytime a human makes a peacedeal
+    -Generic leaders for ai per theatre increased to 4 (from 1)
+    -Max leader traits = 3 (from 6)
+    -Naval strike dmg to str factor is 1.5 (from 3)
+    -Cannot trade is relations < 10
+    -Expeditionary forces cut in half (in theory)
+    -AI equipment surplus = 40% (from 25%)
+    -AI chance to build refineries if no resources doubled.
+    -Training time for DEN, HOL, BEL doubled. (until 1st war)
+    -Training time for Nigeria +50%. (until 1st war)
+    -USA, SOV, GER will build more motorised / armored
+    -AST will focus more on navy.
+    -Persia Rising mod Removed (Permission never given)
+    -Mozambique-Angola Purchase now takes place via event
+    -Argentina does not need to be in faction with USA for battleships
+    -Belgium, Denmark, Netherlands, and Nigeria permanently neutered. 
+    -Swapped streamlined and flexible lines. Streamlined now gives an additional 10% output.
+    -Natchi now properly cant commie.
+    -Australia fascist starts with +18%
+    -Dispersed industry down to 7.5%
+    -Portugal now has Euro Regional tree
+    -Germany will now take Lowlands when possible.
+    -Persia up to ~17mil population.
+    -Traditional "majors" cannot have a coup (unless you force it on them)
+    
+0.4.6 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.11)
+    -Internationalism given +2% drift
+    -Latin Nationalism given to all SA countries. (10% fascist drift, -3% democracy drift)
+    --Combined with collectivist ethos, this should stop US influence.
+    -Nudged Argentina more toward fascism.
+    -Total mobilization fixed
+    -Egypt cannot be puppet for revolts
+    -Japan will peace out with CHI / PRC if they lose the majority of the territory in the mainland
+    -Japan has 20% chance for puppet China, 50% chance for war with China, 30% chance for peace with China
+    --China goes Axis if peace with Japan, China goes democracy if war with Japan.
+    -Sadabat renamed Saadabad
+    -Turkey Industry bug fixed
+    -Added 2 more focus' to Turkey
+    -Added specific focus' and ideas for Persia
+    -French Mandate should not go French after fall of france. (Will add events to this later)
+    -SAF leader changed
+    -Folders organized
+    -Templates included
+    -Ai allied countries neutered.
+    --Un-neutered through gov change or war
+    --DEN NOR HOL BEL NIG RAJ permanently neutered
+    --ENG / FRA gets mobilization buff when un-neutered
+    -Germany gets blitzkrieg modifier which gets weaker with time
+    -Messed with Germany tree & Priorities
+    -Advisors to all countries. (Non-major)
+    
+0.4.7 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.11)
+
+    -No forts for Denmark
+    -Latin League Claims
+    -"Hold Axis Summit" turns Argentina Fascist
+    -Minor fascist boosts for Australia along fascist trees
+    -+5% boost for German Blitzkrieg
+    -Edited "war with france" for "around the maginot"
+    -Remove offensive war restriction from stalin line
+    -Fixed Persia & Australia idea icons
+    -Fixed bug in Persia & Argentina Trees
+    -Fixed bug in Argentina event chain that stopped it from firing.
+    -DEN HOL BEL had their starting OOB's weaken. (Damn Engineers...)
+    -Peru skewed to Fascism. (Democratic Peru made the Latin League awkward)
+    -Advisors given european pictures.
+    -Advisors no longer double up.
+
+0.4.8 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.13)
+
+    -Weather & Attrition fixed
+    -Hungary gets cores on territories when given by events
+    -Argentina should attack Chile now with cores (if no pax america)
+    -Lower argentina UNF popularity required for bolivian coup to 40%
+    -Boost argentina fascism buffs from 5% to 10%
+    -Argentine Influence now boosts fascism acceptance (wonder how this works...)
+    -Bolivia persuaded not to choose an ideology before 1938.
+    -Denmark stops attacking Germany (will still attack nor/swe/fin if they go that route)
+    
+    
+0.4.9 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.14)
+
+    Fix Persian Fascist Portrait
+    Nudge Peru toward fascism
+    Remove Portuguese cores in Africa
+    Boost fate of czechoslovakia
+    Bolivia argentine influence to .30 drift
+    latin-german pact +0.05 fascism
+    Turkey claims on Iraq also generates wargoal
+    germany befriend china / japan requires all, not one
+    Central party - > Centre
+    Forts nerfed (reduce them by 15%)
+    Forts are 4x as likely to be damaged in combat
+    AI should attack without needing a battle plan 60% more often. (Max of 3 -> max of 5 attacks)
+    AI will prioritize high/med VPs over low VPs even more
+    AI will prioritize ports more often
+    AI more aggressive on wargoal generation.
+    Very hard mode +25% conscription to AI and -25% foreign activities
+    Manpower necessary to ignore reserves boosted to 5mil (was 500k)
+    Latin League invitation 100%
+    Bolivia faction joining reduced (they joined daitoa too often)
+    Australian Daitoa events fixed
+    Japanese surrender gives China the option to accept or decline
+    Change Japanese Surrender picture to something more appropriate
+    AI Soviets get -15% defenses, -15% org, +15% org regain for 6 months if attacked by AI Germany
+    Fixed German Blitzkrieg resetting
+    Germany given their own manpower ideas
+    Pax Americana back to June limit
+    Mediterranean Bastion no longer requires direct ownership of Alexandria (UK focus)
+    Localization for Puppets leaving faction
+    Advisors have proper portraits
+    Brazil events related to Latin League
+    Coups Nerfed
+    Nigeria can still ask for provinces after Franco-British Union
+    Flavor names extended update
+    Philippines can break away from USA via Coup
+    Flavor names extended update
+    Cores for Indonesia
+    Add names for Indonesia
+    Add names for Nigeria
+    Fix Double Advisors
+    
+0.5.0 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.21)
+    -Latin League can't attack until the U.S. is at war
+    -Brazil must be in a faction with the US to intervene in the Latin League stuff
+    -Strategic Views added
+    -Fixed Turkey's Leaders (again)
+    -Fixed SAF permanently being neutered
+    -INO now has theorists
+    -Argentina lessed inclined to gun for latin league creation
+    -Move Bechuanaland Chromium to Tanganyika
+    -Tweaked with State Giving
+    -AI aggression of last patch reverted
+    -Buffed Egyptian building slot capacity
+    -Gave Egypt two more civilian factories via focus
+    -Remove Egypt starting with Anti-Air
+    -Fixed bug not giving generic theorists to certain countries
+    -Fixed bug giving too many theorists to certain countries
+    -Fixed a bug from Finland mod event
+    -Chinese Desperate Defense given a time limit of 365 days
+    -Desperate Defense buffed
+    -Ethiopia also gets Desperate Defense vs Italy (60 days)
+    -Soviet Surprise also reduces Attack
+    -Revolts only take 50 days instead of 70 for Egypt
+    -Buff Egyptian Empire org 10-> 12
+    -Make Portuguese Cacedores useful
+    -Boost party popularity buffed to 0.12% (from 0.1%)
+    -Start England with Heavy fighter 1 tech
+    -Latin League claims: if Chile exists, Argentina will attack Chile
+    -Argentina given idea to stop inviting people.
+    -Latin League will remove Bolivian Neutrality
+    -Latin League will ignore Pax Americana
+    -Egypt event for Yemen annexation(cores) with Egyptian Empire
+    -Give Ethiopia cores on Somaliland & Eritrea
+    -Fixed Paradox bug firing German northern intentions twice.
+    -Fixed German Blitzkrieg from not removing previous version properly
+    -Spain shouldn't join the Axis as often.
+    -Tinkered with Germany focuses & ai again. (concerns Yugoslavia, as well as requirements for barbarossa)
+    -German Blitz3 is now permanent. Can only be lost upon taking Russian Territory.
+    -Soviet Surprise is now permanent. Can only be lost upon losing Russian Territory.
+    -Turkey less likely to attack Iraq
+    -AI reminded that Hard Attack is a useful stat.
+    -Australia slightly more inclined to go fascist if Japan forms a faction
+    -Popular Figurehead generic advisor available after 1943
+    -Ethiopia Cut off HOI3 style
+    
+0.5.1 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.21)
+    -German Blitz made sure to work despite randomness
+    -Fixed bug with Australian Events
+    
+0.5.2 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.22)
+    -Super Heavy Tanks buffed
+    -Bypasses for Egyptian claims
+    -Nigerian focuses require territory controller, not owner. If you control the territory, it will bypass petition.
+    -All "Industrialize" focuses for Nigeria / Egypt now grant 1 civilian factory
+    -Air Battles "should" focus more on a series of 1v1s between wings, caring more about airplane design and stats than numbers. (15% more often for 1v1)
+    -2v1 battles nerfed by 5%, 1v1s buffed by 5% (air battles)
+    -10% chance air wings don't even meet eachother in a combat pass
+    -Planes "allowed" to die in one combat reduced from 50% to 40%
+    -Chance to kill one plane if there was not enough damage to kill one reduced from 50% to 10%
+    --So if you failed to kill even 1 aircraft in combat, there was a 50% chance at least 1 would die anyways.
+    -Air aggression reverted to 25%, 50%, 75% (the old fix)
+    -Ace bonuses doubled
+    -Aces twice as hard to get
+    --All these air changes "should" make air combat LESS bloody, until aces start popping up. 
+    --You'll also want to keep these aces alive, especially if they are "genius" level
+    -Light Cruiser evasion down 10%
+    -Belgium / Netherlands -2 military factories at start
+    -Event for Ai Soviets giving them 4 Medium Tank divisions, Medium Tank tech, and a temporary bonus to infantry weapon production / training time at the cost of organization.
+    -Event for Ai Germany giving them 4 Medium Tank divisions, and medium tank tech after taking Prague.
+    -Fixed a bug where Ai was not building tank destroyers
+    -Added more generic callsigns
+    
+0.5.3 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.27)
+    -Light Cruiser evasion nerfed again
+    -More changes to the defines to hopefully have ai build use more generals
+    -Reduce Tank support armor (spart / TD / AA) 
+    -30 Planning Bonus default
+    -Minor buff to Mobile Warfare (more planning speed)
+    -Major buff to Human Wave and Grand Battle Plan Doctrines
+    -Make Colonial Idea stronger (300% training time)
+    -Chance to break forts in combat buffed further
+    -Nudge China to choosing an ideology more after 38
+    -Make the mandates have the colonial idea
+    -Colonial restrictions removed if not in the allies, regardless of ideology
+    -Fixed a bug with African Empire event
+    -Fixed Panama Canal
+    -If Latin Countries join a faction with Japan or Germany, Latin League will still be aggressive
+    -Countries will not join the Latin League if they are puppets
+    -Countries will not join the Latin League if they are not fascist
+    -Star and Crescent Updated
+    -Flavor Names Extended Updated
+    -Strategic View Adjustments Updated
+    -Fixed a bug with Brazilian Intervention
+    -Add create_faction ability to US with "The Giant Wakes"
+    -Countries may choose a fascist demagogue if France loses Paris
+    -Syria, Nigeria, and Egypt have a larger chance of going non-democratic if France loses Paris. 
+    -Japanese, Italian, French,English and Soviet templates modified
+    -Argentina can go Axis by annexing Bolivia instead of joining Latin League
+    -Soviets given a variety of buffs to differentiate ai germany from player germany
+    
+0.5.4 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Jul.31)
+    -Non-Communist members of the Comintern will be paid a visit by "proper" advisors
+    -Argentina made more aggressive toward Uruguay / Paraguay if they join the Axis
+    -Argentina will not join the Axis until the US is at war
+    -Australia more likely to take naval focuses earlier
+    -Bugfix with AI check
+    
+0.5.5 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.1)
+    -Ai much more likely to switch manpower laws if low on manpower
+    -Must be at war to have "All Adults Serve" and "Scraping the Barrel"
+    -Can do war economy if at war despite threat being <15
+    -Fixed bug with Daitoa Alliance Japan / Australia
+    -Fixed Soviet lockups
+    -Fixed Japan Lockups
+    -Buffed German Wunderwaffe
+    -German extra tech slot takes 4x the amount of focus time, lowered to 2x
+    -Germany more likely to sign molotov ribbentrop
+    -Germany less likely to go down air innovation tree early on (it kept delaying danzig)
+    -Poland can't own Warsaw, or must be in a faction with GER / SOV for AI to consider around the maginot
+    -Denmark and Finland given generic advisors on top of existing
+    -Spanish civil war tweaked
+    -Fixed bug where USA continues to intervene in wars against latin league (hopefully...)
+    -Fixed bug where Syria was being un-neutered too early
+    -Japan should not invite as many western countries to Daitoa alliance
+    -Japan given three focuses which convince the various warlords to join the Daitoa alliance
+    -Japan given three political advisors
+    -Japan less likely to attack Soviets until '41
+    -Befriend Siam gives them Fascist Influence
+    -Tweaked Surprise & Rodina for ai soviets / germans
+    -Tweaked ai production for USA / GER / Soviets
+    -Tweaked ai naval production for majors. More capital ships / screeners, less submarines
+    -Australia will build a lot of submarines if they choose the submarine naval tree
+    -Finland much less likely to join a faction until conclusion of the Winter War
+    -Added 40% production efficiency gain to veteran AI
+    -Added 25% repair factor to veteran Ai
+    -Added 25% planning speed to NORMAL ai. (veteran is still at 50%)
+    -Signal Company buffed
+    -Soviet Communist Pressure doubled (So they may actually annex the baltics)
+    -Soviet Baltic Security focus now pressures Latvia, Lithuania, and Estonia instead of the Scandinavian countries. (Finland remains pressured, but for less time)
+    -Claim Bessarabia delayed 1 year for the Soviets
+    -Claim Poland delayed 1 year for the Soviets
+    -Great Purge delayed by 1 year for the Soviets
+
+0.5.6 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.3)
+    -Steel mill construction cost reduced by captain of industry
+    -Lower civil war popup amount
+    -Molotov-Ribbentrop no longer adds cores on Poland for Soviets (it adds them if Germans do not honor the pact)
+    -Southern Expansion & Northern Expansion for Japan no longer threaten war (the war is further down the line)
+    -Egyptian Saudi Revolt gives 10% less supply consumption rather than -10% attrition
+    -Bugfix for Egyptian bypass
+    -Bugfix for German Military Concentration
+    -Persian Minister of Industry idea has new icon
+    -Lowered cost of Defense of Moscow & Move Industry to Urals
+    -Further tweaks to Soviet Surprise
+    -Tweaked Baltic Annexation events
+    -Re-ordered Soviet focus tree so they claim Bessarabia sooner IF Romania owns it
+    -Nigeria, Egypt, Syria can now choose to go non-democratic via focus trees
+    -USA focuses declare war rather than give cb
+    
+0.5.7 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.3)
+    -Switzerland only has one silent workhorse
+    -Egy / Nig / Syria need internationalism / nationalism do not require the specific government
+    -Countries political choices bugfixed
+    -Guerrilla warfare a timed idea for 2 yrs
+    -Removed German bypass for war with ussr (it gives them claims)
+    -Jap wont do subdue the warlords if warlords are puppets or in faction
+    -Give Japanese influence focuses a penalty in relations with Argentina and Germany
+    -Jap wont attack allies or soviets until they are at war with another major
+    -Japanese attack the allies gives claims on Indonesia / Malaysia / Indochina
+    -Japanese attack the US gives claims on Philippines, and Pacific Islands
+    -Japanese attack the Soviets gives claims on Far East (Everything east of Irkutsk)
+    -Annex Mengkukuo between Lake Khasan and reinforce soviet border for Japan
+    -US wont attack soviets/germans/british if at war with any of them
+    -Change Generic Asian regional influence to Japan and Marines
+    -Cleaned up how opinions modified between countries via our focuses and events
+    -Civil War participants wont join factions
+    -Must have Grand Battleplan for field marshalls to get planning bonuses
+    -Tweaked Bessarabia event to be more reliable (Paradox Bugs)
+    
+0.5.8 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.4)
+    -Fixed Romania Loop
+    -Argentina has theorists
+    -Fixed some double advisors for Turkey
+    -Localize Persian text
+    
+0.5.9 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.5)
+    -Bump chance for Demand Slovenia
+    -All Veteran production bonuses removed, combat bonuses instead
+    --10% off/def
+    --10% screeners atk/def
+    --10% capital atk/def
+    --10% air atk
+    --5% air agility
+    --10 flat org
+    
+0.6.0 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.16)
+    -Adiya's flag pack separated from the main mod, requires separate download
+    -Default planning gain reduced to 3%
+    -Human wave breakthrough increased by 5% (infantry only)
+    -Ai 5x more likely to research the first Anti-Tank technology, 3x for the rest
+    -Ai 5x more likely to research the first Artillery technology, 3x for the rest
+    -Ai does not become less likely to research land doctrines the further they are down the tree
+    -Ai cares slightly more about lower end air techs
+    -Naval majors care a lot more about naval doctrines
+    -Great Patriotic War renamed For the Motherland (Fixing the Purge means Paradox's version of Great Patriotic War actually fires)
+    -Fixed a bug with Soviets receiving non-ai and ai buffs at the same time vs Germany
+    -Enemy AI will upgrade their divisions much more
+    -Gave Veteran ai -25% supply consumption
+    -Forts & Coastal forts cost moved to 3000
+    -Fort efficiency back to vanilla (they can still break easier)
+    -Buffed Veteran ai stats to 14%
+    
+0.6.1 - Zan - HOI4 v1.1 (5d33) Jun 30.2016 (Aug.18)    
+    -Republican Spain international divisions made into 7 inf from 8
+    -Romania event fixed
+    -Buffed Chinese defense idea
+    
+0.6.1 - Zan - HOI4 v1.2.0 (fd4f) Jun 30.2016 (Sep.20)   
+    -Compatible with Sunflower Patch
+    -Air advisor for Spain
+    
+0.6.3 - Zan - HOI4 v1.3.1 1/10/2017 
+    -Compatible with latest patch
+    -Fixed advisors for Dominions
+    -Added Autonomy modifiers to Nigeria / Egypt focus trees
+    -Fixed the certainty of certain Australian events
+    -Added a new difficulty between "normal" and "veteran"
+    
+0.6.4 - Zan - HOI4 v1.3.2 1/17/2017 
+    -Compatible with latest Patch
+    -EGY and NIG start as colonies (barely)
+    -EGY and NIG are now part of commonwealth tech sharing group
+    -AST given a tiny bump to manpower
+    -Tinkered a bit more with AI tunnel vision. (Less likely to give up Berlin just because Paris is two steps away)
+    -Autonomy continous focus 0.5 - > 2 / day
+    
+0.6.5 - Zan - HOI4 v1.3.2 1/17/2017 
+    -Fixed Nigeria states issue
+    -Egypt needs 20% World Tension to remilitarize
+    -Raj given a war industrialist
+    -Added a few more resources across the board
+    -Tinkered with defines (mainly on how many VP ai considers important)
+    -Egyptian democratic / free name
+    -Nigerian democratic / free name
+    -Syrian democratic / free name
+ 
+0.6.6 - Zan - HOI4 v1.3.2 1/20/2017 
+    -Fix Division Template Icons
+    -Fix Graphical Error of minimize and factory conversion
+    -Reduce Military Capabilities of Netherlands / Belgium
+    -Change Egypt focus ->  Restart Industry / Aswan Dam / Jordan & Israel revolts give 250AP ea
+    -Specialize Egyptian Industry Focuses toward Cairo / Alexandria
+    -Move AP to Internationalism / Nationalism for Nig / EGY
+    -Change Nigerian Government / Leader when free from uk
+    -Fix Service By Requirement double bug
+    -Lessons of War for Soviets requires 1943
+    -Fix Soviet Claim Bessarabia event
+    -Great Patriotic War bonus cut in half
+    -Give AI Germany half the mobile warfare tree
+    -Slightly buffed tank side of mobile warfare tree
+    -Updated Denmark mod
+    
+0.6.7 - Zan - HOI4 v1.3.2 1/24/2017 
+
+    -Updated Finland
+    -Fix War with Greece for Germany (bypass if at war)
+    -Lowered ai focus on entrenchment (to prevent jitters)
+    -Ai Germany / Italy given larger navy
+    -Third International gone after Soviet dies
+    -Japan more likely to invite nations into their faction
+    -Remove cores from Bolivian annexation
+    -Lower fort destruction chance to ~10%
+    -Change War with USSR from abandon to bypass
+    -Added an infantry division template to Mongolia
+    -Make steel mills / refineries better with tech
+    -Have Japan annex Manchukuo as well as Mengkukuo for Northern Expansion
+    -Transfer of the Belgian Congo for Nigeria
+    -Mechanization effort for generics actually gives mechanization boost
+    -Wesewubering can fire if Poland is puppeted by SOV   
+    
+    0.6.8 - Zan - HOI4 v1.3.2 1/24/2017 
+    
+    -Turkey remove exclusiveness of demand mosul / expand saadabad
+    -Persia localization for indoctrination
+    -Sinkiang 60-40 join China when Japan attacks
+    -Lower Chile civilian factories from 9 - > 7
+    -Make Chinese puds less likely to join Comintern when Japan attacks
+    -Port Defense 20-> 25 (ai)
+    -Naval Ai tweaks
+    -Brazilian Intervention on Argentina temporarily stopped
+    -Third International removed on Soviets not being Communist
+    -Mud 50%-> 60% speed penalty
+    
+    0.6.9 - Zan - HOI4 v1.3.2 1/31/2017 
+    
+    -Used new Paradox methods of granting equipment rather than my own
+    -Argentine focuses now use the "swap" feature rather than remove / add
+    -Nepal now has a base infantry division template
+    -Tinkered with Ai Templates & Ai Strategy
+    -Fixed issue with Finland / Nigeria
+    
+    
+    0.7.0 - Zan - HOI4 v1.3.3 2/23/2017 
+    
+    -Smoothed out regional unit focuses
+    -Nigerian regions no longer named after Finnish regions
+    -Reduced civilian factories for Chinese Minors
+    -Ai Japan given land doctrines vs Player China
+    -Japan state shintoism changed: faster naval invasions, out of supply combat bonus
+    -Japan spiritual mobilization gives 10% less supply usage
+    -Fascist Argentina leader changed to Ramon Castillo
+    -Siam given aluminium
+    -Countries in civil war no longer want to join factions(again)
+    -Brazilian Intervention returns(and works)
+    --Argentina must be leader of a faction
+    --Argentina's faction must include either PRU, BOL, or VEN
+    --Latin League no longer under US protection
+    -Indian & Australian advisors fixed
+    -Danish forts removed(again)
+    -Germans should use heavy tanks(again)
+    -Fixed Japanese surrender to China
+    -FRA / ENG un-neuter should be AI only now
+    -Poland tree buffed
+    -Poland receives some generic advisors
+    -New Zealand no longer steals UK Navy.
+    -Soviet Rodina slightly buffed against both AI and player (more tank equipment)
+    -Ger will focus on navy after barbarossa
+    -Sov will focus on navy after barbarossa
+    -Attempted to tame the revenge against soviets AND germans of Romania
+    -Lowered chance of SIK joining China vs JAP
+    -Revamped AI unit priorities
+    -USA warplan focuses make the ai attack things
+    -USA given 6 more focuses. (thanks Vllad!)
+    -Japan given strong nudges toward murder in pacific
+    -Iraq given a fascism focus tree (minor)
+    -Persian tree given mutual exclusive tags for clarity
+    -Brazil more likely to join Latin League when going / being fascist
+    -Increased ai chance of researching carrier planes if using carriers
+    -Ger more likely to research heavy tanks
+    -Fascist Iraq will seek alliance with GER
+    -Nationalist Chinese political tree is now only restricted to AI
+    -Japan will not join the axis too early
+    -USA will get involved earlier (especially after 1942)
+    -RAJ tree civil war focuses will bypass if already that ideology
+    -Argentine economic pictures fixed
+    -Bolivia no longer transfers units when annexed by argentina
+    -Indian Princely State troops no longer require you to be a subject, but take more autonomy
+    -India given three focuses to lessen the effects of agrarian society
+    -Soviet transformation of nature gives more rubber
+    -Soviet on_action stuff removed, they use their focus tree now (like everyone else)
+    -Soviets given a few factories back to vanilla levels
+    -Soviet officer purge made more deadly
+    -Soviet great patriotic war buffed to compensate deadlier purge
+    -Buffed Finland's Karelia province
+    -Gave Finland a hint more starting equipment
+    -Japanese skirmish with Soviets gives land doctrine bonus instead of grand battle plan
+    -Older Australian events added
+    -Buffed England / France (neuter is less effective)
+    -Guerilla Warfare idea for Spain removed after civil war
+    -Mechanized focus now gives research bonus instead of ahead of time bonus
+    -Ai production efficiency gain increased
+    -Moved a few French VPs to the Italian border
+    -Doubled Alpine Forts for France
+    -AI will always take a research slot if available in the focus tree
+    -Updated graphical mods
+    -Fixed duplicate localizations
+
+    0.7.2 - Zan - HOI4 v1.3.3 3/21/2017 
+    
+    -Reworked manpower laws
+    -Cleaned up national spirits
+    -Germany wont attack lowlands or scandinavia if at war with soviets
+    -Germany wont demand slovenia if at war with soviets
+    -Fixed Turkish localization
+    -Tech sharing added to regional trees
+    -Logistics Advisor makes you use less supply rather than take less attrition
+    -Autonomy from lend lease reduced (still 4x vanilla)
+    -Soviet surprise debuff should only happen on defensive war with Germany (no surprise if soviets attack germany)
+    -Molotov-Ribbentrop Pact extends to Baltics
+    -To keep variety Germany has 80% chance to honor pact (vanilla was 90)
+    -Germany more likely to make Vichy France
+    -Germany more likely to select repair focus if at war with Soviets and has damaged buildings
+    -Construction engineering now affects steel mills
+    -Chinese Warlords more likely to go Fascist if Japan has completed Tsuyoshi lives
+    -Added aluminium to middle east, canada, iceland, jamaica
+    -Modified left end side of mobile warfare
+    -Increased Heavy Cruiser AA
+    -Increase Heavy Fighter agility
+    -SAF no longer has generic ideology advisors
+    -Egypt and Nigeria get +5% commonwealth research at end of regional tree
+    -Polish tree somewhat fixed
+    -Grand Battle Plan rebalanced
+    -Nigerian manpower requirements for Belgian Congo halved
+    -Lowered "pip" supply reduction from 25% to 10%
+    -Added events for Indonesia to break free
+    -Fixed Turkish Events
+    -USA given generic popular figurehead
+    -Added naval manufacturers to generic countries
+    -Generic Material Designers added
+    -Generic CAS designer given to most countries
+    -Generic Tank desginers given to most countries
+    -Generic Refinery Company added
+    -Post civil-war Trotsky buffed
+    -Trotsky civil war size now 30%
+    -Map mod removed
+	
+	0.7.2.1 - Arsilon - HOI4 v1.3.3 4/15/2017
+	
+	-Replaced Purge Templates Folder with ExpertAI for testing
+	-Changed Template Upgrade (30) and Create New XP (501) Requiremnet to reduce AI tendency to corrupt templates
+	-Fixed State ID (Paris) for War with France trigger for Germany
+	
+	0.7.4 - Zan - HOI4 v1.3.3 1/19/2019
+    minor bugfix on war with france, tannenbaum, and danzig for germany declaring war on people
+	nigeria cores on senegal
+	nigeria decisions to try again @ france
+	make air combat more deadly
+	extra research slot for egypt fixed
+	fixed event to remove third international
+	spanish civil war bump to limited conscription if ai
+	japan less likely to invite to faction
+	argentina more likely to invite to faction
+	Hatay core of Turkey
+	Building slot changes in middle east(cairo-,hatay+,istanbul+,ankara+,aleppo+,izmir+)
+	buffed persia / turkey focus factories to be on par with generic
+	Minor tweaks to Nigeria's flag
+	Reworked Egypt tree
+	Fixed argentina tooltips
+	minor bugfix to egypt's political tree
+	bugfix nigeria ask for fwa(again)
+	tweaked powerful art designer
+	doubled special forces min(24->48)
+	indian tech continues if invalid
+	reintroduced unit counters
+	reintroduced guderian doctrine in mobile warfare tree
+	changed two nation theory from releasing pakistan to losing cores on the territory
+	tweak to usa ai to get them to invade people they declared war on through focus tree
+	eng, jap, usa start with marine tech researched
+	
+	removed german / soviet ai buff events
+	PRC can infiltrate multiple at once
+	Increased "true neutral"(neutering) tendency to be neutral
+	remove political power from promises of peace
+	fix powerful art(missing hard attack)
+	add hardness to armored motorized company(only affects motorized)
+	lower time for soviets to do purge by few months
+	lower when golden square coup happens for iraq
+	PRC central military commission -> 75% general cost reduction
+	whampoa academy CHI -> 75% general cost reduction
+	warlords can remove corruption with examination yuan or proclaim prc
+	
+	NATO counters should now show up in template designer
+	Heavy Industry tech should now show what it does
+	Nigeria, Argentina, Turkey, Poland, Iraq, and Persia trees brought up to par with generic tree(industry was lacking)
+	AI Japan has a better boost to invasion time
+	Generic countries given access to special forces idea
+	remove , from localization of mobile land doctrines
+	IRQ gives UK military access
+	war propaganda for fascist / communist on offensive war
+	Ledo road requires either the hump or burma road
+	re-worked some of the interactions of Warlords with PRC and CHI
+	added military academy focuses to regional trees & dominions
+	re-worked naval companies
+	dominions given national army or have their manpower ideas buffed
+	tinkered with formables(removed north africa as requirements, added vietnam to rattan empire)
+	added desert equipment to IRQ, EGY, PER, SAU
+	fixed paradox bug that didn't give everyone electronics concern
+	major buff to mass assault(first 3 techs)
+	
+	remove , from localization of mobile land doctrines
+	change argentinian european leadership to 2% organization
+	Nerfed AI Tags = TIB, NEP, BHU, OMA, YEM, CUB, ALB, COS, DOM, ECU, GUA, HON, LIB, NIC, PAN, TAN, HAI
+	---Nerfed by = AI will not take industry effort, and will eventually take disarmed nation(lowers their manpower)
+	Mass Assault, Grand Battleplan, Mobile warfare tweaked
+	nigerian flag change
+	trimmed argentine tree by 3 focuses
+	tech sharing focus no longer requires you to be at war
+	fixed annex congo focus for nigeria
+	liberia will always union with nigeria, and nigeria gets a core
+	Countries with more than 40 mil factories will now consider picking up armor
+	Made medium tanks more attractive to majors (doubly so for USA, ENG, SOV, GER)
+	GER more likely to research heavy tanks, may even research super heavy...
+	Overwrote Paradox' role ratio for USA, JAP, SOV, and GER
+	Tweaked Japan invasion ai a little more(they had default asia ai which had a tiny priority for the pacific and oceania)
+	---area priority is tweaked as they move along the purge railroad
+	---This means Australia and New Zealand will have a bad time
+	Tweaked USA ai to now have semi-dynamic area priority.
+	---They had default North America ai which meant they didnt care as much about the world.
+	---This means Germany and Japan will now have a bad time
+	
+	Japanese AI less suicidal when attacking people while at war with ENG, SOV, USA
+	Japanese AI has amphibious assault bonus to inf & special forces
+	JAP ai starts at -30% vs player china instead of -50%
+	nat china or non-aligned warlords AI leave comintern if at peace and non-aligned > 50
+	added purge unit ratios to ENG, ITA, FRA, JAP (already had them for SOV, GER, USA)
+	all majors will be heavily inclined to take light tanks tech 1 & 2
+	USA, ENG, SOV, GER will be more inclined to take medium tank tech than other majors
+	Latin League members get +0.05 fascism, +0.03 organization factor
+	argentina should prepare before going to war with CHL, PAR, and URG
+	latin league ai functions for Argentina if they join the axis
+	latin league ai should take them all the way up to war with mexico
+	Made Latin League claims more modular rather than needing all the members of the league
+	GER navy depends on uboat focus vs plan z
+	GER / SOV will build navies after winning vs the other(and attack eng / usa if at war)
+	add north africa / egypt to middle east "continent" for egypt's generals and make north africa more important to italy & others
+	add ai for north africa campaign after france falls for the allies / ITA
+	ai for england to defend egypt until libya is clear
+	
+	Losing Border War does not cost PP
+	Border Conflict cost 75pp
+	Border Conflict cooldown 1/2
+	Border Conflict unit return min time = 1 month
+	Base equipment capture ratio = 0.01(was 0)
+	More ai tinkering
+	
+	pre-region-wide industrial integration -> 1 build slots @ 5 infrastructure, for 50pp
+	region-wide industrial integration -> 2 build slots
+	Remove "neutral bolivia" modifier if they go not-nonaligned
+	Fascist will almost always join latin league
+	GER / SOV more likely support raj
+	JAP-CHI white peace works on everyone in faction with CHI(orwhichever warlord they are)
+	GER/SOV/ITA/JAP will research synthetic tree
+
+	Adjusted Ai air force priorities, "new" majors tank priorities
+	Moved removal of warlord penalty if switching to Comchi to social market economy
+	Removed democracy boost from executive yuan, added fascist advisor to natchi
+	Ledo road, Burma road, hanoi route, the hump now ok if in faction with the owner
+	heavy tanks(10->25%) & super heavy(50->100%) are now better against forts
+	Buffed grand battle plan
+	connect raj two nation theory to quit india movement
+	buffed azad hindoustan
+	tank designers for the dominions
+	falkenhausen and chennault buffed for chinese
+	manchukuo duplicates removed
+	designer duplicates for chinese removed
+	tinkered with manchukuo tree
+	commie france will want to leave allies
+	add mengkukuo cores to manchukuo when annexing
+	uk/ita/ger influence now timed
+	china 2nd, 3rd camco focuses 1/2 time
+	
+	AI to improve worker conditions if stability <91%
+	AI to take war propaganda if war support <100%
+	fix manchurian subject warlords(make it work like natchi subject warlords)
+	wargoal against warlords gives them -20% against MAN
+	unit templates no longer use capital scope and are now specific
+	Japan white peace annexs all puppets of japan / all warlords in a faction with japan
+	tweaked capital scopes for unit ratios
+	Japan non-axis buffed
+	Japan civil war scaled, generic civil war scaled
+	Manchukuo subject problem resolved
+	scaled civil war for generics, japan
+	Fixed ARG getting cores instead of ELS

@@ -1,0 +1,27 @@
+state={
+	id=768
+	name="STATE_768"
+	manpower = 246138
+
+	state_category = town
+	resources={
+        steel=15
+	}
+
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 5
+			12029 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SYR
+		add_core_of = TUR
+	}
+
+
+	provinces={
+		12029
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 547797
+	
+	state_category = city
+    
+    resources={
+		steel=12
+	}
+
+	history={
+		owner = SYR
+		victory_points = {
+			4111 3 
+		}
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
+			infrastructure = 3
+			air_base = 1
+		}
+		add_core_of = SYR	
+
+	}
+
+
+	provinces={
+		1074 4111 4486 4550 7184 
+	}
+}

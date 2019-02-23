@@ -1,0 +1,193 @@
+prestigious_projects = {
+
+	indian_agrarian_improvement = {
+
+		icon = generic_construction
+
+		available = {
+			has_completed_focus = RAJ_argrarian1
+			num_of_civilian_factories_available_for_projects > 5
+		}
+
+		cost = 50
+		modifier = {
+			civilian_factory_use = 6
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 365
+
+		visible = {
+			OR = {
+				has_idea = RAJ_agrarian_society
+				has_idea = RAJ_agrarian_society2
+				has_idea = RAJ_agrarian_society3
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = RAJ_agrarian_society }
+				swap_ideas = {
+					remove_idea = RAJ_agrarian_society
+					add_idea = RAJ_agrarian_society2
+				}
+			}
+			else_if = {
+				limit = { has_idea = RAJ_agrarian_society2 }
+				swap_ideas = {
+					remove_idea = RAJ_agrarian_society2
+					add_idea = RAJ_agrarian_society3
+				}
+			}
+			else_if = {
+				limit = { has_idea = RAJ_agrarian_society3 }
+				remove_ideas = RAJ_agrarian_society3
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = raj_year_investment
+		}		
+	}
+}
+
+political_actions = {
+
+	ask_for_togoland = {
+
+		icon = generic_political_discourse
+
+		available = {
+			NOT = { has_idea = petition_for_territory}	
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 90
+
+		visible = {
+			AND = {
+				has_completed_focus = nigerian_petition_for_togoland
+				NOT = { owns_state = 764 }
+				NOT = { owns_state = 765 }
+				OR = {
+					AND = {
+						FRA = { controls_state = 764 } 
+						FRA = { controls_state = 765 }
+						NIG = { is_in_faction_with = FRA }
+					}
+					AND = {
+						ENG = { controls_state = 764 } 
+						ENG = { controls_state = 765 }
+						NIG = { is_in_faction_with = ENG }
+					}
+				}
+			}
+			
+		}
+		remove_effect = {
+			remove_ideas = petition_for_territory
+		}
+		complete_effect = {
+			FRA = { country_event = { id = nig.9 } }
+			add_ideas = petition_for_territory
+		}		
+	}
+	
+	ask_for_fwa = {
+
+		icon = generic_political_discourse
+
+		available = {
+			NOT = { has_idea = petition_for_territory}	
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 90
+
+		visible = {
+			AND = {
+				has_completed_focus = nigerian_petition_for_french_westafrica
+				NOT = { owns_state = 556 } 
+                NOT = { owns_state = 272 }
+                NOT = { owns_state = 767 } 
+                NOT = { owns_state = 766 }
+				OR = {
+					AND = {
+						FRA = { controls_state = 556 } 
+						FRA = { controls_state = 272 }
+						FRA = { controls_state = 767 } 
+						FRA = { controls_state = 766 }
+						NIG = { is_in_faction_with = FRA }
+					}
+					AND = {
+						ENG = { controls_state = 556 } 
+						ENG = { controls_state = 272 }
+						ENG = { controls_state = 767 } 
+						ENG = { controls_state = 766 }
+						NIG = { is_in_faction_with = ENG }
+					}
+				}
+			}
+		}
+		remove_effect = {
+			remove_ideas = petition_for_territory
+		}
+		complete_effect = {
+			
+			FRA = { country_event = { id = nig.10 } }
+			add_ideas = petition_for_territory 	
+		}		
+	}
+	
+	ask_for_equatorial_africa= {
+
+		icon = generic_political_discourse
+
+		available = {
+			NOT = { has_idea = petition_for_territory}	
+		}
+
+		cost = 75
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 90
+
+		visible = {
+			AND = {
+				has_completed_focus = nigerian_petition_for_gabon
+				NOT = { owns_state = 515 }
+				NOT = { owns_state = 660 } 
+                NOT = { owns_state = 539 }
+				OR = {
+					AND = {
+						FRA = { controls_state = 515 } 
+						FRA = { controls_state = 660 }
+						FRA = { controls_state = 539 } 
+						NIG = { is_in_faction_with = FRA }
+					}
+					AND = {
+						ENG = { controls_state = 515 } 
+						ENG = { controls_state = 660 }
+						ENG = { controls_state = 539 } 
+						NIG = { is_in_faction_with = ENG }
+					}
+				}
+			}
+		}
+		remove_effect = {
+			remove_ideas = petition_for_territory
+		}
+		complete_effect = {
+			FRA = { country_event = { id = nig.11 } }
+			add_ideas = petition_for_territory 	
+		}		
+	}
+
+}

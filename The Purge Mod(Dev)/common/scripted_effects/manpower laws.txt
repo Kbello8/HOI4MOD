@@ -1,0 +1,76 @@
+#	Example:
+# 
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+manpower_law_change_flags_volunteer = {
+	if = {
+		limit = {
+			has_idea = volunteer_only
+		}
+		set_country_flag = volunteer_only
+	}
+}
+
+manpower_law_change_flags_limited_conscription = {
+	if = {
+		limit = {
+			has_idea = limited_conscription
+		}
+        clr_country_flag = volunteer_only
+		set_country_flag = limited_conscription
+	}
+}
+
+manpower_law_change_flags_extensive_conscription = {
+	if = {
+		limit = {
+			has_idea = extensive_conscription
+		}
+		clr_country_flag = limited_conscription
+        set_country_flag = extensive_conscription
+	}
+}
+
+manpower_law_change_flags_service_by_requirement = {
+	if = {
+		limit = {
+			has_idea = service_by_requirement
+		}
+		clr_country_flag = extensive_conscription
+        set_country_flag = service_by_requirement
+	}
+}
+
+manpower_law_change_flags_all_adults_serve = {
+	if = {
+		limit = {
+			has_idea = all_adults_serve
+		}
+		clr_country_flag = service_by_requirement
+        set_country_flag = all_adults_serve
+	}
+}
+
+manpower_law_change_flags_scraping_the_barrel = {
+	if = {
+		limit = {
+			has_idea = scraping_the_barrel
+		}
+		clr_country_flag = all_adults_serve
+        set_country_flag = scraping_the_barrel
+	}
+}

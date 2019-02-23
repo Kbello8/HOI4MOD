@@ -1,0 +1,17 @@
+technology_sharing_group = {
+
+	id = saad_research
+	name = saad_research_name
+	desc = saad_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        AND = {
+            is_in_faction_with = TUR
+            TUR = { is_faction_leader = yes }
+        }
+    }
+
+}

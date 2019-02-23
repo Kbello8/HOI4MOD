@@ -1,0 +1,190 @@
+﻿###########################
+# Egyptian Events
+###########################
+
+add_namespace = egy
+
+
+# UK Accept Petition - Aden
+country_event = {
+	id = egy.1
+	title = egy.1.t
+	desc = egy.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egy.1.a
+
+		EGY = {
+			if = {
+				limit = {
+					659 = {
+						
+						OR = {
+							is_controlled_by = EGY
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 659
+			}
+		}
+	}
+}
+
+# UK Accept Petition - Abu Dhabi
+country_event = {
+	id = egy.2
+	title = egy.2.t
+	desc = egy.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egy.2.a
+
+		EGY = {
+			if = {
+				limit = {
+					658 = {
+						OR = {
+							is_controlled_by = EGY
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 658
+			}
+		}
+	}
+}
+
+# UK Accept Petition - Kuwait
+country_event = {
+	id = egy.3
+	title = egy.3.t
+	desc = egy.3.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egy.3.a
+
+		EGY = {
+			if = {
+				limit = {
+					656 = {	
+						OR = {
+							is_controlled_by = EGY
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 656
+			}
+		}
+	}
+}
+
+
+# Britain Declines 
+country_event = {
+	id = egy.4
+	title = egy.4.t
+	desc = egy.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egy.4.a
+        #Nothing
+	}
+    
+    option = {
+		name = egy.4.b
+        #Nothing
+	}
+}
+
+# Petition for Aden
+country_event = {
+	id = egy.5
+	title = egy.5.t
+	desc = egy.5.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 100
+		}
+		name = egy.5.a
+        EGY = { country_event = { days = 10 id = egy.1 } }
+	}
+    
+    option = {
+        ai_chance = {      
+            factor = 0 
+        }
+		name = egy.5.b
+        EGY = { country_event = { days = 10 id = egy.4 } }
+	}
+}
+
+# Petition for Abu Dhabi
+country_event = {
+	id = egy.6
+	title = egy.6.t
+	desc = egy.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 100
+		}
+		name = egy.6.a
+        EGY = { country_event = { days = 10 id = egy.2 } }
+	}
+    
+    option = {
+        ai_chance = {      
+            factor = 0 
+        }
+		name = egy.6.b
+        EGY = { country_event = { days = 10 id = egy.4 } }
+	}
+}
+
+# Petition for Kuwait
+country_event = {
+	id = egy.7
+	title = egy.7.t
+	desc = egy.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 100
+		}
+		name = egy.7.a
+        EGY = { country_event = { days = 10 id = egy.3 } }
+	}
+    
+    option = {
+        ai_chance = {      
+            factor = 0 
+        }
+		name = egy.7.b
+        EGY = { country_event = { days = 10 id = egy.4 } }
+	}
+}

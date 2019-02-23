@@ -1,0 +1,2412 @@
+﻿###########################
+# Purge Events
+###########################
+
+add_namespace = purge
+
+
+###########################
+# Revolters
+###########################
+
+# Post-Coup Puppet (Remove Puppet)
+country_event = {
+	id = purge.9
+	title = purge.9.t
+	desc = purge.9.d
+	picture = GFX_news_event_communist_leader
+    
+	
+	is_triggered_only = yes
+     
+    
+	option = {
+		name = purge.9.a
+        
+        if = {
+            limit = {
+                AND = {
+                    ROOT = { 
+                        is_subject_of = FRA
+                    }
+                    
+                    FRA = { is_in_faction = yes }
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            
+            ROOT = {
+                country_event = { days = 7 id = purge.14 }
+            }
+        }
+        
+        if = {
+            limit = {
+                AND = {
+                    ROOT = { 
+                        is_subject_of = FRA
+                    }
+                    
+                    FRA = { is_in_faction = no }
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            
+            ROOT = {
+                country_event = { days = 7 id = purge.17 }
+            }
+        }
+        
+        if = {
+            limit = {
+                ROOT = { 
+                    is_subject_of = ENG
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            ROOT = {
+                country_event = { days = 7 id = purge.10 }
+            }
+        }
+        
+        if = {
+            limit = {
+                AND = {
+                    ROOT = { 
+                        is_subject_of = USA
+                    }
+                    
+                    USA = { is_in_faction = yes }
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            
+            ROOT = {
+                country_event = { days = 7 id = purge.46 }
+            }
+        }
+        
+        if = {
+            limit = {
+                AND = {
+                    ROOT = { 
+                        is_subject_of = USA
+                    }
+                    
+                    USA = { is_in_faction = no }
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            
+            ROOT = {
+                country_event = { days = 7 id = purge.44 }
+            }
+        }
+        
+        if = {
+            limit = {
+                AND = {
+                    ROOT = { 
+                        is_subject_of = HOL
+                    }
+                    
+                    HOL = { is_in_faction = yes }
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            
+            ROOT = {
+                country_event = { days = 7 id = purge.74 }
+            }
+        }
+        
+        if = {
+            limit = {
+                AND = {
+                    ROOT = { 
+                        is_subject_of = HOL
+                    }
+                    
+                    HOL = { is_in_faction = no }
+                }
+            }
+            
+            set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_free
+			}
+            
+            ROOT = {
+                country_event = { days = 7 id = purge.77 }
+            }
+        }
+    }
+}
+   
+# Post-Coup Puppet-England (Faction Y/N?)
+country_event = {
+	id = purge.10
+	title = purge.10.t
+	desc = purge.10.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Stay in faction
+	option = {
+        ai_chance = {
+			factor = 50
+		}
+        
+		name = purge.10.a
+        
+        ENG = { country_event = { days = 10 id = purge.12 } }
+	}
+    
+    #Leave faction
+    option = {
+        ai_chance = {
+			factor = 50
+		}
+		name = purge.10.b
+        ENG = { 
+			remove_from_faction = ROOT
+		}
+        
+        If = {
+            limit = {
+                any_country = { has_war_with = ROOT }                
+            }
+            
+           every_enemy_country  = { white_peace = ROOT }
+        }
+        
+        ENG = { country_event = { days = 10 id = purge.11 } }
+	}
+
+}
+
+# Post-Coup Master-England-Leave (Let them leave / Reinstall Puppet)
+country_event = {
+	id = purge.11
+	title = purge.11.t
+	desc = purge.11.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    
+    #Murder
+	option = {
+    
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 80
+                has_war = no
+            }
+        }
+        
+		name = purge.11.a
+        
+        ENG = { 
+			remove_from_faction = FROM
+		}
+        
+        ENG = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 20
+		}
+		name = purge.11.b
+        
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Puppet-France-Faction (Faction Y/N?)
+country_event = {
+	id = purge.14
+	title = purge.14.t
+	desc = purge.14.d
+	picture = GFX_news_event_chamberlain_announce
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Stay in faction
+	option = {
+        ai_chance = {
+			factor = 50
+		}
+        
+		name = purge.14.a
+
+        FRA = { country_event = { days = 10 id = purge.16 } }
+	}
+    
+    #Leave faction
+    option = {
+        ai_chance = {
+			factor = 50
+		}
+		name = purge.14.b
+        FRA = { 
+			remove_from_faction = ROOT
+		}
+        
+        FRA = { country_event = { days = 10 id = purge.15 } }
+	}
+
+}
+
+# Post-Coup Master-France-Leave (Let them leave / Reinstall Puppet)
+country_event = {
+	id = purge.15
+	title = purge.15.t
+	desc = purge.15.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    
+    #Murder
+	option = {
+    
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 80
+                has_war = no
+            }
+        }
+        
+		name = purge.15.a
+        
+        FRA = { 
+			remove_from_faction = FROM
+		}
+        
+        If = {
+            limit = {
+                any_country = { has_war_with = FROM }                
+            }
+            
+            every_enemy_country  = { white_peace = FROM }
+        }
+        
+        FRA = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 20
+		}
+		name = purge.15.b
+        
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Master-France-Stay {Let them stay / Reinstall Puppet)
+country_event = {
+	id = purge.16
+	title = purge.16.t
+	desc = purge.16.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Murder
+	option = {
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 30
+                has_war = no
+            }
+        }
+		name = purge.16.a
+        
+        FRA = { 
+			remove_from_faction = FROM
+		}
+        
+        FRA = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 70
+		}
+		name = purge.16.b
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Master-England-Stay {Let them stay / Reinstall Puppet)
+country_event = {
+	id = purge.12
+	title = purge.12.t
+	desc = purge.12.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Murder
+	option = {
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 30
+                has_war = no
+            }
+        }
+		name = purge.12.a
+        
+        ENG = { 
+			remove_from_faction = FROM
+		}
+        
+        ENG = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 70
+		}
+		name = purge.12.b
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Master lets us live
+country_event = { 
+    id = purge.13
+	title = purge.13.t
+	desc = purge.13.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+
+    
+    #Stay in faction
+	option = {
+		name = purge.13.a
+        #Nothing
+    }
+
+}
+
+# Post-Coup Puppet-France-Nofaction (Faction Y/N?)
+country_event = {
+	id = purge.17
+	title = purge.17.t
+	desc = purge.17.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+       
+    #Leave faction
+    option = {
+		name = purge.17.b
+        
+        FRA = { country_event = { days = 10 id = purge.15 } }
+	}
+
+}
+
+# Post-Coup Puppet-USA-Faction (Faction Y/N?)
+country_event = {
+	id = purge.46
+	title = purge.46.t
+	desc = purge.46.d
+	picture = GFX_news_event_chamberlain_announce
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Stay in faction
+	option = {
+        ai_chance = {
+			factor = 50
+		}
+        
+		name = purge.46.a
+
+        USA = { country_event = { days = 10 id = purge.43 } }
+	}
+    
+    #Leave faction
+    option = {
+        ai_chance = {
+			factor = 50
+		}
+		name = purge.46.b
+        USA = { 
+			remove_from_faction = ROOT
+		}
+        
+        USA = { country_event = { days = 10 id = purge.42 } }
+	}
+
+}
+
+# Post-Coup Master-USA-Leave (Let them leave / Reinstall Puppet)
+country_event = {
+	id = purge.42
+	title = purge.42.t
+	desc = purge.42.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    
+    #Murder
+	option = {
+    
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 80
+                has_war = no
+            }
+        }
+        
+		name = purge.42.a
+        
+        USA = { 
+			remove_from_faction = FROM
+		}
+        
+        If = {
+            limit = {
+                any_country = { has_war_with = FROM }                
+            }
+            
+            every_enemy_country  = { white_peace = FROM }
+        }
+        
+        USA = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 20
+		}
+		name = purge.42.b
+        
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Master-USA-Stay {Let them stay / Reinstall Puppet)
+country_event = {
+	id = purge.43
+	title = purge.43.t
+	desc = purge.43.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Murder
+	option = {
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 30
+                has_war = no
+            }
+        }
+		name = purge.43.a
+        
+        USA = { 
+			remove_from_faction = FROM
+		}
+        
+        USA = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 70
+		}
+		name = purge.43.b
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Puppet-USA-Nofaction (Faction Y/N?)
+country_event = {
+	id = purge.44
+	title = purge.44.t
+	desc = purge.44.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+       
+    #Leave faction
+    option = {
+		name = purge.44.b
+        
+        USA = { country_event = { days = 10 id = purge.42 } }
+	}
+
+}
+
+# Post-Coup Puppet-HOL-Faction (Faction Y/N?)
+country_event = {
+	id = purge.74
+	title = purge.74.t
+	desc = purge.74.d
+	picture = GFX_news_event_chamberlain_announce
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Stay in faction
+	option = {
+        ai_chance = {
+			factor = 50
+		}
+        
+		name = purge.74.a
+
+        HOL = { country_event = { days = 10 id = purge.76 } }
+	}
+    
+    #Leave faction
+    option = {
+        ai_chance = {
+			factor = 50
+		}
+		name = purge.74.b
+        HOL = { 
+			remove_from_faction = ROOT
+		}
+        
+        HOL = { country_event = { days = 10 id = purge.75 } }
+	}
+
+}
+
+# Post-Coup Master-HOL-Leave (Let them leave / Reinstall Puppet)
+country_event = {
+	id = purge.75
+	title = purge.75.t
+	desc = purge.75.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    
+    #Murder
+	option = {
+    
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 80
+                has_war = no
+            }
+        }
+        
+		name = purge.75.a
+        
+        HOL = { 
+			remove_from_faction = FROM
+		}
+        
+        If = {
+            limit = {
+                any_country = { has_war_with = FROM }                
+            }
+            
+            every_enemy_country  = { white_peace = FROM }
+        }
+        
+        HOL = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 20
+		}
+		name = purge.75.b
+        
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Master-HOL-Stay {Let them stay / Reinstall Puppet)
+country_event = {
+	id = purge.76
+	title = purge.76.t
+	desc = purge.76.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+    
+    
+    #Murder
+	option = {
+        ai_chance = {      
+            factor = 0 
+            
+            modifier = {
+                factor = 30
+                has_war = no
+            }
+        }
+		name = purge.76.a
+        
+        HOL = { 
+			remove_from_faction = FROM
+		}
+        
+        HOL = {   
+            declare_war_on = {
+                target = FROM
+                type = puppet_wargoal_focus
+            }    
+        }
+	}
+    
+    #No Murder
+    option = {
+        ai_chance = {
+			factor = 70
+		}
+		name = purge.76.b
+        FROM = { country_event = { days = 10 id = purge.13 } }
+	}
+
+}
+
+# Post-Coup Puppet-HOL-Nofaction (Faction Y/N?)
+country_event = {
+	id = purge.77
+	title = purge.77.t
+	desc = purge.77.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	
+	is_triggered_only = yes
+       
+    #Leave faction
+    option = {
+		name = purge.77.b
+        
+        HOL = { country_event = { days = 10 id = purge.75 } }
+	}
+
+}
+
+
+###########################
+# England
+###########################
+
+#Eden-Malbrán Treaty
+    country_event = {
+	id = purge.5
+	title = purge.5.t
+	desc = purge.5.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+	fire_only_once = yes
+    
+	trigger = {
+        tag = ENG
+		date > 1936.1.27
+	}
+    
+    mean_time_to_happen = {
+		days = 10
+	}
+    
+	option = {
+		name = purge.5.a 
+        ai_chance = { 
+			factor = 60
+		}
+        
+        effect_tooltip = {
+            ARG = { country_event = { id = arg.1 } }
+            PRU = { country_event = { id = pru.1 } }
+        }
+        
+        hidden_effect = {
+			ARG = { country_event = { id = arg.1 } }
+            PRU = { country_event = { id = pru.1 } }
+		}
+
+	}
+
+    
+    option = {
+		name = purge.5.b 
+        ai_chance = { 
+			factor = 40
+		}
+            ENG = {
+                add_opinion_modifier = { target = SAF modifier = Roca_runciman }
+                add_opinion_modifier = { target = AST modifier = Roca_runciman }
+                add_opinion_modifier = { target = CAN modifier = Roca_runciman }
+                add_opinion_modifier = { target = NZL modifier = Roca_runciman }
+                add_opinion_modifier = { target = RAJ modifier = Roca_runciman }
+            }
+            
+            SAF = {
+                add_opinion_modifier = { target = ENG modifier = Roca_runciman }
+            }
+            
+            CAN = {
+                add_opinion_modifier = { target = ENG modifier = Roca_runciman }
+            }
+            
+            NZL = {
+                add_opinion_modifier = { target = ENG modifier = Roca_runciman }
+            }
+            
+            RAJ = {
+                add_opinion_modifier = { target = ENG modifier = Roca_runciman }
+            }
+            
+            AST = {
+                add_opinion_modifier = { target = ENG modifier = Roca_runciman }
+            }
+
+        hidden_effect = {
+			set_global_flag = eden_malbran_no
+            SAF = { country_event = { id = purge.6 } }
+            AST = { country_event = { id = purge.6 } }
+            CAN = { country_event = { id = purge.6 } }
+            NZL = { country_event = { id = purge.6 } }
+            RAJ = { country_event = { id = purge.6 } }
+            ARG = { country_event = { id = arg.3 } }
+            PRU = { country_event = { id = pru.3 } }
+		}
+
+	}
+}
+
+#Roca-Runciman is not extended
+    country_event = {
+	id = purge.6
+	title = purge.6.t
+	desc = purge.6.d
+	picture = GFX_news_event_generic_sign_treaty1
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = purge.6.a 
+        
+        #Nothing
+	}
+
+}
+
+#Peru ends Eden-Malbrán
+    country_event = {
+	id = purge.7
+	title = purge.7.t
+	desc = purge.7.d
+	picture = GFX_news_event_generic_read_write
+    
+	fire_only_once = yes
+	is_triggered_only = yes
+    
+	option = {
+		name = purge.7.a 
+        
+        remove_opinion_modifier = { target = PRU modifier = Eden_malbran_yes }
+        add_opinion_modifier = { target = PRU modifier = Eden_malbran_no }
+	}
+
+}
+
+#Argentina ends Eden-Malbrán
+    country_event = {
+	id = purge.8
+	title = purge.8.t
+	desc = purge.8.d
+	picture = GFX_news_event_generic_read_write
+    
+	fire_only_once = yes
+	is_triggered_only = yes
+    
+	option = {
+		name = purge.8.a 
+        
+        remove_opinion_modifier = { target = ARG modifier = Eden_malbran_yes }
+        add_opinion_modifier = { target = ARG modifier = Eden_malbran_no }
+	}
+
+}
+
+
+################
+### Neutrals ###
+################
+
+
+ #AI Neutral - HOL
+country_event = { 
+    id = purge.19
+	title = purge.19.t
+	desc = purge.19.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = HOL  
+            HOL = { is_ai = yes }  
+        }
+	}
+    
+	option = {
+		name = purge.19.a
+  
+        add_ideas = true_neutral1
+    }
+
+}
+
+# AI Neutral - DEN
+country_event = { 
+    id = purge.20
+	title = purge.20.t
+	desc = purge.20.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = DEN
+            DEN = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.20.a
+
+            add_ideas = true_neutral1
+    }
+
+}
+
+# AI Neutral - BEL
+country_event = { 
+    id = purge.21
+	title = purge.21.t
+	desc = purge.21.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+        
+            original_tag = BEL           
+            BEL = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.21.a
+        
+        add_ideas = true_neutral1
+    }
+
+}
+
+# AI Neutral - NIG
+country_event = { 
+    id = purge.22
+	title = purge.22.t
+	desc = purge.22.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+       
+            original_tag = NIG            
+            NIG = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.22.a
+        add_ideas = colonial1
+    }
+
+}
+
+# AI Neutral - SAF
+#country_event = { 
+#    id = purge.23
+#	title = purge.23.t
+#	desc = purge.23.d
+#	picture = GFX_news_event_057
+#    
+#    fire_only_once = yes 
+#    
+#    mean_time_to_happen = {
+#		days = 2
+#	}
+#	
+#	trigger = {
+#        AND = {
+#        
+#            tag = SAF
+#            SAF = { is_ai = yes }  
+#        }
+#	}
+#    
+#	option = {
+#		name = purge.23.a
+#        add_ideas = true_neutral1
+#    }
+#
+#}
+
+# AI Neutral - ENG
+country_event = { 
+    id = purge.25
+	title = purge.25.t
+	desc = purge.25.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            AND = {
+                original_tag = ENG
+                ENG = { is_ai = yes }
+            }
+            AND = {
+                GER = { is_ai = yes }
+            }
+        }
+	}
+    
+	option = {
+		name = purge.25.a
+        add_ideas = no_more_war
+    }
+
+}
+
+# AI Neutral - FRA
+country_event = { 
+    id = purge.26
+	title = purge.26.t
+	desc = purge.26.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            AND = {
+                original_tag = FRA
+                FRA = { is_ai = yes }
+            }
+            AND = {
+                GER = { is_ai = yes }
+            }   
+        }
+	}
+    
+	option = {
+		name = purge.26.a
+        add_ideas = no_more_war
+    }
+
+}
+
+# AI Neutral - NOR
+country_event = { 
+    id = purge.27
+	title = purge.27.t
+	desc = purge.27.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+        
+            original_tag = NOR
+            NOR = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.27.a
+        add_ideas = true_neutral1
+    }
+
+}
+
+ 
+
+ #AI Neutral - INS
+country_event = { 
+    id = purge.29
+	title = purge.29.t
+	desc = purge.29.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = INS
+            INS = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.29.a
+        add_ideas = colonial1
+    }
+
+}
+
+# AI Un-Neuter
+country_event = { 
+    id = purge.30
+	title = purge.30.t
+	desc = purge.30.d
+	picture = GFX_news_event_057
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            OR = {
+                has_idea = true_neutral1
+                has_idea = true_neutral2
+            }
+            has_war = yes
+            
+            NOT = {
+                original_tag = BEL
+                original_tag = DEN
+            }
+        }
+	}
+    
+	option = {
+		name = purge.30.a
+        remove_ideas = true_neutral1
+        remove_ideas = true_neutral2
+    }
+
+}
+
+# AI Un-Neuter - FRA
+country_event = { 
+    id = purge.31
+	title = purge.31.t
+	desc = purge.31.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {       
+            original_tag = FRA
+            has_idea = no_more_war
+            OR = {
+                FRA = { has_war = yes }
+                NOT = { has_government = democratic }
+            }
+            
+        }
+	}
+    
+	option = {
+		name = purge.31.a
+        remove_ideas = no_more_war
+        add_timed_idea = { idea = fra_moblization days = 120 }
+    }
+
+}
+
+# AI Un-Neuter - ENG
+country_event = { 
+    id = purge.32
+	title = purge.32.t
+	desc = purge.32.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {       
+            original_tag = ENG
+            has_idea = no_more_war
+            OR = {
+                ENG = { has_war = yes }
+                NOT = { has_government = democratic }
+            }
+            
+        }
+	}
+    
+	option = {
+		name = purge.32.a
+        remove_ideas = no_more_war
+        add_timed_idea = { idea = eng_moblization days = 120 }
+    }
+
+}
+
+# AI Neuter - has militarism TN
+country_event = { 
+    id = purge.33
+	title = purge.33.t
+	desc = purge.33.d
+	picture = GFX_news_event_057
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {      
+            has_idea = true_neutral1
+            has_idea = militarism_focus
+        }
+	}
+    
+	option = {
+		name = purge.33.a
+        remove_ideas = true_neutral1
+        add_ideas = true_neutral2
+    }
+
+}
+
+# AI Neuter - has militarism colonial
+country_event = { 
+    id = purge.34
+	title = purge.34.t
+	desc = purge.34.d
+	picture = GFX_news_event_057
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {      
+            has_idea = colonial1
+            has_idea = militarism_focus
+        }
+	}
+    
+	option = {
+		name = purge.34.a
+        remove_ideas = colonial1
+        add_ideas = colonial2
+    }
+
+}
+
+# AI Japan Invasion
+country_event = { 
+    id = purge.35
+	title = purge.35.t
+	desc = purge.35.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = JAP
+            JAP = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.35.a
+
+        remove_ideas = state_shintoism
+        add_ideas = state_shintoism2
+		set_technology = { JAP_AI_Amphib = 1 }
+    }
+
+}
+
+
+# AI Neutral - SYR
+country_event = { 
+    id = purge.52
+	title = purge.52.t
+	desc = purge.52.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+       
+            tag = SYR            
+            SYR = { is_ai = yes }   
+        }
+	}
+    
+	option = {
+		name = purge.52.a
+        add_ideas = colonial1
+    }
+
+}
+
+# AI Neutral - EGY
+country_event = { 
+    id = purge.53
+	title = purge.53.t
+	desc = purge.53.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+       
+            tag = EGY            
+            EGY = { is_ai = yes }
+        }
+	}
+    
+	option = {
+		name = purge.53.a
+        add_ideas = colonial1
+    }
+
+}
+
+# AI Un-Neuter Colonial
+country_event = { 
+    id = purge.54
+	title = purge.54.t
+	desc = purge.54.d
+	picture = GFX_news_event_057
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            OR = {
+                has_idea = colonial1
+                has_idea = colonial2
+            }
+            OR = {
+                has_government = communism
+                has_government = fascism
+            }
+            AND = {
+                NOT ={ is_in_faction_with = ENG}
+                NOT ={ is_in_faction_with = FRA}
+            }
+            AND = {
+                is_puppet = no
+            }
+        }
+	}
+    
+	option = {
+		name = purge.54.a
+        remove_ideas = colonial1
+        remove_ideas = colonial2
+    }
+
+}
+
+#German AI - Doctrine
+country_event = { 
+    id = purge.28
+	title = purge.28.t
+	desc = purge.28.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+        
+            original_tag = GER
+            GER = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.28.a
+		add_war_support = 0.25
+		add_stability = 0.25
+        set_technology = { delay = 1}
+        set_technology = { elastic_defence = 1}
+        set_technology = { armored_spearhead = 1}
+        set_technology = { schwerpunk = 1}
+        set_technology = { blitzkrieg = 1}
+        set_technology = { kampfgruppe = 1}
+        
+    }
+
+}
+
+ #Japan AI vs China PC - Doctrine
+country_event = { 
+    id = purge.70
+	title = purge.70.t
+	desc = purge.70.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+        
+            original_tag = JAP
+            JAP = { is_ai = yes } 
+            CHI = { is_ai = no }
+        }
+	}
+    
+	option = {
+		name = purge.70.a
+        set_technology = { grand_battle_plan = 1}
+        set_technology = { prepared_defense = 1}
+        set_technology = { grand_assault = 1}
+        set_technology = { infantry_offensive = 1}
+        
+    }
+
+}
+
+
+# Ethiopian Defense
+country_event = { 
+    id = purge.47
+	title = purge.47.t
+	desc = purge.47.d
+	picture = GFX_news_event_057
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+    
+    fire_only_once = yes
+	
+	trigger = {
+        AND = {
+            ETH = { is_ai = yes }
+            original_tag = ETH
+            has_war_with = ITA
+        }
+	}
+    
+	option = {
+		name = purge.40.a
+        add_timed_idea = { idea = desperate_defense days = 60 }
+    }
+
+}
+
+# Soviet Surprise3
+country_event = { 
+    id = purge.49
+	title = purge.49.t
+	desc = purge.49.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+    
+    fire_only_once = yes
+	
+	trigger = {
+        AND = {
+            AND = {
+                SOV = { is_ai = yes }
+                SOV = { surrender_progress > 0.05 }
+                original_tag = SOV
+                SOV = { has_war_with = GER }
+                SOV = { controls_state = 219 }
+            }
+        }
+	}
+    
+	option = {
+		name = purge.49.a
+        add_timed_idea = { idea = rodina days = 730 }
+        set_technology = { basic_medium_tank = 1}
+        set_technology = { motorized_rocket_unit = 1}
+        set_technology = { interwar_antitank = 1}
+        load_oob = "SOV_Rodina_Tanks"
+        
+        
+        add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 4000
+		}
+        
+        add_equipment_to_stockpile = {
+			type = medium_tank_equipment_1
+			amount = 2000
+		}
+        
+        add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 20000
+		}
+        
+        add_equipment_to_stockpile = {
+			type = artillery_equipment_2
+			amount = 8000
+		}
+        
+        add_equipment_to_stockpile = {
+			type = rocket_artillery_equipment_1
+			amount = 3000
+		}
+        
+        add_equipment_to_stockpile = {
+			type = anti_tank_equipment_1
+			amount = 8000
+		}
+        
+        add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 8000
+		}
+    }
+
+}
+
+# Škoda Works
+country_event = { 
+    id = purge.50
+	title = purge.50.t
+	desc = purge.50.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 30
+	}
+    
+    fire_only_once = yes
+	
+	trigger = {
+        AND = {
+            GER = { is_ai = yes }
+            original_tag = GER
+            GER = { controls_state = 9 }
+        }
+	}
+    
+	option = {
+		name = purge.50.a
+        set_technology = { basic_medium_tank = 1}
+        set_technology = { basic_medium_td = 1}
+        set_technology = { basic_medium_art = 1}
+        load_oob = "GER_Skoda_Tanks"
+    }
+
+}
+
+
+# Comintern
+country_event = { 
+    id = purge.58
+	title = purge.58.t
+	desc = purge.58.d
+	picture = GFX_report_event_stalin_propaganda
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            NOT = { tag = SOV }
+            is_in_faction_with = SOV 
+            SOV = { has_government = communism }
+            NOT = { has_idea = third_international } 
+        }
+	}
+    
+	option = {
+		name = purge.58.a
+        add_ideas = third_international
+    }
+
+}
+
+# Comintern Removal
+country_event = { 
+    id = purge.60
+	title = purge.60.t
+	desc = purge.60.d
+	picture = GFX_report_event_soviet_purge_speech
+    
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            has_idea = third_international
+			OR = {
+				NOT = { is_in_faction_with = SOV }
+				AND = {
+					is_in_faction_with = SOV
+					NOT = { SOV = { has_government = communism } }
+				}
+			}
+        }
+	}
+    
+	option = {
+		name = purge.60.a
+        remove_ideas = third_international
+    }
+
+}
+
+# Civil War Add
+country_event = { 
+    id = purge.72
+	title = purge.72.t
+	desc = purge.72.d
+	picture = GFX_news_event_057
+      
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {   
+            is_ai = yes
+            has_civil_war = yes
+            NOT = { has_idea = civil_war_idea }
+        }
+	}
+    
+	option = {
+		name = purge.72.a
+        add_ideas = civil_war_idea
+    }
+
+}
+
+# Civil War Remove
+country_event = { 
+    id = purge.73
+	title = purge.73.t
+	desc = purge.73.d
+	picture = GFX_news_event_057
+        
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {   
+            is_ai = yes
+            has_idea = civil_war_idea
+            has_civil_war = no
+        }
+	}
+    
+	option = {
+		name = purge.73.a
+        remove_ideas = civil_war_idea
+    }
+
+}
+
+# USA xp
+country_event = { 
+    id = purge.80
+	title = purge.80.t
+	desc = purge.80.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = USA
+            has_war = yes
+            is_ai = yes
+        }
+	}
+    
+	option = {
+		name = purge.80.a
+        army_experience = 400
+    }
+
+}
+
+# SOV Rockets
+country_event = { 
+    id = purge.81
+	title = purge.81.t
+	desc = purge.81.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        original_tag = SOV
+        date > 1938.1.1
+        is_ai = yes
+        NOT = { has_tech = rocket_artillery }
+	}
+    
+	option = {
+		name = purge.81.a
+        set_technology = { rocket_artillery = 1}
+        set_technology = { motorized_rocket_unit = 1}
+    }
+
+}
+
+#  Player Faction Joining
+country_event = { 
+    id = purge.83
+	title = purge.83.t
+	desc = purge.83.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 5
+	}
+	hidden = yes
+	immediate = {
+		add_ideas = player_faction
+	}
+	trigger = {
+		AND = {
+			ROOT = { NOT = { has_idea = player_faction } }
+			ROOT = { is_ai = no }
+		}
+	}
+    
+	option = {
+		name = purge.82.a
+		
+    }
+}
+
+#  Fascist -> democratic civil war
+country_event = { 
+    id = purge.84
+	title = purge.84.t
+	desc = purge.84.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { democratic < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = fascism
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { democratic > 0.25 }
+					ROOT = { democratic < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = fascism
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = fascism
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.84.a
+		
+    }
+}
+
+#  Fascist -> communism civil war
+country_event = { 
+    id = purge.85
+	title = purge.85.t
+	desc = purge.85.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { communism < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = fascism
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { communism > 0.25 }
+					ROOT = { communism < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = fascism
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = fascism
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.85.a
+		
+    }
+}
+
+#  Communism -> Fascism civil war
+country_event = { 
+    id = purge.86
+	title = purge.86.t
+	desc = purge.86.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { fascism < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { fascism > 0.25 }
+					ROOT = { fascism < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.86.a
+		
+    }
+}
+
+#  Communism -> Democratic civil war
+country_event = { 
+    id = purge.87
+	title = purge.87.t
+	desc = purge.87.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { democratic < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = communism
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { democratic > 0.25 }
+					ROOT = { democratic < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = communism
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = communism
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.87.a
+		
+    }
+}
+
+#  Democratic -> Fascism civil war
+country_event = { 
+    id = purge.88
+	title = purge.88.t
+	desc = purge.88.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { fascism < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = democratic
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { fascism > 0.25 }
+					ROOT = { fascism < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = democratic
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = democratic
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.88.a
+		
+    }
+}
+
+#  Democratic -> Communism civil war
+country_event = { 
+    id = purge.89
+	title = purge.89.t
+	desc = purge.89.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { communism < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = democratic
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { communism > 0.25 }
+					ROOT = { communism < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = democratic
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = democratic
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.89.a
+		
+    }
+}
+
+#  Neutrality -> Communism civil war
+country_event = { 
+    id = purge.90
+	title = purge.90.t
+	desc = purge.90.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { communism < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = neutrality
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { communism > 0.25 }
+					ROOT = { communism < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = neutrality
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = communism
+					ideology = neutrality
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.90.a
+		
+    }
+}
+
+#  Neutrality -> fascism civil war
+country_event = { 
+    id = purge.91
+	title = purge.91.t
+	desc = purge.91.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { fascism < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = neutrality
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { fascism > 0.25 }
+					ROOT = { fascism < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = neutrality
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = neutrality
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.91.a
+		
+    }
+}
+
+#  Neutrality -> democratic civil war
+country_event = { 
+    id = purge.92
+	title = purge.92.t
+	desc = purge.92.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ROOT = { democratic < 0.26 }
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = neutrality
+					size = 0.75
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = { democratic > 0.25 }
+					ROOT = { democratic < 0.51 }
+				}
+			}
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = neutrality
+					size = 0.5
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = neutrality
+					size = 0.25
+				}
+			}
+		}
+	}
+    
+	option = {
+		name = purge.92.a
+		
+    }
+}

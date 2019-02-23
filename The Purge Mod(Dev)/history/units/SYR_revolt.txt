@@ -1,0 +1,181 @@
+﻿division_template = {
+	name = "Rebel Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+	}
+    
+    support = {
+       	artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Rebel Calvary"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 1 y = 0 }
+	}
+    
+    support = {
+       	artillery = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1. Rebel Infantry"
+		location = 4111
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Rebel Infantry"
+		location = 4111
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "3. Rebel Infantry"
+		location = 4111
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "4. Rebel Infantry"
+		location = 4111
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "5. Rebel Calvary"
+		location = 4111
+		division_template = "Rebel Calvary"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "6. Rebel Infantry"
+		location = 4111
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "7. Rebel Infantry"
+		location = 4111
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "8. Rebel Infantry"
+		location = 4486
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "9. Rebel Infantry"
+		location = 4486
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "10. Rebel Infantry"
+		location = 1074
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "11. Rebel Infantry"
+		location = 1074
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "12. Rebel Infantry"
+		location = 1074
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "13. Rebel Infantry"
+		location = 11919
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    division = {
+		name = "14. Rebel Infantry"
+		location = 11919
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "15. Rebel Infantry"
+		location = 792
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "16. Rebel Infantry"
+		location = 792
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    division = {
+		name = "17. Rebel Infantry"
+		location = 7184
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "18. Rebel Infantry"
+		location = 7184
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "19. Rebel Infantry"
+		location = 12473
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "20. Rebel Infantry"
+		location = 4550
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "21. Rebel Infantry"
+		location = 4550
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+    
+    division = {
+		name = "22. Rebel Infantry"
+		location = 4550
+		division_template = "Rebel Infantry"
+        start_experience_factor = 0.1
+	}
+}
