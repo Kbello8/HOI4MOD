@@ -84,7 +84,7 @@ northern_expansion = {
 	ai_strategy = {
 		type = antagonize
 		id = "SOV"			
-		value = 200
+		value = 300
 	}		
 }
 
@@ -836,12 +836,7 @@ first_stop_indochina = {
 	ai_strategy = {
 		type = invade
 		id = "FRA"			
-		value = 400
-	}
-	ai_strategy = {
-		type = area_priority
-		id = asia
-		value = 500
+		value = 1000
 	}
 }
 
@@ -915,13 +910,7 @@ second_stop_malaya = {
 	ai_strategy = {
 		type = invade
 		id = "MAL"			
-		value = 400
-	}
-
-	ai_strategy = {
-	type = area_priority
-	id = asia
-	value = 500
+		value = 1000
 	}
 }
 
@@ -990,13 +979,7 @@ third_stop_indonesia = {
 	ai_strategy = {
 		type = invade
 		id = "INS"			
-		value = 400
-	}
-	
-	ai_strategy = {
-	type = area_priority
-	id = pacific
-	value = 500
+		value = 1000
 	}
 }
 
@@ -1074,23 +1057,18 @@ fourth_stop_australia = {
         ai_strategy = {
             type = antagonize
             id = "AST"			
-            value = 1000
+            value = 1200
         } 
 		ai_strategy = {
 			type = invade
 			id = "AST"			
-			value = 400
+			value = 1000
 		}
 
 	ai_strategy = {
 		type = area_priority
 		id = oceania
-		value = 500
-	}
-	ai_strategy = {
-	type = area_priority
-	id = pacific
-	value = 500
+		value = 1000
 	}
 }
 
@@ -1154,18 +1132,18 @@ fifth_stop_new_zealand = {
         ai_strategy = {
             type = antagonize
             id = "NZL"			
-            value = 1000
+            value = 1200
         }
 		ai_strategy = {
 			type = invade
 			id = "NZL"			
-			value = 400
+			value = 1000
 		}
 
 	ai_strategy = {
 		type = area_priority
 		id = oceania
-		value = 500
+		value = 1000
 	}		
 }
 
@@ -1209,7 +1187,7 @@ final_stop_raj = {
 		ai_strategy = {
 			type = invade
 			id = "RAJ"			
-			value = 400
+			value = 1000
 		}
 }
 
@@ -1261,7 +1239,7 @@ detour_philippines = {
 		ai_strategy = {
 			type = invade
 			id = "PHI"			
-			value = 600
+			value = 1000
 		}
 }
 
@@ -1296,6 +1274,136 @@ second_detour_usa = {
 	}
 	abort = {
         OR = {
+            JAP = { controls_state = 629 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 629
+            }
+        }
+		OR = {
+            JAP = { controls_state = 631 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 631
+            }
+        }
+		OR = {
+            JAP = { controls_state = 638 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 638
+            }
+        }
+		OR = {
+            JAP = { controls_state = 642 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 642
+            }
+        }
+		OR = {
+            JAP = { controls_state = 641 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 641
+            }
+        }
+		OR = {
+            JAP = { controls_state = 630 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 630
+            }
+        }
+		OR = {
+            JAP = { controls_state = 727 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 727
+            }
+        }
+	}
+        ai_strategy = {
+            type = antagonize
+            id = "USA"			
+            value = 1000
+        }
+		ai_strategy = {
+			type = invade
+			id = "USA"			
+			value = 1000
+		}
+		ai_strategy = {
+			type = area_priority
+			id = pacific
+			value = 1000
+		}
+		ai_strategy = {
+			type = area_priority
+			id = north_america
+			value = -1000
+		}
+}
+
+second_detour_usa2 = {
+	enable = {
+        AND = {
+            original_tag = JAP
+            has_war_with = USA
+			OR = {
+            JAP = { controls_state = 629 }
+            any_country = {
+                is_in_faction_with = JAP
+                controls_state = 629
+            }
+			}
+			OR = {
+				JAP = { controls_state = 631 }
+				any_country = {
+					is_in_faction_with = JAP
+					controls_state = 631
+				}
+			}
+			OR = {
+				JAP = { controls_state = 638 }
+				any_country = {
+					is_in_faction_with = JAP
+					controls_state = 638
+				}
+			}
+			OR = {
+				JAP = { controls_state = 642 }
+				any_country = {
+					is_in_faction_with = JAP
+					controls_state = 642
+				}
+			}
+			OR = {
+				JAP = { controls_state = 641 }
+				any_country = {
+					is_in_faction_with = JAP
+					controls_state = 641
+				}
+			}
+			OR = {
+				JAP = { controls_state = 630 }
+				any_country = {
+					is_in_faction_with = JAP
+					controls_state = 630
+				}
+			}
+			OR = {
+				JAP = { controls_state = 727 }
+				any_country = {
+					is_in_faction_with = JAP
+					controls_state = 727
+				}
+			}
+        }
+		
+	}
+	abort = {
+        OR = {
             USA = { is_subject_of = JAP }
             USA = { exists = no } 
             is_in_faction_with = USA 
@@ -1304,11 +1412,16 @@ second_detour_usa = {
         ai_strategy = {
             type = antagonize
             id = "USA"			
-            value = 800
+            value = 1000
         }
 		ai_strategy = {
 			type = invade
 			id = "USA"			
-			value = 400
+			value = 1000
+		}
+		ai_strategy = {
+			type = area_priority
+			id = north_america
+			value = 1000
 		}
 }

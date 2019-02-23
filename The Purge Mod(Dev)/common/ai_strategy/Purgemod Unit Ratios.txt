@@ -188,3 +188,121 @@ enable = {
     ai_strategy = { type = equipment_production_factor id = carrier		 		value = 40}
 }
 
+naval_majors_building_boats_is_great = {
+	
+	enable = {
+		OR = {
+			original_tag = ITA
+			original_tag = USA
+			original_tag = ENG
+			original_tag = AST
+		}
+		num_of_civilian_factories_available_for_projects > 15
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 30  #aim for a 2-1 ratio on naval factories
+	}
+}
+
+
+####Limits
+
+infantry_limit = {
+	enable = {
+		AND = {
+			has_army_manpower = { size > 500000 }
+			has_equipment = { infantry_equipment < 10000 }
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				has_army_manpower = { size > 500000 }
+				has_equipment = { infantry_equipment < 10000 }
+			}
+		}
+	}
+	ai_strategy = { type = build_army id = infantry                              value = -5 }
+}
+
+armor_light_limit = {
+	enable = {
+		AND = {
+			has_template_majority_unit = light_armor
+			has_army_manpower = { size > 500000 }
+			has_equipment = { light_tank_equipment < 500 }
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				has_army_manpower = { size > 500000 }
+				has_equipment = { light_tank_equipment < 500 }
+			}
+		}
+	}
+	ai_strategy = { type = build_army id = light_armor                              value = -5 }
+}
+
+armor_medium_limit = {
+	enable = {
+		AND = {
+			has_template_majority_unit = medium_armor
+			has_army_manpower = { size > 500000 }
+			has_equipment = { medium_tank_equipment < 500 }
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				has_army_manpower = { size > 500000 }
+				has_equipment = { medium_tank_equipment < 500 }
+			}
+		}
+	}
+	ai_strategy = { type = build_army id = medium_armor                              value = -5 }
+}
+
+armor_heavy_limit = {
+	enable = {
+		AND = {
+			has_template_majority_unit = heavy_armor
+			has_army_manpower = { size > 500000 }
+			has_equipment = { heavy_tank_equipment < 500 }
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				has_army_manpower = { size > 500000 }
+				has_equipment = { heavy_tank_equipment < 500 }
+			}
+		}
+	}
+	ai_strategy = { type = build_army id = heavy_armor                              value = -5 }
+}
+
+armor_modern_limit = {
+	enable = {
+		AND = {
+			has_template_majority_unit = modern_armor
+			has_army_manpower = { size > 500000 }
+			has_equipment = { modern_tank_equipment < 500 }
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				has_army_manpower = { size > 500000 }
+				has_equipment = { modern_tank_equipment < 500 }
+			}
+		}
+	}
+	ai_strategy = { type = build_army id = modern_armor                              value = -5 }
+}
