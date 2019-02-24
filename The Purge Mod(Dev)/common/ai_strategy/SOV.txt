@@ -434,7 +434,7 @@ SOV_GER_dead_factories = {
 	abort = {
 	}
 
-	ai_strategy = { type = dockyard_to_military_factory_ratio          value = 20}
+	ai_strategy = { type = dockyard_to_military_factory_ratio          value = 40}
 	ai_strategy = { type = equipment_production_factor id = naval_bomber value = 15}
 	ai_strategy = { type = unit_ratio          id = capital_ship       value = 30}
     ai_strategy = { type = unit_ratio          id = submarine          value = 15}

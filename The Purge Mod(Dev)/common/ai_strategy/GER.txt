@@ -64,6 +64,7 @@ GER_unit_production = {
     ai_strategy = { type = area_priority id = oceania 		                    value = 25}
 }
 
+
 GER_anti_armor = {
 	enable = {
 		original_tag = GER
@@ -85,7 +86,7 @@ GER_anti_armor = {
 	ai_strategy = {
 		type = role_ratio
 		id = anti_armor
-		value = 15
+		value = 5
 	}
 }
 
@@ -109,7 +110,11 @@ GER_armored_production = {
 GER_halt_light_armor_production_in_transitioning = {
 	enable = {
 		original_tag = GER
-		date > 1939.1.1	
+		has_template_majority_unit = medium_armor
+		OR = {
+			has_equipment = { light_tank_equipment > 600 }
+			date > 1939.1.1
+		}		
 	}
 	abort = {
 		# once we start we never go back to light armor
@@ -118,7 +123,12 @@ GER_halt_light_armor_production_in_transitioning = {
 	ai_strategy = {
 		type = equipment_variant_production_factor
 		id = light_tank_equipment
-		value = -100
+		value = -25
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_equipment
+		value = 100
 	}
 }
 
@@ -161,23 +171,6 @@ GER_dont_waste_xp_until_medium_armor = {
 	}
 }
 
-
-GER_heavy_armor = {
-	
-	enable = {
-		original_tag = GER
-		has_tech = basic_heavy_tank
-	}
-
-	abort = {	
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 200
-	}
-}
 GER_super_boost_light_for_med_armor = {
 	
 	enable = {
@@ -200,7 +193,7 @@ GER_super_boost_light_for_med_armor = {
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
-		value = -100
+		value = 100
 	}
 
 	ai_strategy = {
@@ -1186,7 +1179,7 @@ ger_SOV_dead_factories = {
 	abort = {
 	}
 
-	ai_strategy = { type = dockyard_to_military_factory_ratio          value = 20}
+	ai_strategy = { type = dockyard_to_military_factory_ratio          value = 50}
 	ai_strategy = { type = equipment_production_factor id = naval_bomber value = 15}
 	ai_strategy = { type = unit_ratio          id = capital_ship       value = 30}
     ai_strategy = { type = unit_ratio          id = submarine          value = 15}
@@ -1252,4 +1245,16 @@ ger_ENG_dead = {
 	}
 	ai_strategy = { type = area_priority id = north_america 			        value = 125}
 	ai_strategy = { type = area_priority id = south_america 	                value = 125}
+}
+
+luftwaffe = {
+	enable = {
+		tag = GER
+	}
+	
+	ai_strategy = {
+		type = air_factory_balance
+		value = 15
+	}
+
 }

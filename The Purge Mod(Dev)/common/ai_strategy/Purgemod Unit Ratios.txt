@@ -97,7 +97,7 @@ more_mountaineers = {
         }
 	}
     ai_strategy = { type = role_ratio          id = mountaineers       value = 5}
-    ai_strategy = { type = role_ratio          id = infantry           value = -5}
+    ai_strategy = { type = role_ratio          id = infantry           value = -10}
 }
 
 
@@ -125,6 +125,17 @@ low_armor_production_ai = {
     ai_strategy = { type = role_ratio          id = armor              value = -100}
 }
 
+##USAGERSOV Armor
+usa_ger_sov_armor = {
+    enable = {
+		OR = {
+			original_tag = GER
+			original_tag = SOV
+			original_tag = ENG
+		}
+	}
+    ai_strategy = { type = equipment_production_factor          id = armor              value = 25}
+}
 ger_plan_z = {
 	enable = {
         AND = {
@@ -138,7 +149,7 @@ ger_plan_z = {
     ai_strategy = { type = equipment_production_factor id = carrier		 		value = 15}
 	ai_strategy = { type = equipment_production_factor id = capital_ship 		value = 25}
 	ai_strategy = { type = equipment_production_factor id = screen_ship 		value = 40}	
-	ai_strategy = { type = equipment_production_factor id = submarine 			value = -50}
+	ai_strategy = { type = equipment_production_factor id = submarine 			value = -100}
 }
 
 
@@ -169,7 +180,7 @@ ger_u_boat = {
     ai_strategy = { type = unit_ratio          id = capital_ship                value = -20}
     ai_strategy = { type = unit_ratio          id = submarine                   value = 25}
     ai_strategy = { type = unit_ratio          id = screen_ship                 value = -20}
-    ai_strategy = { type = equipment_production_factor id = carrier		 		value = -5}
+    ai_strategy = { type = equipment_production_factor id = carrier		 		value = -10}
 	ai_strategy = { type = equipment_production_factor id = capital_ship 		value = -10}
 	ai_strategy = { type = equipment_production_factor id = screen_ship 		value = -15}	
 	ai_strategy = { type = equipment_production_factor id = submarine 			value = 15}
@@ -188,3 +199,50 @@ enable = {
     ai_strategy = { type = equipment_production_factor id = carrier		 		value = 40}
 }
 
+naval_majors_building_boats_is_great = {
+	
+	enable = {
+		OR = {
+			original_tag = ITA
+			original_tag = USA
+			original_tag = ENG
+			original_tag = AST
+		}
+		num_of_civilian_factories_available_for_projects > 15
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 30  #aim for a 2-1 ratio on naval factories
+	}
+}
+
+
+####Limits
+
+infantry_limit = {
+	enable = {
+		AND = {
+			has_army_manpower = { size > 500000 }
+			has_equipment = { infantry_equipment < 10000 }
+		}
+	}
+	abort = {
+		NOT = {
+			AND = {
+				has_army_manpower = { size > 500000 }
+				has_equipment = { infantry_equipment < 10000 }
+			}
+		}
+	}
+	ai_strategy = { type = build_army id = infantry                              value = -10 }
+	ai_strategy = { type = build_army id = cavalry                               value = -10 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -10 }
+	ai_strategy = { type = build_army id = marines                          	 value = -10 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
+}

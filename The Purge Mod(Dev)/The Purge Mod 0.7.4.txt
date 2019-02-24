@@ -848,3 +848,10 @@ Strategic View Adjustments
 	Manchukuo subject problem resolved
 	scaled civil war for generics, japan
 	Fixed ARG getting cores instead of ELS
+	
+	Adjusted Germany tank production to prioritize mediums without eliminating lights completely.
+	Give equipment production ratio to the medium tank ai unit ratios
+	Further tweaked Japanese ai to hopefully invade Oceania, as well as when and how they invade the USA.
+	more naval dockyards balance for england / usa / ita / AST(later on) 30%(for reference japan has a 40%)
+	Added unit caps starting at 50-100 divisions, depending on equipment. (needs a lot of testing)
+	fixed land doctrine requirement on regional tree

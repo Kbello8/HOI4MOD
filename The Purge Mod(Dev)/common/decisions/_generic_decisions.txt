@@ -913,7 +913,7 @@ war_measures = {
             stability_factor = -0.05
         }
         ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		complete_effect = {
 			if = {
