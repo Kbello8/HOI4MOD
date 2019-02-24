@@ -64,6 +64,7 @@ GER_unit_production = {
     ai_strategy = { type = area_priority id = oceania 		                    value = 25}
 }
 
+
 GER_anti_armor = {
 	enable = {
 		original_tag = GER
@@ -85,7 +86,7 @@ GER_anti_armor = {
 	ai_strategy = {
 		type = role_ratio
 		id = anti_armor
-		value = 10
+		value = 5
 	}
 }
 
@@ -109,52 +110,25 @@ GER_armored_production = {
 GER_halt_light_armor_production_in_transitioning = {
 	enable = {
 		original_tag = GER
-		date > 1939.1.1	
+		has_template_majority_unit = medium_armor
 		OR = {
-			AND = {
-				GER = { controls_state = 16 }
-				any_country = {
-					is_in_faction_with = GER
-					controls_state = 16
-				}
-			}
-			AND = {
-				GER = { controls_state = 37 }
-				any_country = {
-					is_in_faction_with = GER
-					controls_state = 37
-				}
-			}
-        }
+			has_equipment = { light_tank_equipment > 600 }
+			date > 1939.1.1
+		}		
 	}
 	abort = {
-		original_tag = GER
-		date > 1939.1.1	
-		NOT = {
-			OR = {
-				AND = {
-					GER = { controls_state = 16 }
-					any_country = {
-						is_in_faction_with = GER
-						controls_state = 16
-					}
-				}
-				AND = {
-					GER = { controls_state = 37 }
-					any_country = {
-						is_in_faction_with = GER
-						controls_state = 37
-					}
-				}
-			}
-		}
-		
+		# once we start we never go back to light armor
 	}
 
 	ai_strategy = {
 		type = equipment_variant_production_factor
 		id = light_tank_equipment
-		value = -100
+		value = -25
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_equipment
+		value = 100
 	}
 }
 
@@ -197,28 +171,6 @@ GER_dont_waste_xp_until_medium_armor = {
 	}
 }
 
-
-GER_heavy_armor = {
-	
-	enable = {
-		original_tag = GER
-		has_tech = basic_heavy_tank
-	}
-
-	abort = {	
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 200
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = heavy_tank_equipment
-		value = 20
-	}
-}
 GER_super_boost_light_for_med_armor = {
 	
 	enable = {
@@ -241,7 +193,7 @@ GER_super_boost_light_for_med_armor = {
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
-		value = 50
+		value = 100
 	}
 
 	ai_strategy = {
@@ -249,17 +201,12 @@ GER_super_boost_light_for_med_armor = {
 		id = medium_armor
 		value = 150
 	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = medium_tank_equipment
-		value = 50
-	}
 	
 	# Germany is set up to change their SS division into medium armor.
 	ai_strategy = {
 		type = template_prio
 		id = motorized
-		value = 50
+		value = 200
 	}
 }
 
@@ -293,18 +240,6 @@ GER_super_boost_light_for_modern_armor = {
 		id = modern_armor
 		value = 150
 	}
-	
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = modern_tank_equipment
-		value = 50
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = medium_tank_equipment
-		value = -50
-	}
-	
 }
 
 war_with_poland = {
@@ -1244,7 +1179,7 @@ ger_SOV_dead_factories = {
 	abort = {
 	}
 
-	ai_strategy = { type = dockyard_to_military_factory_ratio          value = 20}
+	ai_strategy = { type = dockyard_to_military_factory_ratio          value = 50}
 	ai_strategy = { type = equipment_production_factor id = naval_bomber value = 15}
 	ai_strategy = { type = unit_ratio          id = capital_ship       value = 30}
     ai_strategy = { type = unit_ratio          id = submarine          value = 15}
@@ -1310,4 +1245,16 @@ ger_ENG_dead = {
 	}
 	ai_strategy = { type = area_priority id = north_america 			        value = 125}
 	ai_strategy = { type = area_priority id = south_america 	                value = 125}
+}
+
+luftwaffe = {
+	enable = {
+		tag = GER
+	}
+	
+	ai_strategy = {
+		type = air_factory_balance
+		value = 15
+	}
+
 }

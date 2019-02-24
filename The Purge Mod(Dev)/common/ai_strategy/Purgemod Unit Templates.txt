@@ -61,7 +61,7 @@ all_default_template_prio = {
 	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
 }
 
-more_Marines = {
+more_marines = {
 	enable = {
         OR = {
 			original_tag = ITA
@@ -74,13 +74,18 @@ more_Marines = {
 	ai_strategy = { type = template_prio          id = infantry       	  value = -20}
 }
 
+more_motorized = {
+	enable = {
+        date > 1945.1.1
+	}
+    ai_strategy = { type = template_prio          id = motorized            value = 15}
+	ai_strategy = { type = template_prio          id = infantry       	  value = -15}
+}
+
 ##Base Germany
 ger_default_template_prio = {
 	enable = {
         original_tag = GER
-	}
-    abort = { 
-		has_tech = basic_medium_tank
 	}
 
     ##################################
@@ -90,84 +95,10 @@ ger_default_template_prio = {
 	ai_strategy = { type = template_prio          id = motorized         value = 20}
 	ai_strategy = { type = template_prio          id = marines            value = 1}
 	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
-    ai_strategy = { type = template_prio          id = light_armor        value = 30}
-	ai_strategy = { type = template_prio          id = medium_armor       value = 0}
-	ai_strategy = { type = template_prio          id = heavy_armor        value = 15}
-	ai_strategy = { type = template_prio          id = infantry       	  value = 40}
-}
-
-ger_default_template_prio2 = {
-	enable = {
-        original_tag = GER
-        has_tech = basic_medium_tank
-    }
-	
-	abort = {
-        has_tech = basic_medium_tank
-		OR = {
-			AND = {
-				GER = { controls_state = 16 }
-				any_country = {
-					is_in_faction_with = GER
-					controls_state = 16
-				}
-			}
-			AND = {
-				GER = { controls_state = 37 }
-				any_country = {
-					is_in_faction_with = GER
-					controls_state = 37
-				}
-			}
-        }
-	}
-
-    ##################################
-    #            Army
-    ##################################
-    ai_strategy = { type = template_prio          id = mechanized        value = 5}
-	ai_strategy = { type = template_prio          id = motorized         value = 15}
-	ai_strategy = { type = template_prio          id = marines            value = 1}
-	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
-    ai_strategy = { type = template_prio          id = light_armor        value = 15}
-	ai_strategy = { type = template_prio          id = medium_armor       value = 15}
-	ai_strategy = { type = template_prio          id = heavy_armor        value = 15}
-	ai_strategy = { type = template_prio          id = infantry       	  value = 40}
-}
-
-ger_default_template_prio3 = {
-	enable = {
-        original_tag = GER
-        has_tech = basic_medium_tank
-		OR = {
-			AND = {
-				GER = { controls_state = 16 }
-				any_country = {
-					is_in_faction_with = GER
-					controls_state = 16
-				}
-			}
-			AND = {
-				GER = { controls_state = 37 }
-				any_country = {
-					is_in_faction_with = GER
-					controls_state = 37
-				}
-			}
-        }
-    }
-
-    ##################################
-    #            Army
-    ##################################
-    ai_strategy = { type = template_prio          id = mechanized        value = 5}
-	ai_strategy = { type = template_prio          id = motorized         value = 15}
-	ai_strategy = { type = template_prio          id = marines            value = 1}
-	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
-    ai_strategy = { type = template_prio          id = light_armor        value = 0}
-	ai_strategy = { type = template_prio          id = medium_armor       value = 30}
-	ai_strategy = { type = template_prio          id = heavy_armor        value = 15}
-	ai_strategy = { type = template_prio          id = infantry       	  value = 40}
+    ai_strategy = { type = template_prio          id = light_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 35}
 }
 
 

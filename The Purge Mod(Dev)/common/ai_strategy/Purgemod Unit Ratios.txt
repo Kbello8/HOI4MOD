@@ -125,6 +125,17 @@ low_armor_production_ai = {
     ai_strategy = { type = role_ratio          id = armor              value = -100}
 }
 
+##USAGERSOV Armor
+usa_ger_sov_armor = {
+    enable = {
+		OR = {
+			original_tag = GER
+			original_tag = SOV
+			original_tag = ENG
+		}
+	}
+    ai_strategy = { type = equipment_production_factor          id = armor              value = 25}
+}
 ger_plan_z = {
 	enable = {
         AND = {
@@ -234,80 +245,4 @@ infantry_limit = {
 	ai_strategy = { type = build_army id = marines                          	 value = -10 }
 	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
 	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
-}
-
-armor_light_limit = {
-	enable = {
-		AND = {
-			has_template_majority_unit = light_armor
-			has_army_manpower = { size > 500000 }
-			has_equipment = { light_tank_equipment < 500 }
-		}
-	}
-	abort = {
-		NOT = {
-			AND = {
-				has_army_manpower = { size > 500000 }
-				has_equipment = { light_tank_equipment < 500 }
-			}
-		}
-	}
-	ai_strategy = { type = build_army id = light_armor                              value = -10 }
-}
-
-armor_medium_limit = {
-	enable = {
-		AND = {
-			has_template_majority_unit = medium_armor
-			has_army_manpower = { size > 500000 }
-			has_equipment = { medium_tank_equipment < 500 }
-		}
-	}
-	abort = {
-		NOT = {
-			AND = {
-				has_army_manpower = { size > 500000 }
-				has_equipment = { medium_tank_equipment < 500 }
-			}
-		}
-	}
-	ai_strategy = { type = build_army id = medium_armor                              value = -10 }
-}
-
-armor_heavy_limit = {
-	enable = {
-		AND = {
-			has_template_majority_unit = heavy_armor
-			has_army_manpower = { size > 500000 }
-			has_equipment = { heavy_tank_equipment < 500 }
-		}
-	}
-	abort = {
-		NOT = {
-			AND = {
-				has_army_manpower = { size > 500000 }
-				has_equipment = { heavy_tank_equipment < 500 }
-			}
-		}
-	}
-	ai_strategy = { type = build_army id = heavy_armor                              value = -10 }
-}
-
-armor_modern_limit = {
-	enable = {
-		AND = {
-			has_template_majority_unit = modern_armor
-			has_army_manpower = { size > 500000 }
-			has_equipment = { modern_tank_equipment < 500 }
-		}
-	}
-	abort = {
-		NOT = {
-			AND = {
-				has_army_manpower = { size > 500000 }
-				has_equipment = { modern_tank_equipment < 500 }
-			}
-		}
-	}
-	ai_strategy = { type = build_army id = modern_armor                              value = -10 }
 }
