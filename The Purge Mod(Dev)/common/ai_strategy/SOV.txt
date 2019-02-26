@@ -513,3 +513,15 @@ SOV_ENG_dead = {
 	ai_strategy = { type = area_priority id = north_america 			        value = 125}
 	ai_strategy = { type = area_priority id = south_america 	                value = 125}
 }
+
+SOV_industry_we_are_the_baddies = {
+	enable = {
+		tag = SOV
+		date > 1939.1.1
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 30
+	}
+}

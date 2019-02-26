@@ -193,20 +193,13 @@ GER_super_boost_light_for_med_armor = {
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
-		value = 100
+		value = 10
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = medium_armor
 		value = 150
-	}
-	
-	# Germany is set up to change their SS division into medium armor.
-	ai_strategy = {
-		type = template_prio
-		id = motorized
-		value = 200
 	}
 }
 
@@ -232,7 +225,7 @@ GER_super_boost_light_for_modern_armor = {
 	ai_strategy = {
 		type = template_prio
 		id = medium_armor
-		value = 100
+		value = 25
 	}
 
 	ai_strategy = {

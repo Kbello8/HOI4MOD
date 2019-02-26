@@ -97,7 +97,7 @@ more_mountaineers = {
         }
 	}
     ai_strategy = { type = role_ratio          id = mountaineers       value = 5}
-    ai_strategy = { type = role_ratio          id = infantry           value = -10}
+    ai_strategy = { type = role_ratio          id = infantry           value = -5}
 }
 
 
@@ -125,17 +125,18 @@ low_armor_production_ai = {
     ai_strategy = { type = role_ratio          id = armor              value = -100}
 }
 
-##USAGERSOV Armor
-usa_ger_sov_armor = {
+
+##HighIndustry Armor
+high_industry_armor = {
     enable = {
-		OR = {
-			original_tag = GER
-			original_tag = SOV
-			original_tag = ENG
-		}
+		num_of_military_factories > 49
 	}
+    abort = {
+        num_of_military_factories < 50
+    }
     ai_strategy = { type = equipment_production_factor          id = armor              value = 25}
 }
+
 ger_plan_z = {
 	enable = {
         AND = {
@@ -240,9 +241,116 @@ infantry_limit = {
 		}
 	}
 	ai_strategy = { type = build_army id = infantry                              value = -10 }
+	ai_strategy = { type = build_army id = garrison                              value = -10 }
+	ai_strategy = { type = build_army id = suppression                           value = -10 }
 	ai_strategy = { type = build_army id = cavalry                               value = -10 }
 	ai_strategy = { type = build_army id = mountaineers                          value = -10 }
 	ai_strategy = { type = build_army id = marines                          	 value = -10 }
 	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
 	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
+}
+
+puds_division_limit = {
+	enable = {
+		has_army_manpower = { size > 2000000 }
+		num_of_military_factories < 50
+		NOT = {
+			OR = {
+				original_tag = PRC
+				original_tag = CHI
+				original_tag = YUN
+				original_tag = XSM
+				original_tag = GXC
+				original_tag = SIK
+				original_tag = SHX
+				original_tag = SOV
+				original_tag = MAN
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_army_manpower = { size < 2000000 }
+			num_of_military_factories > 49
+		}
+		
+	}
+	ai_strategy = { type = build_army id = infantry                              value = -10 }
+	ai_strategy = { type = build_army id = cavalry                               value = -10 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -10 }
+	ai_strategy = { type = build_army id = marines                          	 value = -10 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
+	ai_strategy = { type = build_army id = armor                          	     value = -10 }
+	ai_strategy = { type = build_army id = anti_armor                          	 value = -10 }
+	ai_strategy = { type = build_army id = garrison                              value = -10 }
+	ai_strategy = { type = build_army id = suppression                           value = -10 }
+}
+
+maj_division_limit = {
+	enable = {
+		has_army_manpower = { size > 6000000 }
+		num_of_military_factories > 49
+		NOT = {
+			OR = {
+				original_tag = PRC
+				original_tag = CHI
+				original_tag = YUN
+				original_tag = XSM
+				original_tag = GXC
+				original_tag = SIK
+				original_tag = SHX
+				original_tag = SOV
+				original_tag = MAN
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_army_manpower = { size < 6000000 }
+			num_of_military_factories < 50
+		}
+		
+	}
+	ai_strategy = { type = build_army id = infantry                              value = -10 }
+	ai_strategy = { type = build_army id = cavalry                               value = -10 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -10 }
+	ai_strategy = { type = build_army id = marines                          	 value = -10 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
+	ai_strategy = { type = build_army id = armor                          	     value = -10 }
+	ai_strategy = { type = build_army id = anti_armor                          	 value = -10 }
+	ai_strategy = { type = build_army id = garrison                              value = -10 }
+	ai_strategy = { type = build_army id = suppression                           value = -10 }
+}
+
+massive_division_limit = {
+	enable = {
+		has_army_manpower = { size > 8000000 }
+		OR = {
+			original_tag = PRC
+			original_tag = CHI
+			original_tag = YUN
+			original_tag = XSM
+			original_tag = GXC
+			original_tag = SIK
+			original_tag = SHX
+			original_tag = SOV
+			original_tag = MAN
+		}
+		
+	}
+	abort = {
+		has_army_manpower = { size < 8000000 }
+	}
+	ai_strategy = { type = build_army id = infantry                              value = -10 }
+	ai_strategy = { type = build_army id = cavalry                               value = -10 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -10 }
+	ai_strategy = { type = build_army id = marines                          	 value = -10 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -10 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -10 }
+	ai_strategy = { type = build_army id = armor                          	     value = -10 }
+	ai_strategy = { type = build_army id = anti_armor                          	 value = -10 }
+	ai_strategy = { type = build_army id = garrison                              value = -10 }
+	ai_strategy = { type = build_army id = suppression                           value = -10 }
 }
