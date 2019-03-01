@@ -11,6 +11,9 @@ buildings = {
 		infrastructure = yes
 		max_level = 10
 		value = 1
+
+		show_modifier = yes
+		max_fuel_building = 0.75 #k
 	}
 
 	arms_factory = {
@@ -63,8 +66,8 @@ buildings = {
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 750
-		per_level_extra_cost = 750
+		base_cost = 500
+		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 7
@@ -76,8 +79,8 @@ buildings = {
 	coastal_bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 750
-		per_level_extra_cost = 750
+		base_cost = 500
+		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		only_costal = yes
@@ -113,6 +116,36 @@ buildings = {
 		value = 1
 	}
 	
+	synthetic_refinery = {
+		show_on_map = 1
+		base_cost = 14500
+		icon_frame = 10
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
+		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+		fuel_gain_from_states = 2.0 #per hour
+	}
+	
+	fuel_silo = {
+		show_on_map = 1
+		base_cost = 5000
+		icon_frame = 14
+		#max_level = 1
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		fuel_silo = yes
+		
+		show_modifier = yes
+		max_fuel_building = 100.0 #k
+	}
+	
 	steel_mill = {
 		show_on_map = 1
 		base_cost = 10000
@@ -123,19 +156,6 @@ buildings = {
 		shares_slots = yes
 		value = 5
         infrastructure_construction_effect = yes
-	}
-    
-	synthetic_refinery = {
-		show_on_map = 1
-		base_cost = 10000
-		icon_frame = 10
-		local_resources_oil = 2 # May use local_resources_ + any resource name
-		local_resources_rubber = 2 # May use local_resources_ + any resource name
-		refinery = yes
-		max_level = 3 # This is the max unlock level
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
 	}
 
 	radar_station = {

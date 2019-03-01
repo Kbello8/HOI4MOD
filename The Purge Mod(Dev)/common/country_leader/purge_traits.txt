@@ -422,7 +422,7 @@ leader_traits = {
 	generic_construction_company = {
 		random = no
 
-		production_speed_infrastructure_factor = 0.05
+		production_speed_infrastructure_factor = 0.2
 		
 		ai_will_do = {
 			factor = 1
