@@ -1,0 +1,505 @@
+﻿###########################
+# Nigeria Events
+###########################
+
+add_namespace = nga
+
+
+# French Accept Petition - Togoland & Upper Volta
+country_event = {
+	id = nig.2
+	title = nig.2.t
+	desc = nig.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.2.a
+
+		NGA = {
+			if = {
+				limit = {
+					764 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 764
+			}
+			if = {
+				limit = {
+					765 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 765
+			}
+		}
+	}
+}
+
+# French Accept Petition - French West Africa
+country_event = {
+	id = nig.3
+	title = nig.3.t
+	desc = nig.3.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.3.a
+
+		NGA = {
+			if = {
+				limit = {
+					556 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 556
+			}
+			if = {
+				limit = {
+					272 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 272
+			}
+            if = {
+				limit = {
+					767 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 767
+			}
+            if = {
+				limit = {
+					766 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 766
+			}
+		}
+	}
+}
+
+# French Accept Petition - French Equatorial Africa
+country_event = {
+	id = nig.4
+	title = nig.4.t
+	desc = nig.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.4.a
+
+		NGA = {
+			if = {
+				limit = {
+					515 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 515
+			}
+			if = {
+				limit = {
+					660 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 660
+			}
+            if = {
+				limit = {
+					539 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 539
+			}
+		}
+	}
+}
+
+# Britain Accept Petition - British West Africa
+country_event = {
+	id = nig.5
+	title = nig.5.t
+	desc = nig.5.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.5.a
+
+		NGA = {
+			if = {
+				limit = {
+					274 = {
+						is_owned_by = ENG
+						OR = {
+							is_controlled_by = ENG
+							is_controlled_by = NGA
+						}
+					}
+				}
+				transfer_state = 274
+                add_state_core = 274
+			}
+			if = {
+				limit = {
+					700 = {
+						is_owned_by = ENG
+						OR = {
+							is_controlled_by = ENG
+							is_controlled_by = NGA
+						}
+					}
+				}
+				transfer_state = 700
+                add_state_core = 700
+			}
+            if = {
+				limit = {
+					701 = {
+						is_owned_by = ENG
+						OR = {
+							is_controlled_by = ENG
+							is_controlled_by = NGA
+						}
+					}
+				}
+				transfer_state = 701
+                add_state_core = 701
+			}
+		}
+	}
+}
+
+# Liberia Accepts Petition
+country_event = {
+	id = nig.6
+	title = nig.6.t
+	desc = nig.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.6.a
+
+		NGA = {
+			if = {
+				limit = {
+					298 = {
+						is_owned_by = LIB
+						OR = {
+							is_controlled_by = LIB
+							is_controlled_by = NGA
+						}
+					}
+				}
+				annex_country = { target = LIB transfer_troops = yes }
+				add_state_core = 298
+			}
+		}
+	}
+}
+
+# France Declines 
+country_event = {
+	id = nig.7
+	title = nig.7.t
+	desc = nig.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.7.a
+        #Nothing
+	}
+}
+
+# Liberia Declines 
+country_event = {
+	id = nig.8
+	title = nig.8.t
+	desc = nig.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.8.a
+        #Nothing
+	}
+}
+
+# Britain Declines 
+country_event = {
+	id = nig.14
+	title = nig.14.t
+	desc = nig.14.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nig.14.a
+        #Nothing
+	}
+    
+    option = {
+		name = nig.14.b
+        #Nothing
+	}
+}
+
+# Petition for Togoland
+country_event = {
+	id = nig.9
+	title = nig.9.t
+	desc = nig.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 90
+		}
+		name = nig.9.a
+        NGA = { country_event = { days = 10 id = nig.2 } }
+	}
+    
+    option = {
+        ai_chance = {      
+            factor = 10 
+            
+            modifier = {
+                factor = 0
+                AND = {
+                    744 = { is_controlled_by = ENG }
+                    743 = { is_controlled_by = ENG }
+                }
+            }
+        }
+		name = nig.9.b
+        NGA = { country_event = { days = 10 id = nig.7 } }
+	}
+}
+
+# Petition for French West Africa
+country_event = {
+	id = nig.10
+	title = nig.10.t
+	desc = nig.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 80
+		}
+		name = nig.10.a
+        NGA = { country_event = { days = 10 id = nig.3 } }
+	}
+    
+    option = {
+        ai_chance = {      
+            factor = 20 
+            
+            modifier = {
+                factor = 0
+                AND = {
+                    556 = { is_controlled_by = ENG }
+                    272 = { is_controlled_by = ENG }
+                    741 = { is_controlled_by = ENG }
+                    742 = { is_controlled_by = ENG }
+                }
+            }
+        }
+		name = nig.10.b
+        NGA = { country_event = { days = 10 id = nig.7 } }
+	}
+}
+
+# Petition for Equatorial Africa
+country_event = {
+	id = nig.11
+	title = nig.11.t
+	desc = nig.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 70
+		}
+		name = nig.11.a
+        NGA = { country_event = { days = 10 id = nig.4 } }
+	}
+    
+    option = {
+        ai_chance = {      
+            factor = 30 
+            
+            modifier = {
+                factor = 0
+                AND = {
+                    515 = { is_controlled_by = ENG }
+                    660 = { is_controlled_by = ENG }
+                    539 = { is_controlled_by = ENG }
+                }
+            }
+        }
+		name = nig.11.b
+        NGA = { country_event = { days = 10 id = nig.7 } }
+	}
+}
+
+# Petition for British West Africa
+country_event = {
+	id = nig.12
+	title = nig.12.t
+	desc = nig.12.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 100
+		}
+		name = nig.12.a
+        NGA = { country_event = { days = 10 id = nig.5 } }
+	}
+    
+    option = {
+        ai_chance = {
+			factor = 0
+		}
+		name = nig.12.b
+        NGA = { country_event = { days = 10 id = nig.14 } }
+	}
+}
+
+# Petition for Liberia
+country_event = {
+	id = nig.13
+	title = nig.13.t
+	desc = nig.13.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+        ai_chance = {
+			factor = 100
+		}
+		name = nig.13.a
+        NGA = { country_event = { days = 10 id = nig.6 } }
+	}
+    
+    option = {
+        ai_chance = {
+			factor = 0
+		}
+		name = nig.12.b
+        NGA = { country_event = { days = 10 id = nig.8 } }
+	}
+}
+
+# Free Nigeria
+country_event = {
+	id = nig.15
+	title = nig.15.t
+	desc = nig.15.d
+	picture = GFX_report_event_generic_sign_treaty1
+    fire_only_once = yes
+    
+    trigger = {
+        AND = {
+			original_tag = NGA
+			NGA = { is_subject = no }
+			NGA = { has_government = democratic } 
+		}
+	}
+	
+	option = {
+        ai_chance = {
+			factor = 70
+		}
+		name = nig.15.a
+        hidden_effect = {
+            set_party_name = { ideology = democratic long_name = NGA_democratic_party2_long name = NGA_democratic_party2 }
+            retire_country_leader = yes
+            create_country_leader = {
+                name = "Herbert Macaulay"
+                desc = "POLITICS_EDWARD_HALIFAX_DESC"
+                picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+                expire = "1965.1.1"
+                ideology = conservatism
+                traits = {
+				
+                }
+            }
+        }
+	}
+}

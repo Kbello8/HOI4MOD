@@ -1,0 +1,32 @@
+ideas = {
+
+
+    country = {
+        nigerian_unification = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+        
+        jungle_acclimation = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			
+			allowed = { always = no}
+            
+            modifier = {
+				attrition = -0.1
+			}
+		}
+    }
+}

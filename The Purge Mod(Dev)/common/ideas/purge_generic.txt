@@ -1,0 +1,938 @@
+### Recruitment Ideas
+### Industry Ideas
+### Political Ideas
+### Coordination Ideas
+### Manufacturer Ideas
+
+ideas = {
+
+	country = {
+    
+        ### Recruitment Ideas
+        
+        national_army = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.05
+			}
+		}
+	
+		purge_military_youth_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+	
+			modifier = {
+				conscription = 0.07
+			}
+		}
+	
+		purge_paramilitarism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+	
+			modifier = {
+                conscription = 0.07
+				training_time_army_factor = -0.2
+			}
+		}
+        
+        purge_volunteer_corps_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+
+			modifier = {
+				conscription = 0.06
+			}
+		}
+
+		purge_foreign_expeditions_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+                conscription = 0.06
+				send_volunteer_divisions_required = -0.75
+                send_volunteers_tension = -0.25
+			}
+		}
+        
+        ### Industry Ideas
+        
+        
+        neutral_industry = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+	
+			modifier = {
+                production_speed_buildings_factor = 0.20
+			}
+		}
+        
+        interventionist_industry = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+                industrial_capacity_factory = 0.1
+                lend_lease_tension = -0.25
+			}
+		}
+        
+        military_expansion_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+        
+        ### Political Ideas
+	
+    
+        
+        purge_neutrality_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				join_faction_tension = 1.00
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+                research_speed_factor = 0.1
+			}
+		}
+		
+		purge_communist_pressure = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.2
+                democratic_drift = -0.1
+                fascism_drift = -0.1
+			}
+		}
+        
+        purge_collectivist_ethos_focus = {
+			
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+		
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				democratic_drift = -0.02
+			}
+		}
+        
+        purge_nationalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			
+			modifier = {
+				fascism_drift = 0.1
+                democratic_drift = -0.02
+			}
+		}
+
+		purge_internationalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.12
+                democratic_drift = -0.02
+			}
+		}
+	
+        purge_idea_political_correctness = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.40
+                subversive_activites_upkeep = -0.25
+			}			
+		}
+        
+        purge_political_commissars_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+                foreign_subversive_activites = -0.40
+                subversive_activites_upkeep = -0.25
+				army_morale_factor = 0.1
+                enemy_partisan_effect = -0.3
+			}
+		}
+	
+		purge_ideological_fanaticism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			rule = {
+				can_create_factions = yes
+			}
+	
+			modifier = {
+				war_support_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+        
+        purge_liberty_ethos_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+        
+		purge_why_we_fight_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.1
+			}
+		}	
+
+        polish_dominion = {
+            
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            removal_cost = -1
+            
+            picture = generic_production_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.20
+                conscription = 0.01
+			}
+		}
+        
+        
+        ### Coordination Ideas
+        
+        
+        soviet_coordination = {
+            
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            removal_cost = -1
+            
+            picture = generic_production_bonus
+
+			modifier = {
+                production_speed_buildings_factor = 0.1
+			}
+		}
+        
+        german_coordination = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+                industrial_capacity_factory = 0.05
+			}
+		}
+        
+        usa_coordination = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+                industrial_capacity_dockyard = 0.05
+			}
+		}
+        
+        uk_coordination = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+                industrial_capacity_dockyard = 0.05
+			}
+		}
+        
+        jap_coordination = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+                industrial_capacity_dockyard = 0.05
+			}
+		}
+	}
+    
+    industrial_concern = {
+    
+        generic_refinery_concern = {
+			
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI} }
+				NOT = {
+					has_available_idea_with_traits = { idea = refinery_concern limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = GXC tag = SHX tag = YUN tag = XSM tag = SIK tag = PRC tag = MAN}
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			
+			traits = { generic_refinery_concern }
+		}
+    }
+    
+    materiel_manufacturer = {
+	
+		designer = yes
+        
+        
+        generic_quality_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_quality_inf_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			
+			traits = { generic_quality_inf_manufacturer }
+		}
+        
+        generic_cheap_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_cheap_inf_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			
+			traits = { generic_cheap_inf_manufacturer }
+		}
+        
+		
+		generic_reliable_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_reliable_art_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.05
+			}
+			
+			traits = { generic_reliable_art_manufacturer }
+		}
+        
+        generic_powerful_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_powerful_art_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.05
+			}
+			
+			traits = { generic_powerful_art_manufacturer }
+		}
+        
+        generic_light_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_light_art_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.05
+			}
+			
+			traits = { generic_light_art_manufacturer }
+		}
+        
+        generic_reliable_motorized_equipment_manufacturer = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_reliable_mot_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			
+			traits = { generic_reliable_mot_manufacturer }
+		}
+        
+        generic_armored_motorized_equipment_manufacturer = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = generic_heavy_mot_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			
+			traits = { generic_heavy_mot_manufacturer }
+		}
+    }
+    
+    naval_manufacturer = { 
+	
+		designer = yes
+        
+        generic_coastal_naval_manufacturer = {
+			
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = coastal_defence_naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = GXC tag = SHX tag = YUN tag = XSM tag = SIK tag = PRC }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { generic_coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		generic_raiding_naval_manufacturer = {
+			
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = raiding_fleet_naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = GXC tag = SHX tag = YUN tag = XSM tag = SIK tag = PRC }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { generic_raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		generic_atlantic_naval_manufacturer = {
+			
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = atlantic_fleet_naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = RAJ }
+						has_dlc = "Together for Victory"
+					}
+				}
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { generic_atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		generic_pacific_naval_manufacturer = {
+			
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = pacific_fleet_naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
+						has_dlc = "Together for Victory"
+					}
+				}
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { generic_pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+        
+        generic_convoy_escort_naval_manufacturer = {
+			
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = convoy_escort_naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
+						has_dlc = "Together for Victory"
+					}
+				}
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { generic_convoy_escort_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+    
+    aircraft_manufacturer = { 
+	
+		designer = yes
+        
+        generic_cas_manufacturer = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = CAS_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = GXC tag = SHX tag = YUN tag = XSM tag = SIK tag = PRC }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { generic_CAS_manufacturer }
+		}
+    }
+    
+    tank_manufacturer = { 
+	
+		designer = yes
+		
+		generic_light_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = fast_tank_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = NZL }
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = GXC tag = SHX tag = YUN tag = XSM tag = SIK tag = PRC }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			
+			traits = { generic_fast_tank_manufacturer }
+		}
+        
+        generic_medium_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = medium_tank_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = SAF tag = NZL tag = CAN }
+						has_dlc = "Together for Victory"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			
+			traits = { generic_medium_tank_manufacturer }
+		}
+        
+        generic_heavy_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = heavy_tank_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = NZL tag = CAN }
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = GXC tag = SHX tag = YUN tag = XSM tag = SIK tag = PRC }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			
+			traits = { generic_heavy_tank_manufacturer }
+		}
+	}
+}
