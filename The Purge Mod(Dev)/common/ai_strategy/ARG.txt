@@ -42,14 +42,14 @@ ARG_belligerent_CHL = {
 		NOT = { has_government = fascism }
 	}
 	ai_strategy = {
-		type = declare_war
-		id = "CHL"			
-		value = 750
+		type = consider_weak
+		id = "CHL"
+		value = 150
 	}
 	ai_strategy = {
-		type = conquer
-		id = "CHL"			
-		value = 750
+		type = consider_weak
+		id = "USA"
+		value = 150
 	}
 	ai_strategy = {
 		type = antagonize

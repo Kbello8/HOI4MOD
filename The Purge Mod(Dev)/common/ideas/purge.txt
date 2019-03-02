@@ -155,7 +155,7 @@ ideas = {
             modifier = {
                 consumer_goods_factor = 0.1
                 training_time_army_factor = 2.00
-                conscription = -0.007
+                conscription_factor = -0.1
             }
         }
         
