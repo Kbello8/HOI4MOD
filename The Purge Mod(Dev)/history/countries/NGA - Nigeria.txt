@@ -1,22 +1,34 @@
-﻿capital = 291
+﻿capital = 558
 
-oob = "IRQ_1936"
-
+oob = "NGA_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_mountaineers = 1
+	tech_support = 1		
 	gw_artillery = 1
+	interwar_antiair = 1
 	early_fighter = 1
 	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	transport = 1
 }
 
-set_convoys = 5
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_convoys = 40
+
+set_cosmetic_tag = NGA_UK
 
 1939.1.1 = {
-
-	add_political_power = 1198
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -29,13 +41,9 @@ set_convoys = 5
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "IRQ_1939"
 	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
 		tech_support = 1
 		tech_recon = 1
-		infantry_weapons2 = 1
 		support_weapons = 1
 		gw_artillery = 1
 
@@ -46,7 +54,6 @@ set_convoys = 5
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
-
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -59,9 +66,6 @@ set_convoys = 5
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -69,102 +73,72 @@ set_convoys = 5
 	}
 }
 
+
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 70
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 26
 		}
 		
 		communism = {
-			popularity = 0
-			#banned = no #default is no
+			popularity = 4
 		}
-		
-		neutrality = { 
-			popularity = 80
+
+		neutrality = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
+	name = "Sir John Macpherson"
+	desc = "POLITICS_LORD_LINLITHGOW_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Nnamdi Azikiwe"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
 	}
 }
-
 create_country_leader = {
-	name = "Rashid Ali al-Gaylani"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
+	name = "H.O. Davies"
+	desc = "POLITICS_VD_SAVARKAR_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = falangism
 	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	name = "Samuel Alamu"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = marxism
 	traits = {
-		#
-	}
-}
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-			}
-
-			fascism = {
-				popularity = 30
-			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-
-			neutrality = { 
-				popularity = 70
-			}
-		}
-	
-	ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	create_country_leader = {
-		name = "Faisal II"
-		desc = "POLITICS_FAISAL_II_DESC"
-		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
+		
 	}
 }

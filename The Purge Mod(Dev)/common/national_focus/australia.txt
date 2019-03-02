@@ -88,7 +88,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_additional_militia_training
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -124,7 +124,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = artillery
 			}
@@ -161,7 +161,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_promote_reservists
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -175,7 +175,7 @@ focus_tree = {
 					attack_skill = 2
 					defense_skill = 2
 					planning_skill = 3
-					logistics_skill = 2
+					logistics_skill = 3
 				}
 			}		
 		}
@@ -210,7 +210,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.50
+				bonus = 1.00
 				category = motorized_equipment
 			}
 		}
@@ -246,13 +246,13 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_hmas_assault
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = AST_hmas_assault
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = marine_tech
 			}
@@ -288,7 +288,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_specialize_equipment
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -357,7 +357,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				technology = tech_logistics_company
 				technology = tech_logistics_company2
@@ -398,7 +398,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
@@ -434,7 +434,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = armor
 			}
@@ -471,7 +471,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_airborne_defence
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = para_tech
 			}
@@ -508,7 +508,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = AST_introduce_unconventional_warfare
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -544,7 +544,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_z_special_unit
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = marine_tech
 				category = para_tech
@@ -579,15 +579,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_m_special_unit
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				technology = tech_recon
 				technology = tech_recon2
@@ -639,7 +635,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_expand_the_raaf
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -663,7 +659,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_expand_the_raaf
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -696,15 +692,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cac_boomerang
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				technology = early_fighter
 				technology = fighter1
@@ -754,7 +746,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_expand_northern_presence
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -779,7 +771,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_expand_northern_presence
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -815,7 +807,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = cat_strategic_bomber
 				category = tactical_bomber
@@ -823,7 +815,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_strategic_bomber
 			}
@@ -859,7 +851,7 @@ focus_tree = {
 		complete_tooltip = {
 			add_tech_bonus = {
 				name = AST_volunteer_air_observers_corps
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = radar_tech
 			}
@@ -898,7 +890,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_volunteer_air_observers_corps
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = radar_tech
 			}
@@ -1056,8 +1048,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_naval_bombers
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = naval_bomber
 			}
@@ -1134,7 +1126,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_death_from_down_under
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -1204,7 +1196,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = AST_death_from_down_under
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -1236,10 +1228,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			air_experience = 50
@@ -1289,7 +1277,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_dominate_the_skies
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -1313,7 +1301,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_expand_the_raaf
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -1420,7 +1408,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_protect_overseas_commerce
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = fleet_in_being_tree
 				category = convoy_defense_tree
@@ -1458,7 +1446,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fly_the_jolly_roger
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = submarine_doctrine
 			}
@@ -1494,8 +1482,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_scrap_iron_flotilla
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -1531,8 +1519,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_submarine_service
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}
@@ -1564,10 +1552,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = AST_naval_auxiliary_patrol
@@ -1603,8 +1587,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cruisers
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
 				category = ca_tech
@@ -1641,7 +1625,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_pacific_area_navy
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1773,7 +1757,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}			
@@ -2229,10 +2213,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = AST_australian_arms_production
 		}
@@ -2265,14 +2245,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_uranium_mining
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = nuclear
 			}
@@ -2499,10 +2475,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = AST_citizen_military_forces
 			add_ideas = national_army
@@ -2543,10 +2515,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			#Starts with recon and engineers
@@ -2676,10 +2644,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			#if effect is there for the tooltips sake
 			if = {
@@ -2738,10 +2702,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -2871,10 +2831,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = AST_classify_aliens
 			if = {
@@ -2946,10 +2902,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -2997,10 +2949,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {			
 			modify_tech_sharing_bonus = {
  				id = commonwealth_research
@@ -3046,10 +2994,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			country_event = { id = tfv_australia.90 }
@@ -3102,10 +3046,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			ENG = {
 				country_event = { id = tfv_australia.1 }
@@ -3138,10 +3078,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_political_power = 120
@@ -3180,10 +3116,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			AST = {
@@ -3230,10 +3162,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			336 = {
@@ -3363,10 +3291,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = AST_empire_air_training_scheme
 		}
@@ -3397,10 +3321,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = AST_commonwealth_aircraft_corporation
@@ -3443,7 +3363,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -3453,10 +3373,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			set_rule = { can_decline_call_to_war = yes }
@@ -3491,7 +3407,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -3501,10 +3417,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = AST_homeland_defense_tt
@@ -3574,7 +3486,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -3584,10 +3496,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			JAP = {			
@@ -3640,6 +3548,7 @@ focus_tree = {
 				limit = { has_government = fascism }
 				has_autonomy_state = autonomy_satellite
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -3650,14 +3559,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
-			set_autonomy = {
-				target = AST
-				autonomy_state = autonomy_free
+			OVERLORD = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_free
+				}
 			}
 			ENG = { remove_from_faction = ROOT }
 			custom_effect_tooltip = available_political_advisor
@@ -3694,15 +3601,20 @@ focus_tree = {
 			USA = { 
 				has_government = ROOT
 				is_puppet = no
-			 }
-			
+			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
-			USA = {
-				is_in_faction = yes
-				NOT = {
-					is_in_faction_with = AST
+			OR = {
+				USA = { exists = no }
+				USA = {
+					AND = {
+						is_in_faction = yes
+						NOT = {
+							is_in_faction_with = AST
+						}
+					}
 				}
 			}
 		}
@@ -3710,10 +3622,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			USA = {
@@ -3746,21 +3654,21 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = HOL }
 			HOL = { has_capitulated = yes }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
 			INS = {
-				NOT = { is_puppet_of = HOL }
+				OR = {
+					NOT = { is_puppet_of = HOL }
+					exists = no
+				}
 			}
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			HOL = {
@@ -3784,7 +3692,8 @@ focus_tree = {
 		}
 
 		available = {
-
+			is_subject = no
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -3794,10 +3703,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
@@ -3813,7 +3718,10 @@ focus_tree = {
 				limit = {
 					has_completed_focus = AST_woo_usa
 					USA = {
+						exists = yes
+						has_capitulated = no
 						is_puppet = no
+						has_government = ROOT
 						OR = {
 							is_in_faction = no
 							has_war = no
@@ -3845,7 +3753,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -3855,10 +3763,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 		custom_effect_tooltip = AST_swpi_research_tt
@@ -3895,6 +3799,7 @@ focus_tree = {
 			NOT = {
 				JAP = { has_government = ROOT }
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -3904,10 +3809,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -3951,7 +3852,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -3975,7 +3876,7 @@ focus_tree = {
 				ideology = communism 
 				popularity = 0.05
 			}
-			add_ideas = AST_abandon_the_westminster_system
+			add_timed_idea = { days = 1095 idea = AST_abandon_the_westminster_system } 
 		}
 	}
 
@@ -4016,6 +3917,7 @@ focus_tree = {
 				limit = { has_government = fascism } 
 				compare_autonomy_state > autonomy_reichsprotectorate
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4055,12 +3957,15 @@ focus_tree = {
 		}
 
 		available = {
+			country_exists = INS
+			INS = { is_subject = yes }
 			ROOT = {
 				fascism > 0.15
 			}
 			has_equipment = {
 				infantry_equipment > 199
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		select_effect = {
@@ -4109,6 +4014,8 @@ focus_tree = {
 		}
 
 		available = {
+			country_exists = INS
+			INS = { is_subject = yes }
 			OR = {
 				is_subject = no
 				AND = {
@@ -4127,6 +4034,7 @@ focus_tree = {
 			INS = {
 				fascism > 0.3
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -4169,6 +4077,7 @@ focus_tree = {
 			has_government = fascism
 			NOT = { has_war_together_with = ENG }
 			NOT = { is_in_faction_with = NZL }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -4188,9 +4097,11 @@ focus_tree = {
 				limit = { is_in_faction_with = ENG }
 				ENG = { remove_from_faction = ROOT }
 			}
-			set_autonomy = {
-				target = AST
-				autonomy_state = autonomy_free
+			OVERLORD = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_free
+				}
 			}
 			NZL = {
 				country_event = { id = tfv_australia.20 }
@@ -4224,6 +4135,7 @@ focus_tree = {
 			MAL = {
 				is_puppet_of = ENG
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }														
 		}
 		
 		bypass = {
@@ -4287,6 +4199,7 @@ focus_tree = {
 					is_in_faction = no
 				}
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4307,9 +4220,11 @@ focus_tree = {
 				limit = { is_in_faction_with = ENG }
 				ENG = { remove_from_faction = ROOT }
 			}
-			set_autonomy = {
-				target = AST
-				autonomy_state = autonomy_free
+			OVERLORD = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_free
+				}
 			}
 			set_rule = { can_create_factions = yes }
 			JAP = {
@@ -4357,6 +4272,7 @@ focus_tree = {
 				}
 			}
 			NOT = { has_war_together_with = ENG }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4373,9 +4289,11 @@ focus_tree = {
 
 		completion_reward = {
 			ENG = { remove_from_faction = ROOT }
-			set_autonomy = {
-				target = AST
-				autonomy_state = autonomy_free
+			OVERLORD = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_free
+				}
 			}
 			set_rule = { can_create_factions = yes }
 		}
@@ -4397,6 +4315,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = JAP
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4433,6 +4352,7 @@ focus_tree = {
 
 		available = {
 			NOT = { is_in_faction_with = JAP }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4442,10 +4362,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -4489,6 +4405,7 @@ focus_tree = {
 				limit = { has_government = fascism } 
 				compare_autonomy_state > autonomy_reichsprotectorate
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4498,10 +4415,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -4531,7 +4444,8 @@ focus_tree = {
 			ROOT = {
 				communism > 0.3
 			}
-			PRC = { exists = yes }
+			event_target:WTT_communist_china = { exists = yes }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -4542,20 +4456,30 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
-			PRC = {
+			event_target:WTT_communist_china = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = AST_delegation_to_china
 				}
 			}
 			add_opinion_modifier = {
-				target = PRC
+				target = event_target:WTT_communist_china
 				modifier = AST_delegation_to_china
+			}
+			event_target:WTT_communist_china = {
+				ROOT = {
+					add_ai_strategy = {
+						type = support
+						id = PREV
+						value = 100
+					}
+					add_ai_strategy = {
+						type = protect
+						id = PREV
+						value = 100
+					}
+				}
 			}
 		}
 	}
@@ -4576,6 +4500,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_war_together_with = ENG }
+ 			NOT = { has_country_flag = britain_enforced_our_loyalty }  
 		}
 		
 		bypass = {
@@ -4586,15 +4511,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			ENG = { remove_from_faction = ROOT }
-			set_autonomy = {
-				target = AST
-				autonomy_state = autonomy_free
+			OVERLORD = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_free
+				}
 			}
 			if = {
 				limit = {
@@ -4612,9 +4535,35 @@ focus_tree = {
 					NOT = { has_war_with = PRC }
 				}
 				add_opinion_modifier = {
-					target = PRC
+					target = event_target:WTT_communist_china
 					modifier = AST_commitment_to_the_cause
 				}
+			}
+			every_other_country = {
+				limit = {
+					has_government = communism
+				}
+				ROOT = {
+					add_ai_strategy = {
+						type = support
+						id = PREV
+						value = 100
+					}
+				}
+			}
+			event_target:WTT_communist_china = {
+				ROOT = {
+					add_ai_strategy = {
+						type = protect
+						id = PREV
+						value = 100
+					}
+				}
+			}
+			add_ai_strategy = {
+				type = save_equipment
+				id = infantry_equipment
+				value = 501
 			}
 		}
 	}
@@ -4638,6 +4587,7 @@ focus_tree = {
 			has_equipment = {
 				infantry_equipment > 499
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -4650,7 +4600,7 @@ focus_tree = {
 		}
 		select_effect = {
 			send_equipment = {
-				target = PRC
+				target = event_target:WTT_communist_china
 				type = infantry_equipment
 				amount = 500
 			}
@@ -4659,10 +4609,6 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_timed_idea = { idea = AST_arms_for_the_revolution days = 365 }
@@ -4685,7 +4631,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -4695,10 +4641,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = AST_direct_support
@@ -4726,31 +4668,43 @@ focus_tree = {
 		}
 
 		available = {
-			SOV = { 
-				exists = yes 
-				is_puppet = no
+			is_subject = no
+			any_other_country = {
+				is_major = yes
+				has_government = communism
+				is_faction_leader = yes
 			}
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
-
+			is_in_faction = yes
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
+		
 		completion_reward = {
 
 			set_rule = { can_create_factions = yes }
-			SOV = {
-				country_event = { id = tfv_australia.50 }
+			if = {
+				limit = {
+					SOV = {
+						is_faction_leader = yes
+						has_government = communism
+					}	
+				}
+				SOV = {
+					country_event = { id = tfv_australia.50 }
+				}
 			}
+			else = {
+                get_best_alliance_match_communism_effect = yes
+                var:best_leader = {
+                    country_event = generic.2
+                }
+            }
 		}
 	}
 
@@ -4770,7 +4724,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -4806,6 +4760,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = SOV
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {
@@ -4845,7 +4800,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -4887,6 +4842,7 @@ focus_tree = {
 
 		available = {
 			NOT = { is_in_faction_with = JAP }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }															
 		}
 		
 		bypass = {

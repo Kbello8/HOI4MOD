@@ -1,28 +1,25 @@
 ﻿capital = 446
 
-oob = "EGY_1936"
-
+oob = "EGY_1936"				
+give_military_access = ENG
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
 	early_fighter = 1
-	transport = 1
+	transport = 1	  
 	gwtank = 1
 }
 
+set_convoys = 20
 if = {
 	limit = { has_dlc = "Together for Victory" }
 
 	add_to_tech_sharing_group = commonwealth_research
-}
-
-set_convoys = 20
-give_military_access = ENG
+}											 			  
 1939.1.1 = {
 
 	add_political_power = 1198
-    oob = "EGY_1939"
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -60,9 +57,7 @@ give_military_access = ENG
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
+		fuel_silos = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -99,9 +94,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = " Mustafa el-Nahhas"
+	name = "Muhammad Naguib"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Arabia_Generic_democratic1.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -121,7 +116,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Farouk Muhammad Ali"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Arabia_Generic_land_1.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
 	ideology = despotism
 	traits = {
 		#
@@ -131,7 +126,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hosni al-Arabi"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Arabia_Generic_communism1.dds"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
 	ideology = leninism
 	traits = {
 		#

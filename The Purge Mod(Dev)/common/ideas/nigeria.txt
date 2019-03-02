@@ -2,24 +2,6 @@ ideas = {
 
 
     country = {
-        nig_empire = {
-		
-			allowed = {
-				original_tag = NIG
-			}
-			
-			removal_cost = -1
-			
-			picture = generic_wall_line
-			
-			modifier = {
-                generate_wargoal_tension = -0.4
-                neutrality_drift = 0.4
-                industrial_capacity_factory = 0.15
-                production_speed_arms_factory_factor = 0.1
-			}
-		}
-        
         nigerian_unification = {
 			
 			

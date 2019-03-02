@@ -71,7 +71,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 3
+			factor = 20
 		}
 
 		available = {
@@ -128,6 +128,7 @@ focus_tree = {
 
 		available = {
 			is_subject = yes
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -145,7 +146,7 @@ focus_tree = {
 		completion_reward = {
 			add_autonomy_ratio = {
 				value = 0.1
-				localization = RAJ_indian_national_congress
+				localization = RAJ_swaraj
 			}
 			add_opinion_modifier = { target = ENG modifier = RAJ_swaraj }
 			hidden_effect = { news_event = { id = news.284 hours = 12 } }
@@ -255,7 +256,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -317,10 +318,11 @@ focus_tree = {
 					has_government = fascism
 				}
 				compare_autonomy_state < autonomy_satellite
-				has_civil_war = no
-				NOT = { has_country_flag = RAJ_seek_help_from_germany_promised }
-				SOV_can_help_against_ENG = yes
 			}
+			has_civil_war = no
+			NOT = { has_country_flag = RAJ_seek_help_from_germany_promised }
+			SOV_can_help_against_ENG = yes
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -375,10 +377,11 @@ focus_tree = {
 		available = {
 			has_civil_war = no
 			#communism > 0.15
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
-            has_government = communism
+
 		}
 
 		cancel_if_invalid = yes
@@ -399,15 +402,20 @@ focus_tree = {
 				custom_effect_tooltip = RAJ_indian_peoples_army_support
 			}
 			hidden_effect = {
-				ROOT = { set_country_flag = indian_civil_war }
 				random_owned_controlled_state = {
 					prioritize = { 429 425 }
 					RAJ = { set_capital = PREV }
 				}
 				if = {
-					limit = { compare_autonomy_state < autonomy_colony }
-					start_scaled_communist_civil_war_cap439_puppet = yes
-					else = { start_scaled_communist_civil_war_cap439 = yes } #Scaled by autonomy and party support - Don't add these before
+					set_temp_variable = { ideology_val = party_popularity@communism }
+					scale_var_civil_war_size_by_autonomy_and_var_ideology_val = yes
+					start_civil_war = {
+						ruling_party = communism
+						ideology = neutrality
+						size = civil_war_size
+						capital = 439
+					}
+					#Scaled by autonomy and party support - Don't add these before
 				}
 				if = {
 					limit = {
@@ -464,6 +472,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = SOV
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -500,6 +509,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = SOV
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -517,20 +527,20 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_combined_arms_academy
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = RAJ_combined_arms_academy
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 				category = motorized_equipment
 			}
 			add_tech_bonus = {
 				name = RAJ_combined_arms_academy
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_anti_tank
 			}
@@ -557,7 +567,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -632,7 +642,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_country_flag = RAJ_civil_war
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -778,6 +788,7 @@ focus_tree = {
 				exists = yes
 				has_government = fascism
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -831,6 +842,7 @@ focus_tree = {
 
 		available = {
 			has_civil_war = no
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -855,15 +867,20 @@ focus_tree = {
 				custom_effect_tooltip = RAJ_indian_national_army_support
 			}
 			hidden_effect = {
-				ROOT = { set_country_flag = indian_civil_war }
 				random_owned_controlled_state = {
 					prioritize = { 429 425 }
 					RAJ = { set_capital = PREV }
 				}
 				if = {
-					limit = { compare_autonomy_state < autonomy_colony }
-					start_scaled_fascist_civil_war_cap439_puppet = yes
-					else = { start_scaled_fascist_civil_war_cap439 = yes } #Don't add support before this
+					set_temp_variable = { ideology_val = party_popularity@fascism }
+					scale_var_civil_war_size_by_autonomy_and_var_ideology_val = yes
+					start_civil_war = {
+						ruling_party = fascism
+						ideology = neutrality
+						size = civil_war_size
+						capital = 439
+					}
+					#Don't add support before this
 				}
 				if = {
 					limit = {
@@ -923,6 +940,7 @@ focus_tree = {
 				is_in_faction_with = GER
 				has_government = fascism
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -938,7 +956,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 50					   
 			if = {
 				limit = { NOT = { has_tech = paratroopers } }
 				set_technology = { paratroopers = 1 }
@@ -946,7 +964,7 @@ focus_tree = {
 				else = {
 					add_tech_bonus = {
 						name = RAJ_battaglione_azad_hindoustan
-						bonus = 0.5
+						bonus = 1.0
 						uses = 1
 						technology = paratroopers2
 						technology = paratroopers3
@@ -1014,6 +1032,7 @@ focus_tree = {
 				is_in_faction_with = GER
 				is_in_faction_with = JAP
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -1053,6 +1072,7 @@ focus_tree = {
 				is_in_faction_with = GER
 				is_in_faction_with = JAP
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -1071,14 +1091,14 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = RAJ_japanese_army_air_force_academy
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = light_fighter
 				category = cas_bomber
 			}
 			add_tech_bonus = {
 				name = RAJ_japanese_army_air_force_academy
-				bonus = 0.50
+				bonus = 1.00
 				uses = 1
 				category = air_doctrine
 			}
@@ -1163,6 +1183,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = RAJ_two_nation_theory_effect
 			remove_state_core = 430
 			remove_state_core = 440
 			remove_state_core = 441
@@ -1184,10 +1205,8 @@ focus_tree = {
 					remove_idea = RAJ_marginalized_muslim_community
 				}
 			}
-			
 		}
 	}
-
 	focus = {
 		id = RAJ_princely_state_donations
 		icon = GFX_goal_generic_improve_relations
@@ -1241,6 +1260,7 @@ focus_tree = {
 		}
 
 		available = {
+			is_subject = yes
 		}
 
 		bypass = {
@@ -1332,10 +1352,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			if = {
 				limit = { has_tech = basic_light_cruiser }
@@ -1389,15 +1405,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			army_experience = 20
 			add_tech_bonus = {
 				name = RAJ_british_army_support
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = support_tech
 			}
@@ -1429,10 +1441,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 		custom_effect_tooltip = RAJ_create_unit_red_eagles_tt
@@ -1503,27 +1511,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 		custom_effect_tooltip = RAJ_orde_wingate_tt
 		hidden_effect = {
 			create_corps_commander = {
 				name = "Orde Wingate"
 				gfx = "GFX_RAJ_orde_wingate"
-				traits = { jungle_rat }
+				traits = { jungle_rat commando }
 				skill = 4
-				attack_skill = 2
-				defense_skill = 2
+				attack_skill = 3
+				defense_skill = 3
 				planning_skill = 2
-				logistics_skill = 3
+				logistics_skill = 5
 				}
 			}
 			add_tech_bonus = {
 				name = RAJ_chindits
-				bonus = 0.75
+				bonus = 3.0
 				uses = 2
 				category = para_tech
 				category = mountaineers_tech
@@ -1557,10 +1561,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_jungle_training_effect
@@ -1598,14 +1598,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_lessons_of_the_great_war
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -1642,10 +1638,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_political_power = 100
 			army_experience = 25
@@ -1681,10 +1673,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = RAJ_indian_gurkhas			
@@ -1747,22 +1735,18 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = RAJ_indian_sandhurst_tt 
 			hidden_effect = {
 				create_corps_commander = {
 					name = "Kodandera Madappa Cariappa"
 					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
-					traits = { }
+					traits = { career_officer skilled_staffer }
 					skill = 4
-					attack_skill = 1
+					attack_skill = 2
 					defense_skill = 4
-					planning_skill = 2
-					logistics_skill = 2
+					planning_skill = 3
+					logistics_skill = 4
 				}
 				create_corps_commander = {
 					name = "Kodandera Subayya Thimayya"
@@ -1770,9 +1754,9 @@ focus_tree = {
 					traits = { jungle_rat }
 					skill = 3
 					attack_skill = 3
-					defense_skill = 1
+					defense_skill = 2
 					planning_skill = 1
-					logistics_skill = 3
+					logistics_skill = 4
 				}
 				create_corps_commander = {
 					name = "Jayanto Nath Chaudhuri"
@@ -1781,7 +1765,7 @@ focus_tree = {
 					skill = 3
 					attack_skill = 4
 					defense_skill = 1
-					planning_skill = 2
+					planning_skill = 3
 					logistics_skill = 2
 				}
 			}
@@ -1813,10 +1797,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
@@ -1887,10 +1867,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = RAJ_indian_gentlemen_officers
 		}
@@ -1927,14 +1903,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_the_bangalore_torpedo
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = engineers_tech
 			}
@@ -1967,14 +1939,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_vickers_berthier_gun
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
@@ -2007,15 +1975,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = RAJ_royal_indian_artillery
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = artillery
 			}
@@ -2048,14 +2012,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_army_motorization
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2091,10 +2051,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_revive_the_screw_guns_effect
@@ -2132,14 +2088,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
@@ -2173,14 +2125,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_modernizing_army
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -2211,13 +2159,9 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -2260,15 +2204,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = RAJ_british_pilot_training
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -2385,14 +2325,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {			
 			add_tech_bonus = {
 				name = RAJ_air_support_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 				category = cas_bomber
@@ -2427,14 +2363,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_fighter_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
@@ -2475,15 +2407,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = RAJ_royal_indian_air_force
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -2524,14 +2452,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_the_smiling_buddha
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = nuclear
 			}
@@ -2774,7 +2698,7 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 640
+			controls_state = 432
 		}
 
 		bypass = {
@@ -2822,8 +2746,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2870,7 +2794,7 @@ focus_tree = {
 			show_ideas_tooltip = RAJ_homi_j_bhabha
 			add_tech_bonus = {
 				name = RAJ_institute_of_fundamental_research
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = nuclear
 			}
@@ -3075,7 +2999,7 @@ focus_tree = {
 				}
 				set_state_flag = RAJ_found_scindia_shipyard
 				if = {
-					limit = { state = 429 }
+					limit = { state = 426 }
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -3115,14 +3039,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_royal_indian_navy
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = naval_doctrine
 			}
@@ -3155,14 +3076,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_screening_effort
-				bonus = 0.6
+				bonus = 1.5
 				uses = 1
 				category = dd_tech
 				category = cl_tech
@@ -3196,14 +3113,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_cruiser_effort
-				bonus = 0.6
+				bonus = 1.5
 				uses = 1
 				category = bc_tech
 				category = ca_tech
@@ -3237,14 +3150,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_submarine_effort
-				bonus = 0.6
+				bonus = 1.5
 				uses = 1
 				category = ss_tech
 			}
@@ -3277,14 +3186,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_capital_ship_effort
-				bonus = 0.6
+				bonus = 1.5
 				uses = 1
 				category = cv_tech
 				category = bb_tech
@@ -3318,14 +3223,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_modernizing_navy
-				bonus = 0.70
+				bonus = 3.0
 				uses = 1
 				category = naval_doctrine
 			}
@@ -3597,47 +3498,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			remove_ideas = RAJ_risk_of_famine
-		}
-	}
-    
-    focus = {
-		id = RAJ_argrarian1
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus =  RAJ_clamp_down_on_corruption }
-		x = 0
-		y = 2
-        relative_position_id = RAJ_clamp_down_on_corruption
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		
-			custom_effect_tooltip = raj_agrarian_tooltip
 		}
 	}
 
@@ -3935,6 +3797,41 @@ focus_tree = {
 				}
 				set_state_flag = RAJ_british_arms_investors_AF2
 			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_argrarian1
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus =  RAJ_clamp_down_on_corruption }
+		x = 0
+		y = 2
+        relative_position_id = RAJ_clamp_down_on_corruption
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		
+			custom_effect_tooltip = raj_agrarian_tooltip
 		}
 	}
 

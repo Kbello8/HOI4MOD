@@ -758,7 +758,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_air
 				category = medium_air
@@ -897,7 +897,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -918,7 +918,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				technology = basic_battleship
 				technology = heavy_battleship
@@ -1475,7 +1475,8 @@ focus_tree = {
 			add_state_claim = 12
 			add_state_claim = 190
 			add_named_threat = { threat = 1 name = SOV_claims_on_baltic }
-
+			USA = {
+				set_country_flag = { flag = USA_baltic_window days = 60 value = 1 }
 			every_other_country = {
 				limit = {					
 					OR = {
@@ -1654,6 +1655,7 @@ focus_tree = {
 					93 = { is_owned_and_controlled_by = POL }
 					91 = { is_owned_and_controlled_by = POL }
 					89 = { is_owned_and_controlled_by = POL }
+					784 = { is_owned_and_controlled_by = POL }											   
 				}
 			}
 		}
@@ -1713,6 +1715,9 @@ focus_tree = {
 						limit = { POL = { owns_state = 89 controls_state = 89 } }
 						transfer_state = 89
 					}
+					if = {
+						limit = { POL = { owns_state = 784 controls_state = 784 } }
+						transfer_state = 784
 				}
 			}
 		}
@@ -1797,6 +1802,9 @@ focus_tree = {
 						limit = { POL = { owns_state = 89 controls_state = 89 } }
 						transfer_state = 89
 					}
+					if = {
+						limit = { POL = { owns_state = 784 controls_state = 784 } }
+						transfer_state = 784
 				}
 			}
 		}
@@ -1837,6 +1845,10 @@ focus_tree = {
 				add_state_claim = 78
 			}
 			if = {
+				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 766
+			}
+			if = {
 				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
 				add_state_claim = 80
 			}
@@ -1861,8 +1873,28 @@ focus_tree = {
 					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
 				}
 			}
+			if = {
+				limit = {
+					AND = {
+						any_other_country = {
+							owns_state = 78
+							NOT = {	owns_state = 766 }
+						}
+						any_other_country = {
+							owns_state = 80
+							NOT = {	owns_state = 766 }
+						}
+					}
+				}
+				random_other_country = {
+					limit = { 
+						owns_state = 766
+						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
+					}
+					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
+				}
+			}
 		}
-	}
 
 
 	focus = {
@@ -2032,7 +2064,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = naval_equipment
 			}			
@@ -2076,7 +2108,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = naval_equipment
 			}
@@ -2216,6 +2248,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_ultimatum_to_greece }
 		available = {
 			country_exists = ENG
+			NOT = { ENG = { has_government = communism } }												 
 			NOT = { has_idea = trotskyite_plot }
 			custom_trigger_tooltip = {
 				tooltip = SOV_has_not_officers_purged_tt
@@ -2251,8 +2284,8 @@ focus_tree = {
 						JAP = { has_capitulated = no }
 					}
 					AND = {
-						has_completed_focus = SOV_war_with_uk
-						ENG = { has_capitulated = no }
+						has_completed_focus = SOV_war_with_germany
+						GER = { has_capitulated = no }
 					}
 					has_war = yes
 				}
@@ -2643,7 +2676,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -2734,13 +2767,13 @@ focus_tree = {
 			army_experience = 20
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1.0
 				category = land_doctrine
 			}
 			if = { limit = { has_idea = officers_purged } remove_ideas = officers_purged }
@@ -2782,7 +2815,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				bonus = 0.5
+				bonus = 1.0
 				category = nuclear
 			}
 		}
@@ -2809,7 +2842,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = rocketry
 			}

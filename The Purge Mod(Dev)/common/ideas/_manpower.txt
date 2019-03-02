@@ -9,32 +9,6 @@ ideas = {
 			removal_cost = -1
 			level = 7
 			
-			ai_will_do = {
-   				factor = 0
-				modifier = {
-					add = 100
-					OR = {
-						original_tag = TAN
-						original_tag = PAN
-						original_tag = NIC
-						original_tag = LIB
-						original_tag = HON
-						original_tag = GUA
-						original_tag = ELS
-						original_tag = ECU
-						original_tag = DOM
-						original_tag = COS
-						original_tag = ALB
-						original_tag = CUB
-						original_tag = YEM
-						original_tag = OMA
-						original_tag = BHU
-						original_tag = NEP
-						original_tag = TIB
-					}
-				}
-			}
-
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
 			}
@@ -123,6 +97,14 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
 			}
 
 			modifier = {
@@ -192,6 +174,14 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
 			}
 
 			ai_will_do = {
@@ -208,6 +198,7 @@ ideas = {
 					tag = CHI
 					has_manpower < 200000
 				}
+				
 			}
 			
 			cost = 150
@@ -215,7 +206,7 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.16
+				conscription = 0.14
 			}
 			
 			cancel_if_invalid = no
@@ -279,6 +270,14 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
 			}
 
 			ai_will_do = {
@@ -297,6 +296,7 @@ ideas = {
 					#Block has plenty manpower
 					factor = 0
 					NOT = { tag = CHI }
+					NOT = { tag = SOV }
 					manpower_per_military_factory >  3000
 				}
 
@@ -306,6 +306,19 @@ ideas = {
 					tag = CHI
 					has_manpower < 200000
 				}
+
+				modifier = { # germany needs this before russia, badly
+					factor = 10
+
+					original_tag = GER
+					has_manpower < 2000000
+				}
+				modifier = {
+					factor = 1000
+					original_tag = SOV
+					check_variable = { manpower_k < 3000 }
+				}
+
 			}
 			
 			cost = 150
@@ -375,6 +388,14 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
 			}
 
 			ai_will_do = {
@@ -402,6 +423,12 @@ ideas = {
 					tag = CHI
 					has_manpower < 200000
 				}
+				modifier = {
+					factor = 10
+					original_tag = SOV
+					date > 1943.1.1
+					has_manpower < 2000000	
+				}
 			}
 		
 			cost = 150
@@ -414,6 +441,7 @@ ideas = {
                 experience_gain_navy_unit_factor = -0.06
                 line_change_production_efficiency_factor = -0.3
                 production_factory_efficiency_gain_factor = -0.1
+				training_time_factor = 0.3
 			}
 			
 			cancel_if_invalid = no
@@ -470,6 +498,14 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
 			}
 
 			ai_will_do = {
@@ -501,6 +537,7 @@ ideas = {
                 experience_gain_navy_unit_factor = -0.1
                 line_change_production_efficiency_factor = -0.4
                 production_factory_efficiency_gain_factor = -0.15
+				training_time_factor = 0.5
 			}
 			
 			cancel_if_invalid = no

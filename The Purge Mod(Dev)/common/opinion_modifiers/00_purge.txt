@@ -1,0 +1,164 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+    ## Iraq focus tree
+    
+    sever_german_relations_eng = { value = 10 }
+    
+    sever_german_relations_ger = { value = 50 }
+    
+    habbaniya_siege = { value = -50 }
+    
+    coup_fail_opinion = { value = -30 }
+    
+    
+    ### Turkish focus tree ###
+
+	TUR_treaty_with_iran = { value = 50 }
+
+	TUR_the_Saadabad_pact = { value = 50 }
+
+	TUR_seek_accommodation_with_germany = { value = 50 }
+
+	TUR_seek_accommodation_with_USSR  = { value = 50 }
+
+	TUR_draw_closer_to_britain = { value = 50 }
+    
+    ### Generic focus tree ###
+    
+    US_early_support = {
+        value = 25
+    }
+    
+    USSR_early_support = {
+        value = 25
+    }
+    
+    UK_early_support = {
+        value = 25
+    }
+    
+    GER_early_support = {
+        value = 25
+    }
+    
+    JAP_early_support = {
+        value = 25
+    }
+    
+    US_strong_support = {
+        value = 10
+    }
+    
+    USSR_strong_support = {
+        value = 10
+    }
+    
+    UK_strong_support = {
+        value = 10
+    }
+    
+    GER_strong_support = {
+        value = 10
+    }
+    
+    JAP_strong_support = {
+        value = 10
+    }
+    
+    Daitoa_alliance = {
+        value = 35
+    }
+    
+    England_forgives = {
+        value = 25
+    }
+    
+    England_does_not_forgive = {
+        value = -25
+    }
+    
+    Tsuyoshi_lives_GER = {
+        value = -50
+    }
+    
+    Tsuyoshi_lives_USA = {
+        value = 25
+    }
+    
+    Axis_summit = {
+        value = 35
+    }
+    
+    Roca_runciman = {
+        value = 25
+    }
+    
+    Eden_malbran_no = {
+        value = -25
+    }
+    
+    Eden_malbran_yes = {
+        value = 25
+    }
+    
+    German_sa_pact = {
+        value = 35
+    }
+    
+    German_peru_pact = {
+        value = 25
+    }
+    
+    African_empire = {
+        value = -100
+    }
+    
+    Syrian_empire = {
+        value = -100
+    }
+    
+    Egyptian_empire = {
+        value = -100
+    }
+    
+    Border_war = {
+        value = -50
+    }
+    
+    Remove_dmz = {
+        value = -50
+    }
+    
+    import_rifles = {
+        value = -20
+    }
+    
+    import_aircraft = {
+        value = -20
+    }
+    
+    import_navy = {
+        value = -20
+    }
+    
+    ideological_support = {
+        value = 15
+    }
+    
+    jap_china_support = {
+        value = 100
+    }
+    
+    eastern_prosperity = {
+        value = -100
+    }
+}	
