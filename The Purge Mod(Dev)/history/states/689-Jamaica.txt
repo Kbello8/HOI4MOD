@@ -9,7 +9,10 @@ state={
 	}
 
 	history={
+		add_core_of = JAM
 		owner = ENG
+		victory_points = {
+			12304 1 
 		buildings = {
 			infrastructure = 4
 			12304 = {

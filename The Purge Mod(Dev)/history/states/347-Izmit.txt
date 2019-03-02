@@ -5,6 +5,7 @@ state={
 	manpower = 807660
 	resources={
 		steel=26
+		chromium=19 # was: 26
 	}
 	
 	state_category = rural
@@ -12,8 +13,10 @@ state={
 	history={
 		owner = TUR
 		victory_points = {
-			890 1 
+			11811 1 
 		}
+		victory_points = {
+			904 1 
 		buildings = {
 			infrastructure = 4
 			904 = {
