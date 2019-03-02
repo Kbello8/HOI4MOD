@@ -2042,22 +2042,27 @@ focus_tree = {
         available = {
             OR = {
                 AND = {
-                    FRA = { controls_state = 764 } 
-                    FRA = { controls_state = 765 }
+                    FRA = { controls_state = 776 } 
+                    FRA = { controls_state = 777 }
+					FRA = { controls_state = 778 }
+					FRA = { controls_state = 781 }
                     NGA = { is_in_faction_with = FRA }
                 }
                 AND = {
-                    ENG = { controls_state = 764 } 
-                    ENG = { controls_state = 765 }
+                    ENG = { controls_state = 776 } 
+                    ENG = { controls_state = 777 }
+					ENG = { controls_state = 778 }
+					ENG = { controls_state = 781 }
                     NGA = { is_in_faction_with = ENG }
                 }
             }
-        
         }
         bypass = {
             AND = {
-                NGA = { controls_state = 764 } 
-                NGA = { controls_state = 765 }
+                NGA = { controls_state = 776 } 
+                NGA = { controls_state = 777 }
+				NGA = { controls_state = 778 }
+				NGA = { controls_state = 781 }
             }
 		}
 		x = 32
@@ -2080,16 +2085,22 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			764 = {
-                add_extra_state_shared_building_slots = 3
+			776 = {
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
             }
-            765 = {
+            777 = {
                 add_extra_state_shared_building_slots = 2
+            }
+			778 = {
+                add_extra_state_shared_building_slots = 1
+            }
+			781 = {
+                add_extra_state_shared_building_slots = 1
             }
 		}
 	}
@@ -2101,27 +2112,30 @@ focus_tree = {
         available = {
             OR = {
                 AND = {
-                    FRA = { controls_state = 556 } 
+                    FRA = { controls_state = 556 }
+					FRA = { controls_state = 557 }
                     FRA = { controls_state = 272 }
-                    FRA = { controls_state = 767 } 
-                    FRA = { controls_state = 766 }
+                    FRA = { controls_state = 779 } 
+                    FRA = { controls_state = 780 }
                     NGA = { is_in_faction_with = FRA }
                 }
                 AND = {
-                    ENG = { controls_state = 556 } 
+                    ENG = { controls_state = 556 }
+					ENG = { controls_state = 557 }
                     ENG = { controls_state = 272 }
-                    ENG = { controls_state = 767 } 
-                    ENG = { controls_state = 766 }
+                    ENG = { controls_state = 779 } 
+                    ENG = { controls_state = 780 }
                     NGA = { is_in_faction_with = ENG }
                 }
             }
         }
         bypass = {
             AND = {
-                NGA = { controls_state = 556 } 
+                NGA = { controls_state = 556 }
+				NGA = { controls_state = 557 }
                 NGA = { controls_state = 272 }
-                NGA = { controls_state = 767 }
-                NGA = { controls_state = 766 }
+                NGA = { controls_state = 779 } 
+                NGA = { controls_state = 780 }
             }
 		}
 		x = 34
@@ -2144,7 +2158,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			767 = {
+			556 = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
 					type = industrial_complex
@@ -2152,10 +2166,13 @@ focus_tree = {
 					instant_build = yes
 				}
             }
-            766 = {
+            557 = {
                 add_extra_state_shared_building_slots = 1
             }
-            556 = {
+            779 = {
+                add_extra_state_shared_building_slots = 1
+            }
+			780 = {
                 add_extra_state_shared_building_slots = 1
             }
             272 = {
@@ -2171,25 +2188,31 @@ focus_tree = {
         available = {
             OR = {
                 AND = {
-                    FRA = { controls_state = 515 } 
                     FRA = { controls_state = 660 }
-                    FRA = { controls_state = 539 } 
+                    FRA = { controls_state = 539 }
+					FRA = { controls_state = 772 } 
+					FRA = { controls_state = 773 }
+					FRA = { controls_state = 774 } 					
                     NGA = { is_in_faction_with = FRA }
                 }
                 AND = {
-                    ENG = { controls_state = 515 } 
                     ENG = { controls_state = 660 }
-                    ENG = { controls_state = 539 } 
-                    NGA = { is_in_faction_with = ENG }
+                    ENG = { controls_state = 539 }
+					ENG = { controls_state = 772 } 
+					ENG = { controls_state = 773 }
+					ENG = { controls_state = 774 } 					
+                    NGA = { is_in_faction_with = FRA }
                 }
             }
         
         }
         bypass = {
             AND = {
-                NGA = { controls_state = 515 } 
                 NGA = { controls_state = 660 }
                 NGA = { controls_state = 539 }
+				NGA = { controls_state = 772 } 
+				NGA = { controls_state = 773 }
+				NGA = { controls_state = 774 } 
             }
 		}
 		x = 36
@@ -2220,7 +2243,13 @@ focus_tree = {
 					instant_build = yes
 				}
             }
-            515 = {
+            772 = {
+                add_extra_state_shared_building_slots = 1
+            }
+			773 = {
+                add_extra_state_shared_building_slots = 1
+            }
+			774 = {
                 add_extra_state_shared_building_slots = 1
             }
             539 = {
@@ -2246,8 +2275,7 @@ focus_tree = {
 				remove_ideas = colonial1
                 remove_ideas = colonial2
 			}
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_political_power = 200
             add_autonomy_ratio = {
 				value =	1.0
 				localization = nigerian_unification_autonomy

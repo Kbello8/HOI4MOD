@@ -1,4 +1,4 @@
-﻿name="The Purge Mod(Dev)"
+name="The Purge Mod(Dev)"
 path="mod/The Purge Mod(Dev)/"
 tags={
 	"Alternative History"

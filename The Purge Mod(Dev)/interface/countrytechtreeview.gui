@@ -2322,7 +2322,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_heavy_industry"
-					position = { x = 1408 y = 115  }
+					position = { x = 1435 y = 115  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2335,7 +2335,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1308 y = 115  }
+					position = { x = 1230 y = 115  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2377,7 +2377,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fuel_silos_tree"
-				position = { x = 1250 y = 172 }
+				position = { x = 1200 y = 172 }
 				size = { width =72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2393,7 +2393,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "heavy_industry1_tree"
-				position = { x = 790 y = 312 }
+				position = { x = 1225 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

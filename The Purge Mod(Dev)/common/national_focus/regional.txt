@@ -925,7 +925,7 @@
 			x = 12
 			y = 0
 			trigger = {
-				tag = NIG
+				tag = NGA
 			}
 		}
 
@@ -958,7 +958,7 @@
 						original_tag = IRQ
 						original_tag = PER
 						original_tag = SAU
-						original_tag = NIG
+						original_tag = NGA
 						original_tag = AFG
 						original_tag = TUR
 					}
