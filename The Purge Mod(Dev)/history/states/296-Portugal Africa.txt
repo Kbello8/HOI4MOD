@@ -13,6 +13,7 @@ state={
 		add_core_of = GNB
 		victory_points = {
 			12891 1
+		}
 		buildings = {
 			infrastructure = 2
 			12891 ={

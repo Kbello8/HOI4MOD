@@ -756,6 +756,7 @@ focus = {
 				}	
 			}
 		}
+	}
 	focus = {
 		id = GER_ostwall
 		icon = GFX_goal_generic_fortify_city
@@ -3569,6 +3570,7 @@ focus = {
 					NOT = { HOL = { is_in_faction_with = GER } }
 					NOT = { has_war_with = HOL }
 					NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+				}
 				create_wargoal = {
 					type = take_state_focus
 					target = HOL
@@ -3588,6 +3590,7 @@ focus = {
 				}
 			}
 			if = {
+				limit = {
 					country_exists = LUX
 					NOT = { LUX = { is_in_faction_with = GER } }
 					NOT = { has_war_with = LUX }
@@ -3805,6 +3808,8 @@ focus = {
 					country_event = germany.122
 				}
 			}
+			if = {
+				limit = {
 					ENG = { exists = yes }
 					ENG = { is_subject = no }
 					NOT = { ENG = { has_completed_focus = ENG_a_change_in_course } }
@@ -3865,6 +3870,7 @@ focus = {
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			69 = {
 				add_claim_by = GER
+			}
 			}
 			if = {
 				limit = {
@@ -4225,9 +4231,8 @@ focus = {
 			}
 		}
 		bypass = {
-				is_in_faction_with = POL
-				is_alone_or_in_faction_at_peace_with_GER = no
-			}
+			is_in_faction_with = POL
+			is_alone_or_in_faction_at_peace_with_GER = no
 		}
 		x = 0
 		y = 1
@@ -4781,7 +4786,7 @@ focus = {
 				}
 				set_technology = { cruiser_submarines = 1 }
 			}
-		
+		}
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -4812,6 +4817,7 @@ focus = {
 					has_dlc = "Man the Guns"
 				}
 				set_technology = { cruiser_submarines = 1 }
+			}
 		}
 	}
 
@@ -5739,6 +5745,7 @@ focus = {
 			add_timed_idea = {
 				idea = GER_clamp_down_on_fascism
 				days = 720
+			}
 		}
 	}
 
@@ -6626,6 +6633,7 @@ focus = {
 				is_in_faction_with = ROOT
 				has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary
 			}
+		}
 		cancel_if_invalid = yes
 		x = 2
 		y = 1
@@ -6693,6 +6701,7 @@ focus = {
 				add_timed_idea = {
 					idea = GER_communist_refugees
 					days = 720
+				}
 				country_event = { id = wtt_germany.17 }
 			}
 			hidden_effect = {
@@ -6974,7 +6983,8 @@ focus = {
 				}
 			}
 		}
-
+	}
+	
 	focus = {
 		id = GER_danzig_for_guarantees
 		icon = GFX_focus_generic_polish_deal
@@ -7076,6 +7086,7 @@ focus = {
 					add_timed_idea = {
 						idea = GER_safeguard_the_baltic
 						days = 720
+					}
 					add_ai_strategy = {
 						type = befriend
 						id = "GER"			
@@ -7099,6 +7110,7 @@ focus = {
 					add_timed_idea = {
 						idea = GER_safeguard_the_baltic
 						days = 720
+					}
 					add_ai_strategy = {
 						type = befriend
 						id = "GER"			
@@ -7122,6 +7134,7 @@ focus = {
 					add_timed_idea = {
 						idea = GER_safeguard_the_baltic
 						days = 720
+					}
 					add_ai_strategy = {
 						type = befriend
 						id = "GER"			
@@ -7384,6 +7397,7 @@ focus = {
 			add_timed_idea = {
 				idea = GER_reestablish_free_elections
 				days = 720
+			}
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 		}
 	}

@@ -584,6 +584,7 @@ foreign_politics = {
 
 		allowed = {
 			original_tag = JAP
+		}
 		available = {
 			FROM = { 
 				surrender_progress < 0.2 # if they are losing, lets not allow it
@@ -1182,6 +1183,7 @@ JAP_colonial_independence = {
 					original_tag = JAP
 				}
 				owns_state = 611
+			}
 			has_completed_focus = JAP_liberate_manchuria
 		}
 
@@ -1336,7 +1338,7 @@ operations = {
 		
 		allowed = {
 			original_tag = JAP
-
+		}
 		icon = decision_generic_naval
 
 		available = {

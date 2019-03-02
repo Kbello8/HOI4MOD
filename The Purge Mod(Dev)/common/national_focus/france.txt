@@ -2023,6 +2023,7 @@ focus_tree = {
 			add_ideas = FRA_army_of_aggression_focus
 			USA = {
 				set_country_flag = { flag = USA_army_of_aggression_window days = 60 value = 1 }
+			}
 			if = {
 				limit = {
 					ENG = { 

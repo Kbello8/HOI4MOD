@@ -216,6 +216,7 @@ ideas = {
 				neutrality_drift = 0.1
 				neutrality_acceptance = 85
 			}
+		}
 		
 		soviet_german_friendship = {
 			allowed = {
@@ -1020,6 +1021,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { communist_revolutionary }
@@ -1063,6 +1065,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 
 			
@@ -1104,6 +1107,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { fascist_demagogue }
@@ -1160,6 +1164,7 @@ ideas = {
 						OR = { tag = MEX }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1203,6 +1208,7 @@ ideas = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1246,6 +1252,7 @@ ideas = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1284,6 +1291,7 @@ ideas = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1322,6 +1330,7 @@ ideas = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1356,6 +1365,7 @@ ideas = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1391,6 +1401,7 @@ ideas = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1426,6 +1437,7 @@ ideas = {
 						OR = { tag = HOL tag = MEX }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1463,6 +1475,7 @@ ideas = {
 						OR = { tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1495,6 +1508,7 @@ ideas = {
 						OR = { tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150
@@ -1527,6 +1541,7 @@ ideas = {
 						OR = { tag = HOL }
 						has_dlc = "Man the Guns"
 					}
+				}
 			}
 			
 			cost = 150

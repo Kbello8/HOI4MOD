@@ -3050,6 +3050,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3108,6 +3109,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3198,6 +3200,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3288,6 +3291,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3374,6 +3378,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3464,6 +3469,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3554,6 +3560,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3637,6 +3644,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3693,6 +3701,7 @@ prospect_for_resources = {
 				factor = 0
 				original_tag = SOV
 				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		remove_effect = {
@@ -3836,6 +3845,8 @@ prospect_for_resources = {
 				}
 				set_variable = { var = chosin_tungsten_duration value = 30 }
 			}
+		}
+	}
 
 	develop_abu_dhabi_oil_fields  = { #658
 		
@@ -4382,4 +4393,6 @@ prospect_for_resources = {
 				}
 			}
 		}
-	}}
+	}
+}
+	

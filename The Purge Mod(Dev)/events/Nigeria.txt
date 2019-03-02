@@ -2,7 +2,7 @@
 # Nigeria Events
 ###########################
 
-add_namespace = nga
+add_namespace = nig
 
 
 # French Accept Petition - Togoland & Upper Volta
@@ -20,7 +20,7 @@ country_event = {
 		NGA = {
 			if = {
 				limit = {
-					764 = {
+					776 = {
 						
 						OR = {
 							is_controlled_by = FRA
@@ -29,11 +29,11 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 764
+				transfer_state = 776
 			}
 			if = {
 				limit = {
-					765 = {
+					777 = {
 						
 						OR = {
 							is_controlled_by = FRA
@@ -42,7 +42,33 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 765
+				transfer_state = 777
+			}
+			if = {
+				limit = {
+					778 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 778
+			}
+			if = {
+				limit = {
+					781 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 781
 			}
 		}
 	}
@@ -89,7 +115,7 @@ country_event = {
 			}
             if = {
 				limit = {
-					767 = {
+					779 = {
 						
 						OR = {
 							is_controlled_by = FRA
@@ -98,11 +124,11 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 767
+				transfer_state = 779
 			}
             if = {
 				limit = {
-					766 = {
+					780 = {
 						
 						OR = {
 							is_controlled_by = FRA
@@ -111,7 +137,20 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 766
+				transfer_state = 780
+			}
+			if = {
+				limit = {
+					557 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 557
 			}
 		}
 	}
@@ -132,7 +171,7 @@ country_event = {
 		NGA = {
 			if = {
 				limit = {
-					515 = {
+					772 = {
 						
 						OR = {
 							is_controlled_by = FRA
@@ -141,7 +180,33 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 515
+				transfer_state = 772
+			}
+			if = {
+				limit = {
+					773 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 773
+			}
+			if = {
+				limit = {
+					774 = {
+						
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = NGA
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 774
 			}
 			if = {
 				limit = {
@@ -333,8 +398,10 @@ country_event = {
             modifier = {
                 factor = 0
                 AND = {
-                    744 = { is_controlled_by = ENG }
-                    743 = { is_controlled_by = ENG }
+                    776 = { is_controlled_by = ENG }
+                    777 = { is_controlled_by = ENG }
+					778 = { is_controlled_by = ENG }
+					781 = { is_controlled_by = ENG }
                 }
             }
         }
@@ -368,9 +435,10 @@ country_event = {
                 factor = 0
                 AND = {
                     556 = { is_controlled_by = ENG }
+					557 = { is_controlled_by = ENG }
                     272 = { is_controlled_by = ENG }
-                    741 = { is_controlled_by = ENG }
-                    742 = { is_controlled_by = ENG }
+                    779 = { is_controlled_by = ENG }
+                    780 = { is_controlled_by = ENG }
                 }
             }
         }
@@ -403,7 +471,9 @@ country_event = {
             modifier = {
                 factor = 0
                 AND = {
-                    515 = { is_controlled_by = ENG }
+                    772 = { is_controlled_by = ENG }
+					773 = { is_controlled_by = ENG }
+					774 = { is_controlled_by = ENG }
                     660 = { is_controlled_by = ENG }
                     539 = { is_controlled_by = ENG }
                 }

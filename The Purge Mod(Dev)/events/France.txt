@@ -237,6 +237,7 @@ country_event = {
 				}
 			}
 		}
+	}
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -447,6 +448,7 @@ country_event = {
 			limit = { 785 = { owner = { original_tag = FRA } } }
 			set_state_controller = 785
 		}
+		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
 			set_state_controller = 15
 		}
@@ -761,6 +763,7 @@ country_event = {
 			limit = { 785 = { owner = { original_tag = FRA } } }
 			set_state_controller = 785
 		}
+		if ={
 			limit = { 15 = { owner = { original_tag = FRA } } }
 			set_state_controller = 15
 		}
@@ -1064,7 +1067,7 @@ country_event = {
 		16 = { controller = { NOT = { original_tag = FRA } } }
 		has_capitulated = yes
 		#16 = { is_owned_by = FRA }
-	
+	}
 	mean_time_to_happen = {
 		days = 4
 	}

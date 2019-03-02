@@ -1967,14 +1967,14 @@ focus_tree = {
 		id = nigerian_petition_for_british_westafrica
 		icon = GFX_goal_generic_alliance
         available = {
-            NIG = { is_in_faction_with = ENG }
+            NGA = { is_in_faction_with = ENG }
         }
         
         bypass = {
             AND = {
-                NIG = { controls_state = 274 } 
-                NIG = { controls_state = 700 }
-                NIG = { controls_state = 701 }
+                NGA = { controls_state = 274 } 
+                NGA = { controls_state = 700 }
+                NGA = { controls_state = 701 }
             }
 		}
 		x = 30
@@ -2020,13 +2020,13 @@ focus_tree = {
         prerequisite = { focus = nigerian_industrialize_british_westafrica }
         
         available = {
-            NIG = { NOT = { has_war_with = USA }
+            NGA = { NOT = { has_war_with = USA }
                     NOT = { has_war_with = LIB }
             }
         }
         
         bypass = {
-            NIG = { controls_state = 298 } 
+            NGA = { controls_state = 298 } 
 		}
 		x = 30
 		y = 2
@@ -2044,20 +2044,20 @@ focus_tree = {
                 AND = {
                     FRA = { controls_state = 764 } 
                     FRA = { controls_state = 765 }
-                    NIG = { is_in_faction_with = FRA }
+                    NGA = { is_in_faction_with = FRA }
                 }
                 AND = {
                     ENG = { controls_state = 764 } 
                     ENG = { controls_state = 765 }
-                    NIG = { is_in_faction_with = ENG }
+                    NGA = { is_in_faction_with = ENG }
                 }
             }
         
         }
         bypass = {
             AND = {
-                NIG = { controls_state = 764 } 
-                NIG = { controls_state = 765 }
+                NGA = { controls_state = 764 } 
+                NGA = { controls_state = 765 }
             }
 		}
 		x = 32
@@ -2105,23 +2105,23 @@ focus_tree = {
                     FRA = { controls_state = 272 }
                     FRA = { controls_state = 767 } 
                     FRA = { controls_state = 766 }
-                    NIG = { is_in_faction_with = FRA }
+                    NGA = { is_in_faction_with = FRA }
                 }
                 AND = {
                     ENG = { controls_state = 556 } 
                     ENG = { controls_state = 272 }
                     ENG = { controls_state = 767 } 
                     ENG = { controls_state = 766 }
-                    NIG = { is_in_faction_with = ENG }
+                    NGA = { is_in_faction_with = ENG }
                 }
             }
         }
         bypass = {
             AND = {
-                NIG = { controls_state = 556 } 
-                NIG = { controls_state = 272 }
-                NIG = { controls_state = 767 }
-                NIG = { controls_state = 766 }
+                NGA = { controls_state = 556 } 
+                NGA = { controls_state = 272 }
+                NGA = { controls_state = 767 }
+                NGA = { controls_state = 766 }
             }
 		}
 		x = 34
@@ -2174,22 +2174,22 @@ focus_tree = {
                     FRA = { controls_state = 515 } 
                     FRA = { controls_state = 660 }
                     FRA = { controls_state = 539 } 
-                    NIG = { is_in_faction_with = FRA }
+                    NGA = { is_in_faction_with = FRA }
                 }
                 AND = {
                     ENG = { controls_state = 515 } 
                     ENG = { controls_state = 660 }
                     ENG = { controls_state = 539 } 
-                    NIG = { is_in_faction_with = ENG }
+                    NGA = { is_in_faction_with = ENG }
                 }
             }
         
         }
         bypass = {
             AND = {
-                NIG = { controls_state = 515 } 
-                NIG = { controls_state = 660 }
-                NIG = { controls_state = 539 }
+                NGA = { controls_state = 515 } 
+                NGA = { controls_state = 660 }
+                NGA = { controls_state = 539 }
             }
 		}
 		x = 36
@@ -2280,18 +2280,18 @@ focus_tree = {
 		}
         bypass = {
             AND = {
-                NIG = { controls_state = 718 } 
-                NIG = { controls_state = 538 }
-                NIG = { controls_state = 295 }
+                NGA = { controls_state = 718 } 
+                NGA = { controls_state = 538 }
+                NGA = { controls_state = 295 }
             }
 		}
 		x = 38
 		y = 2
 		cost = 10
 		completion_reward = {
-			295 = { add_claim_by = NIG }
-			718 = { add_claim_by = NIG }
-			538 = { add_claim_by = NIG }
+			295 = { add_claim_by = NGA }
+			718 = { add_claim_by = NGA }
+			538 = { add_claim_by = NGA }
 		}
 	}
     
@@ -2304,22 +2304,22 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = { size > 250000 }
             num_of_factories > 25
-            NIG = { is_in_faction_with = BEL }
+            NGA = { is_in_faction_with = BEL }
             NOT = { BEL = { controls_state = 6 } }
             NOT = { BEL = { controls_state = 34 } }
 		}
         bypass = {
             AND = {
-                NIG = { controls_state = 718 } 
-                NIG = { controls_state = 538 }
-                NIG = { controls_state = 295 }
+                NGA = { controls_state = 718 } 
+                NGA = { controls_state = 538 }
+                NGA = { controls_state = 295 }
             }
 		}
 		x = 40
 		y = 2
 		cost = 10
 		completion_reward = {
-			NIG = {
+			NGA = {
                 if = {
                     limit = {
                         295 = {
@@ -2328,7 +2328,7 @@ focus_tree = {
                             }
                             OR = {
                                 is_controlled_by = BEL
-                                is_controlled_by = NIG
+                                is_controlled_by = NGA
                             }
                         }
                     }
@@ -2343,7 +2343,7 @@ focus_tree = {
                             }
                             OR = {
                                 is_controlled_by = BEL
-                                is_controlled_by = NIG
+                                is_controlled_by = NGA
                             }
                         }
                     }
@@ -2358,7 +2358,7 @@ focus_tree = {
                             }
                             OR = {
                                 is_controlled_by = BEL
-                                is_controlled_by = NIG
+                                is_controlled_by = NGA
                             }
                         }
                     }

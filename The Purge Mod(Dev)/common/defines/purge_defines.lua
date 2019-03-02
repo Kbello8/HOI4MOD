@@ -1,30 +1,30 @@
-##################################
-#            Game
-##################################
+---------------------------------
+--            Game
+---------------------------------
 
 	NDefines.NGame.END_DATE = "1969.1.1.1",
 
-##################################
-#            Diplomacy
-##################################
+---------------------------------
+--            Diplomacy
+---------------------------------
 
 	NDefines.NDiplomacy.BASE_STAGE_COUP_TOTAL_COST = 500, 				-- Equipment consume factor for stage coup.
 	NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 1,				-- Number of human players as winners needed for peace conference to pause and open for everyone in multiplayer, needs to fullfill MP_NUM_LOSERS_FOR_PEACE_PAUSE as well.
 	NDefines.NDiplomacy.RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.03,	-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
 	NDefines.NDiplomacy.LL_TO_OVERLORD_AUTONOMY_DAILY_FACTOR = 0.2,	-- If puppet lend leases equipment to overlord of at least same tech level as they have, they gain autonomy																																							  
 
-##################################
-#            Country
-##################################
+---------------------------------
+--            Country
+---------------------------------
 
 	NDefines.NCountry.LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_FACTOR = 0.08,  -- accessible recruitable factor base
 	NDefines.NCountry.MAJOR_MIN_FACTORIES = 45,						-- need at least these many factories to become a major
 	NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 48,					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 	NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 1,				-- Number of days a war has to have existed before anyone can surrender in it 
 
-##################################
-#            Military
-##################################
+---------------------------------
+--            Military
+---------------------------------
 
 	NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 10, 	--Base cost to unlock a regiment slot,
 	NDefines.NMilitary.TRAINING_ATTRITION = 0.005,		  			   -- amount of extra attrition from being in training
@@ -33,22 +33,22 @@
 	NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.0,				-- after a successful land combat, ratio of the equipments that are being captured/salvaged from enemy's lost equipment
 	NDefines.NMilitary.HOURS_REQ_REJOIN_BORDER_WAR_FOR_INJURED_UNITS = 720, -- minimum hours required for units to rejoin border wars
 
-##################################
-#            Air
-##################################
+---------------------------------
+--            Air
+---------------------------------
 
 	NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5,							-- Higher value = more shot down planes
 	NDefines.NAir.AGGRESSION_THRESHOLD = { 0.25, 0.5, 0.75 },			-- Threshold levels for mission aggressivity for air				
 
-##################################
-#            Navy
-##################################
+---------------------------------
+--           Navy
+---------------------------------
 
 	NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 100,								-- base hours needed to prepare an invasion
 
-##################################
-#            AI
-##################################
+---------------------------------
+--            AI
+---------------------------------
 
 	NDefines.NAI.PRODUCTION_EQUIPMENT_SURPLUS_FACTOR = 1.0,	-- Base value for how much of currently used equipment the AI will at least strive to have in stock
 	NDefines.NAI.WANTED_UNITS_INDUSTRY_FACTORY = 1.25, 		-- How many units a country wants is partially based on how much military industry that is available
@@ -73,9 +73,9 @@
 	NDefines.NAI.AVERAGE_SUPPLY_USE_PESSIMISM = 2.5,					-- Multiplier for when AI calculates average supply use of entire army.
 	NDefines.NAI.DEMOCRATIC_AI_FACTION_KICKING_PLAYER_THREAT_DIFFERENCE = 50.0, -- World threat generation difference needed to kick a player from a democratic faction
 
-##################################
-#            Focus
-##################################
+---------------------------------
+--           Focus
+---------------------------------
 
 	NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15,				-- This much progress can be saved while not having a focus selected
 

@@ -1998,6 +1998,7 @@ technologies = {
 					can_research = modern_spaa
 					is_researching_technology = main_battle_tank
 				}
+			}
 		}
 		
 		categories = {

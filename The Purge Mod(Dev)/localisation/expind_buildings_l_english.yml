@@ -1,0 +1,7 @@
+﻿l_english:
+ steel_mill:0 "Steel Mill"
+ steel_mill_plural:0 "Steel Mills"
+ steel_mill_desc:0 "This takes up a shared building slot"
+ steel_mill_amount:0 " provides $VALUE|Y0=$"
+ steel_mill_resource:0 "£resources_strip|$FRAME$"
+ 

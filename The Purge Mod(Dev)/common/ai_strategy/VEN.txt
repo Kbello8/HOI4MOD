@@ -1,0 +1,48 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+VEN_belligerent = {
+	enable = {
+		original_tag = VEN
+        has_government = fascism
+        USA = { has_war = yes }
+		is_in_faction_with = PRU
+	}
+	abort = {
+		AND = {
+			NOT = { country_exists = COL }
+		}
+		NOT = { has_government = fascism }
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = "COL"			
+		value = 750
+	}
+	ai_strategy = {
+		type = conquer
+		id = "COL"			
+		value = 750
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "ECU"			
+		value = 750
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ECU"			
+		value = 750
+	}
+}
+

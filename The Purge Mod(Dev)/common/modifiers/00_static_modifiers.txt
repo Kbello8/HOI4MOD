@@ -252,6 +252,20 @@ free_license = {
 	license_purchase_cost = 0 #no base cost
 }
 
+Regional_license = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+
+	license_purchase_cost = 0 #base cost reduction
+	ai_license_acceptance = 60 #more to AI acceptance value.
+	license_production_speed = 0.15 #speed  increase for being a license
+	license_tech_difference_speed = 0.15 #less cost increase for each tech level between the license and own tech level 
+
+}
+
 # applies when stability > 50%
 stability_good_modifier = {
 	industrial_capacity_factory = 0.20

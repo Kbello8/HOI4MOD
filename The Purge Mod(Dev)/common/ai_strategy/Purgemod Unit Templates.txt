@@ -1,0 +1,143 @@
+##North America
+
+usa_default_template_prio = {
+	enable = {
+        original_tag = USA
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 15}
+	ai_strategy = { type = template_prio          id = marines            value = 0}
+    ai_strategy = { type = template_prio          id = motorized         value = 15}
+    ai_strategy = { type = template_prio          id = light_armor        value = 4}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 35}
+}
+
+eng_default_template_prio = {
+	enable = {
+        original_tag = ENG
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 10}
+	ai_strategy = { type = template_prio          id = motorized         value = 10}
+	ai_strategy = { type = template_prio          id = marines            value = 0}
+    ai_strategy = { type = template_prio          id = light_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 20}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 0}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
+}
+
+
+##Default
+all_default_template_prio = {
+	enable = {
+        NOT = {
+            OR = {
+                original_tag = SOV
+                original_tag = GER
+				original_tag = ENG
+				original_tag = USA
+            }
+        }
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 0}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = motorized         value = 15}
+    ai_strategy = { type = template_prio          id = light_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 0}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
+}
+
+more_marines = {
+	enable = {
+        OR = {
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = ENG
+			original_tag = USA
+		}
+	}
+    ai_strategy = { type = template_prio          id = marines            value = 20}
+	ai_strategy = { type = template_prio          id = infantry       	  value = -20}
+}
+
+more_motorized = {
+	enable = {
+        date > 1945.1.1
+	}
+    ai_strategy = { type = template_prio          id = motorized            value = 15}
+	ai_strategy = { type = template_prio          id = infantry       	  value = -15}
+}
+
+##Base Germany
+ger_default_template_prio = {
+	enable = {
+        original_tag = GER
+	}
+
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = mechanized        value = 0}
+	ai_strategy = { type = template_prio          id = motorized         value = 20}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = light_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 35}
+}
+
+
+
+modern_template_prio = {
+	enable = {
+        has_tech = main_battle_tank
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+    ai_strategy = { type = template_prio          id = heavy_armor       value = -5}
+    ai_strategy = { type = template_prio          id = medium_armor      value = -30}
+	ai_strategy = { type = template_prio          id = light_armor       value = -30}
+    ai_strategy = { type = template_prio          id = modern_armor      value = 35}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = modern_tank_equipment
+		value = 15
+	}
+}
+
+
+sov_default_template_prio = {
+	enable = {
+        original_tag = SOV
+	}
+   
+    ##################################
+    #            Army
+    ##################################
+
+    ai_strategy = { type = template_prio          id = mechanized        value = 5}
+	ai_strategy = { type = template_prio          id = motorized         value = 15}
+	ai_strategy = { type = template_prio          id = marines            value = 1}
+	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
+    ai_strategy = { type = template_prio          id = light_armor        value = 5}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 20}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
+}

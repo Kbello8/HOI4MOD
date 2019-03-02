@@ -571,6 +571,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 
 			picture = generic_fascist_demagogue_commonwealth_2d
@@ -606,6 +607,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			picture = generic_democratic_reformer_commonwealth_2d
@@ -638,6 +640,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 
 			picture = generic_communist_revolutionary_commonwealth_2d

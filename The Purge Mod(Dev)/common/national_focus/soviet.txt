@@ -1477,6 +1477,7 @@ focus_tree = {
 			add_named_threat = { threat = 1 name = SOV_claims_on_baltic }
 			USA = {
 				set_country_flag = { flag = USA_baltic_window days = 60 value = 1 }
+			}
 			every_other_country = {
 				limit = {					
 					OR = {
@@ -1718,6 +1719,7 @@ focus_tree = {
 					if = {
 						limit = { POL = { owns_state = 784 controls_state = 784 } }
 						transfer_state = 784
+					}
 				}
 			}
 		}
@@ -1805,6 +1807,7 @@ focus_tree = {
 					if = {
 						limit = { POL = { owns_state = 784 controls_state = 784 } }
 						transfer_state = 784
+					}
 				}
 			}
 		}
@@ -1895,6 +1898,7 @@ focus_tree = {
 				}
 			}
 		}
+	}
 
 
 	focus = {

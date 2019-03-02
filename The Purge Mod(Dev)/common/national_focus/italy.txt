@@ -1506,6 +1506,7 @@ focus_tree = {
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
 			USA = {
 				set_country_flag = { flag = USA_yugoslavia_window days = 60 value = 1 }
+			}
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
 				if = {
@@ -2007,6 +2008,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+		}
 		cancel = { has_war_with = GER }
 		x = -1
 		y = 1
@@ -2049,6 +2051,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_german_millitary_cooperation }
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+		}
 		x = 1
 		y = 1
 		relative_position_id = ITA_german_millitary_cooperation
@@ -2404,6 +2407,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_italy_first }		
 		available = {
 			NOT = { is_in_faction_with = ENG }
+		}
 		bypass = {
 			OR = {
 				has_war_with = ENG

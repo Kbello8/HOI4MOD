@@ -1802,7 +1802,7 @@ leader_traits = {
 				carrier_size = 0.35 armor_value = -0.15 naval_range = 0.35
 			}
 			capital_ship = {
-				naval_range = 0.25 armor_value = -0.10 fire_range = 0.2 naval_speed = 0.2
+				naval_range = 0.25 armor_value = -0.10 naval_speed = 0.2
 			}
 			screen_ship = {
 				naval_range = 0.35

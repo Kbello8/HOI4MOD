@@ -641,8 +641,8 @@
 
 		completion_reward = {
 		
-			IF = { limit = { original_tag = NIG }
-				NIG = {
+			IF = { limit = { original_tag = NGA }
+				NGA = {
 					modify_tech_sharing_bonus = {
 						id = commonwealth_research
 						bonus = 0.05
@@ -661,7 +661,7 @@
 			IF = { limit = { 
 						AND = {
 							NOT = { original_tag = EGY }
-							NOT = { original_tag = NIG }
+							NOT = { original_tag = NGA }
 						}
 					}
 				add_to_tech_sharing_group = commonwealth_research

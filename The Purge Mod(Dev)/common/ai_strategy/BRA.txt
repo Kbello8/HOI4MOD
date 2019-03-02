@@ -1,0 +1,32 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+
+ARG_contain = {
+	enable = {
+		original_tag = BRA
+        ARG = { has_war = yes }
+		country_exists = ARG
+	}
+	abort = {
+        OR = {
+            NOT = { country_exists = ARG }
+            is_in_faction_with = ARG
+        }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ARG"			
+		value = 500
+	}
+}

@@ -1,0 +1,1114 @@
+ideas = {
+
+    political_advisor = {
+		# POLITICAL	
+        
+        
+        europe_popular_figurehead = {
+			
+			picture = generic_political_advisor_europe_2
+            
+			allowed = {
+				OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    original_tag =  POL
+                    original_tag =  USA
+                }
+			}
+            
+
+			
+			traits = { popular_figurehead }
+		}
+        
+        
+		europe_captain_of_industry2 = {
+			
+            picture = generic_political_advisor_europe_1
+            
+			allowed = {
+			
+				OR = {
+					original_tag =  ALB
+					
+					original_tag =  CZE
+					original_tag =  GRE
+					original_tag =  HOL
+					original_tag =  LAT
+					
+					
+					original_tag =  SWI
+					original_tag =  AST
+					original_tag =  NZL
+					
+					original_tag =  POL
+				}
+			}
+			
+			traits = { captain_of_industry }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+        
+        europe_war_industrialist2 = {
+        
+            picture = generic_political_advisor_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SWE
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { war_industrialist }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+        
+        europe_silent_workhorse = {
+        
+            picture = generic_political_advisor_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  YUG
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    
+                }
+			}
+			
+			traits = { silent_workhorse }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+        
+        europe_prince_of_terror = {
+        
+            picture = generic_political_advisor_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BUL
+                    original_tag =  HUN
+                    original_tag =  EST
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+            
+			traits = { prince_of_terror }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}	
+
+	army_chief = {
+		
+		old_guard_everyone = {
+			
+			picture = generic_political_advisor_europe_2
+            
+			allowed = {
+				NOT = {
+					OR = {
+						original_tag =  USA
+						original_tag =  GER
+						original_tag =  SOV
+						original_tag =  FRA
+						original_tag =  ENG
+						original_tag =  JAP
+						original_tag =  CAN
+						original_tag =  AST
+						original_tag =  SAF
+						original_tag =  RAJ
+					}
+				}
+			}
+			traits = { army_chief_old_guard }
+		}
+		
+		europe_army_chief_off2 = {
+        
+            picture = generic_army_europe_1
+            
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  BUL                 
+                    original_tag =  EST
+                    original_tag =  HOL
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR                  
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  AST
+                    
+                }
+			}
+			
+			traits = { army_chief_offensive_2 }
+		}
+
+		europe_army_chief_def2 = {
+			
+            picture = generic_army_europe_2
+            
+			allowed = {
+                OR = {
+                    
+                    original_tag =  EST
+                    original_tag =  IRE
+                    
+                    
+                    original_tag =  SWE
+                    
+                }
+			}
+			
+			traits = { army_chief_defensive_2 }
+		}
+        
+        europe_army_concealment_2 = {
+        
+            picture = generic_army_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    original_tag =  POL
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_concealment_2 }
+		}
+        
+        
+        europe_army_commando_2 = {
+        
+            picture = generic_army_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  POR
+                    original_tag =  POL
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    
+                }
+			}
+			traits = { army_commando_2 }
+		}
+        
+        europe_army_armored_2 = {
+        
+            picture = generic_army_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  POL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_armored_2 }
+		}
+        
+        europe_army_cavalry_2 = {
+        
+            picture = generic_army_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    
+                    original_tag =  CZE
+                    original_tag =  GRE
+                    original_tag =  POL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_cavalry_2 }
+		}
+	}
+
+	navy_chief = {		
+
+		europe_navy_chief_naval_aviation_2 = {
+        
+            picture = generic_navy_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  POL
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { navy_chief_naval_aviation_2 }
+		}
+        
+        europe_navy_chief_decisive_battle_2 = {
+        
+            picture = generic_navy_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  LIT
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SAF
+                    original_tag =  AST
+                    
+                }
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+        
+        europe_navy_chief_commerce_raiding_2 = {
+        
+            picture = generic_navy_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  HOL
+                    original_tag =  POL
+                    original_tag =  IRE
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWI
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    
+                }
+			}
+			
+			traits = { navy_chief_commerce_raiding_2 }
+		}
+	}
+
+	air_chief = {
+    
+        europe_air_chief_ground_support_1 = {
+        
+            picture = generic_air_europe_2
+			
+			allowed = {
+                OR = {
+                    
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  NOR
+                    
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  DEN
+                    
+                }
+			}
+			
+			traits = { air_chief_ground_support_2 }
+		}
+		
+        europe_air_chief_all_weather_2 = {
+        
+            picture = generic_air_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  POL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    
+                }
+			}
+			
+			traits = { air_chief_all_weather_2 }
+		}
+        
+        europe_air_close_air_support_2 = {
+        
+            picture = generic_air_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  IRE
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  FIN
+                }
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	}
+
+	high_command = {
+
+		europe_army_chief_maneuver_2 = {
+        
+            picture = generic_army_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_chief_maneuver_2 }
+		}
+        
+        europe_army_chief_reform_2 = {
+        
+            picture = generic_army_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_chief_reform_2 }
+		}
+        
+        europe_army_infantry_2 = {
+        
+            picture = generic_army_europe_3
+			
+			allowed = {
+                OR = {
+                    
+                    original_tag =  CZE
+                    
+                    original_tag =  IRE
+                    
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_infantry_2 }
+		}
+        
+        europe_army_logistics_2 = {
+        
+            picture = generic_army_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BUL
+                    
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  POL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { army_logistics_2 }
+		}
+        
+        europe_air_chief_reform_2 = {
+        
+            picture = generic_air_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  POR
+                    original_tag =  POL
+                    
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { air_chief_reform_2 }
+		}
+        
+        europe_air_chief_night_operations_2 = {
+        
+            picture = generic_air_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { air_chief_night_operations_2 }
+		}
+        
+        europe_air_combat_training_2 = {
+        
+            picture = generic_air_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  IRE
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+        
+        europe_air_naval_strike_2 = {
+        
+            picture = generic_air_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { air_naval_strike_2 }
+		}
+        
+        europe_navy_chief_reform_2 = {
+        
+            picture = generic_navy_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    
+                    
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { navy_chief_reform_2 }
+		}
+        
+        europe_navy_anti_submarine_2 = {
+        
+            picture = generic_navy_europe_2
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+        
+        europe_navy_naval_air_defense_2 = {
+        
+            picture = generic_navy_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  POL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { navy_naval_air_defense_2 }
+		}
+        
+        europe_navy_amphibious_assault_2 = {
+        
+            picture = generic_navy_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  POL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    
+                    
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  YUG
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    
+                }
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+		}
+	}
+
+	theorist = {
+
+	
+		europe_naval_theorist = {
+        
+            picture = generic_navy_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  AUS
+                    original_tag =  CZE
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  ROM
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  CAN
+                    original_tag =  AST
+                    original_tag =  POL
+                }
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		europe_air_warfare_theorist = {
+        
+            picture = generic_air_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  EST
+                    original_tag =  LIT
+                    original_tag =  SWE
+                    original_tag =  YUG
+                    original_tag =  AST
+                    original_tag =  FIN
+                    original_tag =  DEN
+                }
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+}
