@@ -911,4 +911,32 @@ Strategic View Adjustments
 	USA given purge ai
 	Modern light tanks
 	
+	0.8.3 - Zan - HOI4 v1.6.0 3/14/2019 MTG
+	argentina considers chile even weaker(more likely to attack)
+	lowered soviet defense vs japan(so they dedicate more units to germany)
+	GER/SOV shouldn't put anymore tank destroyers with infantry
+	SOV will use support anti-air in their infantry
+	regional tree opinion works similarly to china shared tree
+	-country must exist,not capitulated, be at peace w/ root, 
+	-country must be in a faction w/ root, root be a subject of country, or have opinio+75(reverse to what we had)
+	--you can use improve relations for this
+	require coastal state to receive battleship from eng/usa
+	moved modern light tank picture down alongside mainbattletank
+	EGY import rifles-> 2x land doctrine(from 1)
+	EGY import navy -> added bb/bc tech boost
+	EGY land transfers -> is in faction OR is subject of
+	elite officer training -> only add 1 level to generals
+	generous officer training -> only -50% cost
+	abdication crisis for England involves NGA, EGY, & IRQ
+	GER more likely to take french armistice
+	--puppets syria as part of the peace deal
+	GER - > dismantle maginot - > +30% construction speed to infrastructure, 270/180 days
+	GER - > dismantle czech forts -> +30% construction speed to infrastructure 180 days
+	Hitler more likely to flee to Argentina / USA
+	added non-aligned bonus to TUR / PER through focus tree
+	reorganize persian tree
+	GRE must form Byzantium before triumphs
+	Byzantium requires BUL & TUR only
+	Triumph for Balkans -> YUG / ALB
+	--Removed cores/requirements on Romania
 	
