@@ -30,11 +30,11 @@ JAP_unit_production = {
     ##################################
     #            Navy
     ##################################
-	ai_strategy = { type = unit_ratio          id = capital_ship       value = 15}
-    ai_strategy = { type = unit_ratio          id = submarine          value = 5}
-    ai_strategy = { type = unit_ratio          id = screen_ship        value = 30}
-    ai_strategy = { type = unit_ratio          id = convoy             value = 5}
-	ai_strategy = { type = unit_ratio		   id = carrier			   value = 15}
+	#ai_strategy = { type = unit_ratio          id = capital_ship       value = 15}
+    #ai_strategy = { type = unit_ratio          id = submarine          value = 5}
+    #ai_strategy = { type = unit_ratio          id = screen_ship        value = 30}
+    #ai_strategy = { type = unit_ratio          id = convoy             value = 5}
+	#ai_strategy = { type = unit_ratio		   id = carrier			   value = 15}
 
     ##################################
     #            Air
@@ -1793,5 +1793,15 @@ JAP_USA_we_love_islands = {
 		type = area_priority
 		id = pacific
 		value = 80
+	}
+}
+JAP_we_will_mostly_fight_on_subjects = {
+	enable = {
+		tag = JAP
+	}
+	
+	ai_strategy = {
+		type = produce_unit_for_subject_supply_chunks
+		value = 50
 	}
 }

@@ -834,6 +834,84 @@ war_measures = {
 			factor = 0
 		}
 	}
+	
+	purge_generic_licenses_decision = {
+
+		icon = generic_industry
+
+		available = {
+			OR = {
+				has_idea = generic_licenses_purge
+				AND = {
+					is_in_faction = yes
+					num_faction_members > 1
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_war = yes
+				has_idea = generic_licenses_purge
+			}	
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 10
+
+		cost = 50
+
+		complete_effect = {
+			if = { 
+				limit = { has_idea = generic_licenses_purge }
+				remove_ideas = generic_licenses_purge
+			}
+			else = {
+				add_ideas = generic_licenses_purge
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	purge_generic_colonial_conscription_decision = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+
+		}
+
+		visible = {
+			OR = {
+				has_war = yes
+				has_idea = generic_colonial_conscription_purge
+			}	
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 10
+
+		cost = 50
+
+		complete_effect = {
+			if = { 
+				limit = { has_idea = generic_colonial_conscription_purge }
+				remove_ideas = generic_colonial_conscription_purge
+			}
+			else = {
+				add_ideas = generic_colonial_conscription_purge
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 	desperate_defense = {
 
@@ -911,7 +989,10 @@ war_measures = {
         cost = 100
         days_remove = -1
         remove_trigger = {
-            has_war = no
+        	OR = {
+            	has_war = no
+            	not = { has_idea = tot_economic_mobilisation }
+            }									   
         }
         modifier = {
             conscription = 0.03
@@ -1205,6 +1286,7 @@ economy_decisions = {
 
         visible = {
 			any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_flag1 }
             	NOT = { has_state_flag = infrastructure_building_slot_flag1 }
             	is_fully_controlled_by = ROOT
             	is_owned_by = ROOT

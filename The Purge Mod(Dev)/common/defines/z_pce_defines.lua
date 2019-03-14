@@ -1,0 +1,1 @@
+NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0

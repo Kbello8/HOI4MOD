@@ -165,6 +165,8 @@ country = {
 			has_government = communism
 		}
 		
+		picture = generic_morale_bonus
+		
 		removal_cost = -1
 	
 		modifier = {

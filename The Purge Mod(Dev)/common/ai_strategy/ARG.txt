@@ -25,7 +25,7 @@ ARG_prepare_CHL = {
 		has_completed_focus = argentinian_nationalism
 	}
 	ai_strategy = {
-		type = conquer
+		type = prepare_for_war
 		id = "CHL"			
 		value = 750
 	}	
@@ -44,12 +44,12 @@ ARG_belligerent_CHL = {
 	ai_strategy = {
 		type = consider_weak
 		id = "CHL"
-		value = 150
+		value = 2500
 	}
 	ai_strategy = {
 		type = consider_weak
 		id = "USA"
-		value = 150
+		value = 500
 	}
 	ai_strategy = {
 		type = antagonize
@@ -84,12 +84,12 @@ ARG_prepare_URG_PAR = {
 		
 	}
 	ai_strategy = {
-		type = conquer
+		type = prepare_for_war
 		id = "URG"			
 		value = 750
 	}	
 	ai_strategy = {
-		type = conquer
+		type = prepare_for_war
 		id = "PAR"			
 		value = 750
 	}
@@ -312,7 +312,18 @@ Latin_Central_America_Focus1 = {
 		}
 	}
 	abort = {
-		NOT = { country_exists = PAN }
+		AND = {
+			OR = {
+				NOT = { country_exists = PAN }
+				is_in_faction_with = PAN 
+			}
+			
+			OR = {
+				NOT = { country_exists = COL }
+				is_in_faction_with = COL 
+			}
+		}
+		
 	}
 	ai_strategy = {
 		type = antagonize
@@ -356,32 +367,50 @@ Latin_Central_America_Focus1 = {
 		}
 	}
 	abort = {
-		NOT = { country_exists = COS }
-		NOT = { country_exists = NIC }
-		NOT = { country_exists = GUA }
-		NOT = { country_exists = HON }
+		AND = {
+			OR = {
+				NOT = { country_exists = COS }
+				is_in_faction_with = COS 
+			}
+			
+			OR = {
+				NOT = { country_exists = NIC }
+				is_in_faction_with = NIC 
+			}
+			
+			OR = {
+				NOT = { country_exists = GUA }
+				is_in_faction_with = GUA 
+			}
+			
+			OR = {
+				NOT = { country_exists = HON }
+				is_in_faction_with = HON 
+			}
+		}
 	}
 	
 	ai_strategy = {
 		type = antagonize
 		id = "COS"			
-		value = 2000
+		value = 2500
 	}	
 	ai_strategy = {
 		type = antagonize
 		id = "NIC"			
-		value = 2000
+		value = 2500
 	}
 	ai_strategy = {
 		type = antagonize
 		id = "HON"			
-		value = 2000
+		value = 2500
 	}	
 	ai_strategy = {
 		type = antagonize
 		id = "GUA"			
-		value = 2000
+		value = 2500
 	}
+	ai_strategy = { type = area_priority id = north_america value = 150}
 }
 
 Latin_Central_America_Focus2 = {
@@ -419,12 +448,107 @@ Latin_Central_America_Focus2 = {
 		}
 	}
 	abort = {
-		NOT = { country_exists = MEX }
+		OR = {
+			NOT = { country_exists = MEX }
+			is_in_faction_with = MEX 
+		}
 	}
 	
 	ai_strategy = {
 		type = antagonize
 		id = "MEX"			
-		value = 2000
+		value = 2500
+	}
+	ai_strategy = { type = area_priority id = north_america value = 150}	
+}
+
+Latin_North_America_Focus = {
+	enable = {
+		OR = {
+			AND = { 
+				is_in_faction_with = ARG
+				ARG = { is_faction_leader = yes }
+			}
+			original_tag = ARG
+		}
+        has_government = fascism
+        USA = { has_war = yes }
+		surrender_progress < 0.01
+		OR = {
+			ARG = { controls_state = 317 }
+			any_country = {
+				is_in_faction_with = ARG
+				controls_state = 317
+			}
+		}
+		OR = {
+			ARG = { controls_state = 312 }
+			any_country = {
+				is_in_faction_with = ARG
+				controls_state = 312
+			}
+		}
+		OR = {
+			ARG = { controls_state = 313 }
+			any_country = {
+				is_in_faction_with = ARG
+				controls_state = 313
+			}
+		}
+		OR = {
+			ARG = { controls_state = 316 }
+			any_country = {
+				is_in_faction_with = ARG
+				controls_state = 316
+			}
+		}
+		OR = {
+			ARG = { controls_state = 314 }
+			any_country = {
+				is_in_faction_with = ARG
+				controls_state = 314
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = USA }
+			is_in_faction_with = USA 
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "USA"			
+		value = 2500
+	}
+	ai_strategy = { type = area_priority id = north_america value = 150}	
+}
+
+arg_ger_ally = {
+	enable = {
+		tag = ARG
+		AND = {
+			country_exists = GER
+			GER = { has_government = fascism }
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = GER }
+			GER = { has_government = fascism }
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = 100
 	}	
 }

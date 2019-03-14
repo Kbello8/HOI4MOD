@@ -2497,7 +2497,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 			#Requires UK at war in Africa
 			any_country = {
 				has_war_with = ENG
@@ -2936,7 +2942,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 			ENG = { has_war = no }
 		}
 		
@@ -2983,12 +2995,26 @@ focus_tree = {
 
 		available = {
 			is_subject_of = ENG
-			is_in_faction_with = ENG
-			ENG = { has_idea = ENG_george_vi }
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
+			OR = {
+				ENG = { has_idea = ENG_george_vi }
+				ENG = { has_country_flag = edward_viii_married_wallis_simpson }
+			}
 		}
 		
 		bypass = {
-
+			NOT = {
+				OR = {
+					is_subject_of = ENG
+					is_in_faction_with = ENG
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2996,7 +3022,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = tfv_australia.90 }
+			if = { 
+				limit = {
+					ENG = { has_idea = ENG_george_vi }
+				}
+				country_event = { id = tfv_australia.90 }
+			}
+			if = { 
+				limit = {
+					ENG = { has_country_flag = edward_viii_married_wallis_simpson } 
+				}
+				country_event = { id = tfv_australia.92 } 
+			}
 		}
 	}
 
@@ -3068,7 +3105,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 		}
 		
 		bypass = {
@@ -3105,7 +3148,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 			is_in_tech_sharing_group = commonwealth_research
 		}
 		
@@ -3146,7 +3195,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 			336 = {
 				controller = { is_in_faction_with = ROOT }
 			}
@@ -3280,7 +3335,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 		}
 		
 		bypass = {
@@ -3311,9 +3372,14 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 		}
-		
 		bypass = {
 
 		}
@@ -4644,7 +4710,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = AST_direct_support
-			add_timed_idea = { idea = AST_arms_for_the_revolution days = 365 }
 		}
 	}
 

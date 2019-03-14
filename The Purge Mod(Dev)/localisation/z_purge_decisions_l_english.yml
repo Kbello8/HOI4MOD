@@ -6,3 +6,5 @@
  unlock_decision_category_tooltip:0 "Agrarian Investment"
  infrastructure_building_slot1:0 "Preliminary Industrial Integration"
  infrastructure_building_slot_flag1:0 "Has not already received an extra building slot from Preliminary Industrial Integration."
+ purge_generic_colonial_conscription_decision:0 "Colonial Forced Conscription"
+ purge_generic_licenses_decision:0 "War Licenses"

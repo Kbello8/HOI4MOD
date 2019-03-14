@@ -34,11 +34,11 @@ FRA_unit_production = {
     ##################################
     #            Navy
     ##################################
-	ai_strategy = { type = unit_ratio          id = capital_ship       value = 30}
-    ai_strategy = { type = unit_ratio          id = submarine          value = 5}
-    ai_strategy = { type = unit_ratio          id = screen_ship        value = 40}
-    ai_strategy = { type = unit_ratio          id = convoy             value = 5}
-	ai_strategy = { type = unit_ratio		   id = carrier			   value = 5}
+	#ai_strategy = { type = unit_ratio          id = capital_ship       value = 30}
+    #ai_strategy = { type = unit_ratio          id = submarine          value = 5}
+    #ai_strategy = { type = unit_ratio          id = screen_ship        value = 40}
+    #ai_strategy = { type = unit_ratio          id = convoy             value = 5}
+	#ai_strategy = { type = unit_ratio		   id = carrier			   value = 5}
 
     ##################################
     #            Air
@@ -164,7 +164,13 @@ FRA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 100
+		value = 65
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 35
 	}
 
 	ai_strategy = {
@@ -210,5 +216,31 @@ fra_commie_no_allies = {
 		type = alliance
 		id = "ENG"			
 		value = -1000
+	}	
+}
+
+fra_commie_save_the_soviets = {
+	enable = {
+		original_tag = FRA
+		has_government = communism
+		SOV = { has_government = communism }
+		SOV = { has_war_with = GER }
+		has_war = no
+		is_faction_leader = yes
+		NOT = { is_in_faction_with = GER }
+	}
+	abort = {
+		NOT = { has_government = communism }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SOV"			
+		value = 300
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "GER"
+		value = 500
 	}	
 }

@@ -2067,8 +2067,8 @@ focus_tree = {
         available = {
             AND = {
                 OR = {
-                    FRA = { controls_state = 768 } 
-                    SYR = { controls_state = 768 }
+                    FRA = { controls_state = 788 } 
+                    SYR = { controls_state = 788 }
                 }
                 OR = {
                     NOT = { has_war_with = FRA }
@@ -2081,7 +2081,7 @@ focus_tree = {
         y = 2
         cost = 10
         bypass = {
-            TUR = { controls_state = 768 }
+            TUR = { controls_state = 788 }
 		}
 		ai_will_do = {
 			factor = 10
@@ -2093,11 +2093,11 @@ focus_tree = {
 		completion_reward = {
 						add_ideas = TUR_ideological_fanaticism_focus
 						#Same as in Generic Focus
-						768 = { add_claim_by = TUR }
+						788 = { add_claim_by = TUR }
 			
             if = {
                 limit = {
-                    FRA = { controls_state = 768 }
+                    FRA = { controls_state = 788 }
                 }
 				FRA = {
 					country_event = { id = sadabat.31 }
@@ -2106,7 +2106,7 @@ focus_tree = {
             
             if = {
                 limit = {
-                    SYR = { controls_state = 768 }
+                    SYR = { controls_state = 788 }
                 }
 				SYR = {
 					country_event = { id = sadabat.31 }

@@ -1043,33 +1043,33 @@ country_event = {
 
 }
 
-# AI Neutral - SAF
-#country_event = { 
-#    id = purge.23
-#	title = purge.23.t
-#	desc = purge.23.d
-#	picture = GFX_news_event_057
-#    
-#    fire_only_once = yes 
-#    
-#    mean_time_to_happen = {
-#		days = 2
-#	}
-#	
-#	trigger = {
-#        AND = {
-#        
-#            tag = SAF
-#            SAF = { is_ai = yes }  
-#        }
-#	}
-#    
-#	option = {
-#		name = purge.23.a
-#        add_ideas = true_neutral1
-#    }
-#
-#}
+# AI Neutral - CHL
+country_event = { 
+    id = purge.23
+	title = purge.23.t
+	desc = purge.23.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+        
+            tag = CHL
+            CHL = { is_ai = yes }  
+        }
+	}
+    
+	option = {
+		name = purge.23.a
+        add_ideas = true_neutral1
+    }
+
+}
 
 # AI Neutral - ENG
 country_event = { 
@@ -1403,7 +1403,6 @@ country_event = {
 		name = purge.52.a
         add_ideas = colonial1
     }
-
 }
 
 # AI Neutral - EGY
@@ -1575,7 +1574,7 @@ country_event = {
         set_technology = { basic_medium_tank = 1}
         set_technology = { motorized_rocket_unit = 1}
         set_technology = { interwar_antitank = 1}
-        load_oob = "SOV_Rodina_Tanks"
+        #load_oob = "SOV_Rodina_Tanks"
         
         
         add_equipment_to_stockpile = {
@@ -1642,7 +1641,7 @@ country_event = {
         set_technology = { basic_medium_tank = 1}
         set_technology = { basic_medium_td = 1}
         set_technology = { basic_medium_art = 1}
-        load_oob = "GER_Skoda_Tanks"
+        #load_oob = "GER_Skoda_Tanks"
     }
 
 }
@@ -2351,5 +2350,57 @@ country_event = {
 	option = {
 		name = purge.92.a
 		
+    }
+}
+
+# AI BUFF - SOV
+country_event = { 
+    id = purge.93
+	title = purge.93.t
+	desc = purge.93.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = SOV
+            SOV = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.93.a
+         add_timed_idea = { idea = ai_buff days = 365 }
+    }
+}
+
+# AI BUFF - ARG
+country_event = { 
+    id = purge.94
+	title = purge.94.t
+	desc = purge.94.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = ARG
+            ARG = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.94.a
+         add_timed_idea = { idea = ai_buff days = 180 }
     }
 }

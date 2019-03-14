@@ -2232,39 +2232,6 @@ focus_tree = {
 	}
 	
     focus = {
-		id = egyptian_import_rifles
-		icon = GFX_goal_generic_small_arms
-        prerequisite = { focus = egyptian_import_aircraft focus = egyptian_industrialize_cairo focus = egyptian_petition_for_aden }
-		relative_position_id = egyptian_import_aircraft
-		mutually_exclusive = { focus = egyptian_industrialize_alexandria focus = egyptian_petition_for_abu_dhabi}
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = {
-			
-            reverse_add_opinion_modifier = { target = ENG modifier = import_rifles }
-			army_experience = 25
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-            
-            add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1.0
-				uses = 2
-				category = infantry_weapons
-			}
-            add_autonomy_ratio = {
-                value =	0.15
-                localization = aswan_dam_autonomy
-            }
-		}
-	}
-    
-    focus = {
 		id = egyptian_import_aircraft
 		icon = GFX_goal_generic_air_fighter
         prerequisite = { focus = egyptian_remilitarization }
@@ -2296,6 +2263,39 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = medium_air
+			}
+            add_autonomy_ratio = {
+                value =	0.15
+                localization = aswan_dam_autonomy
+            }
+		}
+	}
+	
+	focus = {
+		id = egyptian_import_rifles
+		icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = egyptian_import_aircraft focus = egyptian_industrialize_cairo focus = egyptian_petition_for_aden }
+		relative_position_id = egyptian_import_aircraft
+		mutually_exclusive = { focus = egyptian_industrialize_alexandria focus = egyptian_petition_for_abu_dhabi}
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+            reverse_add_opinion_modifier = { target = ENG modifier = import_rifles }
+			army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+            
+            add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
 			}
             add_autonomy_ratio = {
                 value =	0.15

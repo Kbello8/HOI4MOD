@@ -855,3 +855,60 @@ Strategic View Adjustments
 	more naval dockyards balance for england / usa / ita / AST(later on) 30%(for reference japan has a 40%)
 	Added unit caps starting at 50-100 divisions, depending on equipment. (needs a lot of testing)
 	fixed land doctrine requirement on regional tree
+	
+	
+	0.8.0 - Zan - HOI4 v1.6.0 3/3/2019 MTG
+	
+	GER will build refineries
+	positioning fix(75% -> 7.5%)
+	industrial concern - > 6% output
+	electronic concern - > 3% reseach speed
+	latin league should continue attacking up central american, including mexico and the usa
+	backhand blow(right right) - +1 org to tank, 1% reinforce
+	large front offensive -> 20% breakthrough
+	buffed soviets & argentina(test)
+	blitz requirement to speed instead of hardness
+	integrated playerledpeace
+	England more likely to be democratic
+	reworked naval designers
+	
+	0.8.1 - Zan - HOI4 v1.6.0 3/8/2019 MTG
+	
+	Germany less likely to attack lowlands if at war with soviets
+	tinkered with german fleet composition pre & post soviet
+	--gave soviets a similar fleet composition if germany dead to soviets
+	tinkered with german tank composition
+	ai can build motorized(again)
+	common cause for latin league & axis to like each other more
+	removed fra / ita from default naval role ratio (paradox forgot)
+	--they now use their own personal ones instead of both
+	greece double silent workhorse removed
+	mexico double silent workhorse / war industrialist removed
+	exile calles advisor now gives 15% political power
+	democratic mexico leader gives 15% stability instead of 5%(through focus tree)
+	hatay fixed(no more african provinces)
+	befriend turkey influence is now timed
+	SOV / FRA should prepare vs Germany better. Hopefully.
+	becoming free as a puppet chain cannot happen if capitulated(you will miss your chance. forever.)
+	pentagon to an organization bonus instead of planning speed
+	soviet set to base 30% of their mil factories to inf equipment after '38
+	soviets also set to build more mil factories after 38 instead of 39
+	chile neutered
+	home of the revolution +10% construction speed to soviets
+	if french is commie, in their own faction, and not at war, antagonize germany if soviet at war with ger
+	
+	0.8.2 - Zan - HOI4 v1.6.0 3/9/2019 MTG
+	changed some ai strategies to prepare_for_war
+	add decision for licenses similar to mexicos(requires being in a faction, cost 10% political power)
+	add decision for non core manpower (requires being at war, cost 5% war support / stability)
+	soviets will research fighter 2s
+	majors will research jet 2s(tac & fighter)
+	ITA / JAP will research light tank 3s
+	majors(not ITA/JAP) will use less light tanks after researching medium 2s
+	amphibious tanks / mechs added to marine nations
+	USA/GER/SOV will add anti-tank to their templates
+	soviets ai to transition better to mediums
+	USA given purge ai
+	Modern light tanks
+	
+	

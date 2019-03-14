@@ -55,8 +55,8 @@ all_default_template_prio = {
 	ai_strategy = { type = template_prio          id = marines            value = 1}
 	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
     ai_strategy = { type = template_prio          id = motorized         value = 15}
-    ai_strategy = { type = template_prio          id = light_armor        value = 10}
-	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
+    ai_strategy = { type = template_prio          id = light_armor        value = 15}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 20}
 	ai_strategy = { type = template_prio          id = heavy_armor        value = 0}
 	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
 }
@@ -96,12 +96,28 @@ ger_default_template_prio = {
 	ai_strategy = { type = template_prio          id = marines            value = 1}
 	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
     ai_strategy = { type = template_prio          id = light_armor        value = 10}
-	ai_strategy = { type = template_prio          id = medium_armor       value = 25}
-	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 35}
+	ai_strategy = { type = template_prio          id = heavy_armor        value = 5}
 	ai_strategy = { type = template_prio          id = infantry       	  value = 35}
 }
 
+german_medium_prio = {
+	enable = {
+		original_tag = GER
+        has_tech = basic_medium_tank
+	}
+	abort = {
+		has_tech = main_battle_tank
+	}
 
+   
+    ##################################
+    #            Army
+    ##################################
+
+    ai_strategy = { type = template_prio          id = medium_armor      value = 10}
+	ai_strategy = { type = template_prio          id = light_armor       value = -10}
+}
 
 modern_template_prio = {
 	enable = {
@@ -136,8 +152,8 @@ sov_default_template_prio = {
 	ai_strategy = { type = template_prio          id = motorized         value = 15}
 	ai_strategy = { type = template_prio          id = marines            value = 1}
 	ai_strategy = { type = template_prio          id = mountaineers       value = 1}
-    ai_strategy = { type = template_prio          id = light_armor        value = 5}
-	ai_strategy = { type = template_prio          id = medium_armor       value = 20}
+    ai_strategy = { type = template_prio          id = light_armor        value = -5}
+	ai_strategy = { type = template_prio          id = medium_armor       value = 30}
 	ai_strategy = { type = template_prio          id = heavy_armor        value = 10}
 	ai_strategy = { type = template_prio          id = infantry       	  value = 50}
 }

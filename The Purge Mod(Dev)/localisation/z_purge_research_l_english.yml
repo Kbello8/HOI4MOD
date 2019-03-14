@@ -1,0 +1,25 @@
+﻿l_english:
+ modern_light_tank:0 "Modern Light Tank"
+ modern_light_tank_desc:0 "The modern light tank supplements the main battle tank in expeditionary roles and situations where all major threats have been neutralized and excessive weight in armor and armament would only hinder mobility and cost more money to operate. They have also been used for reconnaissance and in some cases, infantry support. "
+ light_tank_equipment_4:0 "Modern Light Tank"
+ light_tank_equipment_4_short:0 "LM Tank"
+ light_tank_equipment_4_desc:0 "The modern light tank supplements the main battle tank in expeditionary roles and situations where all major threats have been neutralized and excessive weight in armor and armament would only hinder mobility and cost more money to operate. They have also been used for reconnaissance and in some cases, infantry support. "
+ 
+ modern_light_td:0 "Modern Light Tank Destroyer"
+ modern_light_td_desc:0 "Tank Destroyers are tanks with a larger than normal gun in a fixed mounting in place of a turret. Light Tank Destroyers are based on the chassis of Light Tanks, which means they are fairly mobile but do not carry particularly powerful guns compared to heavier TDs."
+ light_tank_destroyer_equipment_4:0 "Modern Light Tank Destroyer"
+ light_tank_destroyer_equipment_4_short:0 "LM TD"
+ light_tank_destroyer_equipment_4_desc:0 "Tank Destroyers are tanks with a larger than normal gun in a fixed mounting in place of a turret. Light Tank Destroyers are based on the chassis of Light Tanks, which means they are fairly mobile but do not carry particularly powerful guns compared to heavier TDs."
+ 
+ modern_light_art:0 "Modern Light SP Artillery"
+ modern_light_art_desc:0 "Modern self-propelled artillery vehicles may superficially resemble tanks, but they are generally lightly armored, too lightly to survive in direct-fire combat. However, they protect their crews against shrapnel and small arms."
+ light_tank_artillery_equipment_4:0 "Modern Light SP Artillery"
+ light_tank_artillery_equipment_4_short:0 "LM SPG"
+ light_tank_artillery_equipment_4_desc:0 "Modern self-propelled artillery vehicles may superficially resemble tanks, but they are generally lightly armored, too lightly to survive in direct-fire combat. However, they protect their crews against shrapnel and small arms."
+
+ modern_light_spaa:0 ""Modern Light SP Anti-Air"
+ modern_light_spaa_desc:0 "A combination of anti-air missiles and rapid fire cannon, modern anti-air artillery presents a deadly threat to aircraft."
+ light_tank_aa_equipment_4:0 "Modern Light SP Anti-Air"
+ light_tank_aa_equipment_4_short:0 "LM SPAA"
+ light_tank_aa_equipment_4_desc:0 "A combination of anti-air missiles and rapid fire cannon, modern anti-air artillery presents a deadly threat to aircraft."
+ 

@@ -920,8 +920,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
-				technology = basic_battleship
-				technology = heavy_battleship
+				category = bb_tech
 			}
 		}
 	}

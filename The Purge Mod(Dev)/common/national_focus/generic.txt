@@ -951,6 +951,13 @@ focus_tree = {
 					original_tag = HAI
 				}
 			}
+			modifier = {
+				factor = 0
+				AND = {
+					original_tag = CHL
+					date < 1939.1.1
+				}
+			}
 		}
 	}
 

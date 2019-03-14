@@ -296,16 +296,16 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				carrier_size = 0.25 armor_value = -0.15 naval_range = 0.25
+				naval_range = 0.25	naval_speed = 0.15
 			}
 			capital_ship = {
-				naval_range = 0.25 armor_value = -0.10  naval_speed = 0.1
+				naval_range = 0.25  naval_speed = 0.15
 			}
 			screen_ship = {
-				naval_range = 0.25
+				naval_range = 0.25	naval_speed = 0.15
 			}
 			submarine = {
-				naval_range = 0.25
+				naval_range = 0.25	naval_speed = 0.15
 			}
 		}
 		
@@ -318,14 +318,14 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				armor_value = 0.5 
+				anti_air_attack = 0.2
 			}
 			capital_ship = {
-				armor_value = 0.1 hg_attack = 0.1
+				anti_air_attack = 0.2
 			}
-			#screen_ship = {
-			#	
-			#}
+			screen_ship = {
+				anti_air_attack = 0.2
+			}
 			#submarine = {
 			#	
 			#}
@@ -358,13 +358,13 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				surface_visibility = -0.15 naval_speed = 0.1 carrier_size = -0.1
+				surface_visibility = -0.15 naval_speed = 0.1
 			}
 			capital_ship = {
-				surface_visibility = -0.15 naval_speed = 0.1 hg_attack = -0.1
+				surface_visibility = -0.15 naval_speed = 0.1
 			}
 			screen_ship = {
-				surface_visibility = -0.1 naval_speed = 0.1 torpedo_attack = 0.1
+				surface_visibility = -0.1 naval_speed = 0.1 
 			}
 			submarine = {
 				sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
@@ -380,7 +380,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			screen_ship = {
-				sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = -0.1 anti_air_attack = 0.1
+				sub_detection = 0.1 surface_detection = 0.1 build_cost_ic = -0.1 anti_air_attack = 0.1 
 			}
 		}
 		
@@ -393,16 +393,16 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				build_cost_ic = -0.4 carrier_size = -0.2 naval_range = -0.5
+				build_cost_ic = -0.3 naval_range = -0.5
 			}
 			capital_ship = {
-				build_cost_ic = -0.4 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.5
+				build_cost_ic = -0.3 naval_range = -0.5
 			}
 			screen_ship = {
-				build_cost_ic = -0.4 naval_range = -0.5
+				build_cost_ic = -0.3 naval_range = -0.5
 			}
 			submarine = {
-				build_cost_ic = -0.4 naval_range = -0.5
+				build_cost_ic = -0.3 naval_range = -0.5
 			}
 		}
 		

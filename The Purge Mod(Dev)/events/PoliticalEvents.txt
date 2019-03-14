@@ -864,6 +864,7 @@ country_event = {
 		if = {
             limit = {
                 is_subject = yes 
+				has_capitulated = no
             }
             ROOT = {
                 country_event = { days = 5 id = purge.9 }
@@ -937,6 +938,7 @@ country_event = {
 		if = {
             limit = {
                 is_subject = yes 
+				has_capitulated = no
             }
             ROOT = {
                 country_event = { days = 5 id = purge.9 }
@@ -1009,6 +1011,7 @@ country_event = {
 		if = {
             limit = {
                 is_subject = yes 
+				has_capitulated = no
             }
             ROOT = {
                 country_event = { days = 5 id = purge.9 }

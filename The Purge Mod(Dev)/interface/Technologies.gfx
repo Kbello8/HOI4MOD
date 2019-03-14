@@ -4734,4 +4734,8 @@ spriteTypes = {
 		name = "GFX_heavy_industry5_medium"
 		texturefile = "gfx/interface/technologies/heavy_industry5.dds"
 	}
+	SpriteType = {
+		name = "GFX_modern_light_tank_medium"
+		texturefile = "gfx/interface/technologies/advanced_light_tank.dds"
+	}
 }
