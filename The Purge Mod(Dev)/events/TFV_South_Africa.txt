@@ -24,11 +24,13 @@ country_event = {
 		
 		effect_tooltip = {
 			SAF = {
+				transfer_state = 269
 				transfer_state = 542
 				transfer_state = 545
 				transfer_state = 546
 				transfer_state = 547
 				transfer_state = 548
+				transfer_state = 549
 				transfer_state = 771
 				transfer_state = 770
 			}

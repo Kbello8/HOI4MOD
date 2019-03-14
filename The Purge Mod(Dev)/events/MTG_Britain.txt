@@ -105,6 +105,8 @@ country_event = {
 			RAJ = { country_event = { id = mtg_britain.15 } }
 			AST = { country_event = { id = mtg_britain.15 } }
 			NZL = { country_event = { id = mtg_britain.15 } }
+			EGY = { country_event = { id = mtg_britain.15 } }
+			NGA	= { country_event = { id = mtg_britain.15 } }
 		}
 	}
 
@@ -177,6 +179,8 @@ country_event = {
 			RAJ = { country_event = { id = mtg_britain.15 } }
 			AST = { country_event = { id = mtg_britain.15 } }
 			NZL = { country_event = { id = mtg_britain.15 } }
+			EGY = { country_event = { id = mtg_britain.15 } }
+			NGA	= { country_event = { id = mtg_britain.15 } }
 		}
 	}
 }
@@ -318,6 +322,18 @@ country_event = {
 			}
 			if = {
 				limit = {
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				}
+				set_autonomy = { target = EGY autonomy_state = autonomy_free }
+			}
+			if = {
+				limit = {
+					NGA = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				}
+				set_autonomy = { target = NGA autonomy_state = autonomy_free }
+			}
+			if = {
+				limit = {
 					CAN = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 				}
 				CAN = {
@@ -444,6 +460,32 @@ country_event = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				}
+				EGY = {
+					country_event = { id = mtg_britain.16 }
+					add_ai_strategy = {
+						type = alliance
+						id = ENG
+						value = -200
+					}
+				}
+			}
+			if = {
+				limit = {
+					NGA = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				}
+				NGA = {
+					country_event = { id = mtg_britain.16 }
+					add_ai_strategy = {
+						type = alliance
+						id = ENG
+						value = -200
+					}
+				}
+			}
 		}
 	}
 }
@@ -471,6 +513,13 @@ country_event = {
 		add_popularity = { ideology = neutrality popularity = 0.05 }
 		add_stability = 0.05
 		add_political_power = 50
+		hidden_effect = {
+			diplomatic_relation = {
+				country = IRQ
+				relation = guarantee
+				active = no
+			}
+		}
 	}
 }
 
@@ -986,6 +1035,18 @@ country_event = {
 				}
 				add_to_faction = NZL
 			}
+			if = {
+				limit = {
+					EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				}
+				add_to_faction = EGY
+			}
+			if = {
+				limit = {
+					NGA = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+				}
+				add_to_faction = NGA
+			}
 			hidden_effect = {
 				every_other_country = {
 					limit = {
@@ -1020,6 +1081,18 @@ country_event = {
 					}
 					add_to_faction = NZL
 				}
+				if = {
+					limit = {
+						EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					}
+					add_to_faction = EGY
+				}
+				if = {
+					limit = {
+						NGA = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					}
+					add_to_faction = NGA
+				}
 				hidden_effect = {
 					every_other_country = {
 						limit = {
@@ -1050,6 +1123,29 @@ country_event = {
 		}
 		if = {
 			limit = {
+				tag = EGY
+			}
+			FROM = { set_autonomy = { target = EGY autonomy_state = autonomy_free } }
+			ENG = { remove_from_faction = EGY }
+			EGY = {
+				remove_from_tech_sharing_group = commonwealth_research
+				IF = { limit = { has_idea  = colonial1} remove_ideas = colonial1}
+			}
+		}
+		if = {
+			limit = {
+				tag = NGA
+			}
+			FROM = { set_autonomy = { target = NGA autonomy_state = autonomy_free } }
+			ENG = { remove_from_faction = NGA }
+			NGA = {
+				drop_cosmetic_tag = yes
+				remove_from_tech_sharing_group = commonwealth_research
+				IF = { limit = { has_idea  = colonial1} remove_ideas = colonial1}
+			}
+		}
+		if = {
+			limit = {
 				tag = AST
 			}
 			FROM = { set_autonomy = { target = AST autonomy_state = autonomy_free } }
@@ -1069,6 +1165,18 @@ country_event = {
 						NZL = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
 					}
 					add_to_faction = NZL
+				}
+				if = {
+					limit = {
+						EGY = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					}
+					add_to_faction = EGY
+				}
+				if = {
+					limit = {
+						NGA = { has_country_flag = ENG_abdication_crisis_dominion_will_leave }
+					}
+					add_to_faction = NGA
 				}
 				hidden_effect = {
 					every_other_country = {

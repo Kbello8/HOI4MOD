@@ -11,8 +11,6 @@ if = {
 	}
 }
 give_guarantee = IRQ
-give_guarantee = EGY
-give_military_access = IRQ
 load_oob = "ENG_Motorized"
 
 set_research_slots = 4

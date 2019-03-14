@@ -644,9 +644,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_leader_cost_factor = -0.7
-				army_leader_start_defense_level  = 1
-				army_leader_start_logistics_level= 1
+				army_leader_cost_factor = -0.5
 			}
 		}
 		
@@ -665,10 +663,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_leader_start_planning_level = 1
-				army_leader_start_attack_level   = 1
-				army_leader_start_defense_level  = 1
-				army_leader_start_logistics_level= 1
+				army_leader_start_level = 1
 			}
 		}
 		

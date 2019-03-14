@@ -791,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = persian_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 18
+		x = 14
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -830,7 +830,7 @@ focus_tree = {
 		id = persian_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = persian_industrial_effort }
-		x = 18
+		x = 13
 		y = 1
 		cost = 10
 
@@ -899,7 +899,7 @@ focus_tree = {
 		id = persian_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = persian_industrial_effort }
-		x = 20
+		x = 15
 		y = 1
 		cost = 10
 
@@ -967,7 +967,7 @@ focus_tree = {
 		id = persian_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = persian_construction_effort }
-		x = 18
+		x = 13
 		y = 2
 		cost = 10
 
@@ -1035,7 +1035,7 @@ focus_tree = {
 		id = persian_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = persian_production_effort }
-		x = 20
+		x = 15
 		y = 2
 		cost = 10
 
@@ -1103,7 +1103,7 @@ focus_tree = {
 		id = persian_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = persian_construction_effort_2 }
-		x = 18
+		x = 13
 		y = 3
 		cost = 10
 		bypass = {
@@ -1193,7 +1193,7 @@ focus_tree = {
 		id = persian_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = persian_production_effort_2 }
-		x = 20
+		x = 15
 		y = 3
 		cost = 10
 
@@ -1261,7 +1261,7 @@ focus_tree = {
 		id = persian_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = persian_infrastructure_effort }
-		x = 18
+		x = 13
 		y = 4
 		cost = 10
 		bypass = {
@@ -1353,7 +1353,7 @@ focus_tree = {
 		id = persian_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = persian_infrastructure_effort }
-		x = 20
+		x = 15
 		y = 4
 		cost = 10
 
@@ -1421,7 +1421,7 @@ focus_tree = {
 		id = persian_nuclear_effort
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = persian_infrastructure_effort_2 }
-		x = 16
+		x = 11
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -1445,7 +1445,7 @@ focus_tree = {
 		id = persian_extra_tech_slot
 		icon = GFX_focus_research
 		prerequisite = { focus = persian_infrastructure_effort_2 }
-		x = 18
+		x = 13
 		y = 5
 		cost = 10
         ai_will_do = {
@@ -1464,7 +1464,7 @@ focus_tree = {
 			num_of_factories > 50
 		}
 		continue_if_invalid = yes
-		x = 18
+		x = 13
 		y = 6
 		cost = 10
         ai_will_do = {
@@ -1479,7 +1479,7 @@ focus_tree = {
 		id = persian_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = persian_infrastructure_effort_2 }
-		x = 20
+		x = 15
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -1518,7 +1518,7 @@ focus_tree = {
 	focus = {
 		id = persian_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-        prerequisite = { focus = persian_anglo_russo_railroad focus = persian_german_technology focus = persian_western_factory focus = persian_minister_of_industry}
+        prerequisite = { focus = persian_anglo_russo_railroad focus = persian_german_technology focus = persian_factory_westernization focus = persian_minister_of_industry}
 		available = {
 
 			is_in_faction = yes
@@ -1577,146 +1577,15 @@ focus_tree = {
     ### Persian Specific ###
     ########################
     
-    focus = {
-		id = persian_sangan_mineral_project
-		icon = GFX_goal_generic_construction2
-        prerequisite = { focus = persian_industrial_effort }
-        prerequisite = { focus = persian_german_trade }
-		x = 14
-		y = 1
-		cost = 10
-        
-        ai_will_do = {
-			factor = 3
-		}
-        
-		completion_reward = {
-			416 = {
-                add_resource = {
-                type = steel
-                amount = 14
-                }   
-                
-                add_resource = {
-                type = tungsten
-                amount = 6
-                }
-                
-                add_resource = {
-                type = aluminium
-                amount = 3
-                }
-            }
-		}
-	}
     
-    focus = {
-		id = persian_lut_desert_mineral_project
-		icon = GFX_goal_generic_construction2
-        prerequisite = { focus = persian_sangan_mineral_project }
-		x = 14
-		y = 2
-		cost = 10
-        
-        ai_will_do = {
-			factor = 3
-		}
-        
-		completion_reward = {
-			414 = {
-                add_resource = {
-                type = steel
-                amount = 10
-                }   
-                
-                add_resource = {
-                type = tungsten
-                amount = 6
-                }
-                
-                add_resource = {
-                type = chromium
-                amount = 3
-                }
-            }
-		}
-	}
     
-    focus = {
-		id = persian_mineral_extraction_improvements
-		icon = GFX_goal_generic_construction
-        prerequisite = { focus = persian_lut_desert_mineral_project }
-		x = 14
-		y = 3
-		cost = 10
-        
-        ai_will_do = {
-			factor = 3
-		}
-        
-		completion_reward = {
-			add_ideas = resource1
-		}
-	}
     
-    focus = {
-		id = persian_factory_westernization
-		icon = GFX_goal_generic_construct_civ_factory
-        prerequisite = { focus = persian_industrial_effort }
-        prerequisite = { focus = persian_western_factory }
-		x = 16
-		y = 1
-		cost = 10
-        
-        ai_will_do = {
-			factor = 3
-		}
-        
-		completion_reward = {
-			add_ideas = factory_westernization
-		}
-	}
-    
-    focus = {
-		id = persian_assembly_research
-		icon = GFX_goal_generic_construct_civilian
-        prerequisite = { focus = persian_factory_westernization }
-		x = 16
-		y = 2
-		cost = 10
-        
-        ai_will_do = {
-			factor = 3
-		}
-        
-		completion_reward = {
-			add_ideas = assembly_research
-		}
-	}
-    
-    focus = {
-		id = persian_production_improvements
-		icon = GFX_goal_generic_production
-        prerequisite = { focus = persian_assembly_research }
-		x = 16
-		y = 3
-		cost = 10
-        
-        ai_will_do = {
-			factor = 3
-		}
-        
-		completion_reward = {
-			add_ideas = production_improvements
-		}
-	}
     
     focus = {
 		id = persian_trans_iranian_railway
 		icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = persian_shah_approves_trans_iranian_railway }
-        prerequisite = { focus = persian_industrial_effort }
-		x = 22
+		x = 18
 		y = 2
 		cost = 10
         
@@ -1756,7 +1625,7 @@ focus_tree = {
 		id = persian_khuzestan_infrastructure
 		icon = GFX_goal_generic_construct_naval_dockyard
         prerequisite = { focus = persian_trans_iranian_railway }
-		x = 22
+		x = 18
 		y = 3
 		cost = 10
         
@@ -1810,7 +1679,7 @@ focus_tree = {
 		id = persian_hamadan_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = persian_khuzestan_infrastructure }
-		x = 22
+		x = 18
 		y = 4
 		cost = 10
         
@@ -1841,9 +1710,10 @@ focus_tree = {
 		id = persian_shah_approves_trans_iranian_railway
 		icon = GFX_goal_generic_position_armies
         prerequisite = { focus = persian_political_effort }
-		x = 24
+		prerequisite = { focus = persian_industrial_effort }
+		x = 19
 		y = 1
-		cost = 10
+		cost = 5
         
         ai_will_do = {
 			factor = 3
@@ -1859,7 +1729,7 @@ focus_tree = {
 		id = persian_tehran_university
 		icon = GFX_focus_research
         prerequisite = { focus = persian_shah_approves_trans_iranian_railway }
-		x = 24
+		x = 20
 		y = 2
 		cost = 10
         
@@ -1879,7 +1749,7 @@ focus_tree = {
         mutually_exclusive = { focus = persian_political_correctness }
         mutually_exclusive = { focus = persian_militarism }
         mutually_exclusive = { focus = persian_volunteer_corps }
-		x = 26
+		x = 24
 		y = 1
 		cost = 10
         available = {
@@ -1895,6 +1765,7 @@ focus_tree = {
 		completion_reward = {
             add_stability = 0.05
             add_ideas = national_army
+			add_ideas = neutrality_influence
 			add_popularity = {
 				ideology = communism
 				popularity = -0.2
@@ -1916,7 +1787,7 @@ focus_tree = {
 		id = persian_german_trade
 		icon = GFX_goal_generic_positive_trade_relations
         prerequisite = { focus = persian_eastern_neutrality }
-		x = 26
+		x = 24
 		y = 2
 		cost = 10
         
@@ -1935,12 +1806,96 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = persian_sangan_mineral_project
+		icon = GFX_goal_generic_construction2
+        prerequisite = { focus = persian_german_trade }
+		relative_position_id = persian_german_trade
+		x = -2
+		y = 1
+		cost = 10
+        
+        ai_will_do = {
+			factor = 3
+		}
+        
+		completion_reward = {
+			416 = {
+                add_resource = {
+                type = steel
+                amount = 14
+                }   
+                
+                add_resource = {
+                type = tungsten
+                amount = 6
+                }
+                
+                add_resource = {
+                type = aluminium
+                amount = 3
+                }
+            }
+		}
+	}
+    
+    focus = {
+		id = persian_lut_desert_mineral_project
+		icon = GFX_goal_generic_construction2
+        prerequisite = { focus = persian_sangan_mineral_project }
+		relative_position_id = persian_sangan_mineral_project
+		x = 0
+		y = 1
+		cost = 10
+        
+        ai_will_do = {
+			factor = 3
+		}
+        
+		completion_reward = {
+			414 = {
+                add_resource = {
+                type = steel
+                amount = 10
+                }   
+                
+                add_resource = {
+                type = tungsten
+                amount = 6
+                }
+                
+                add_resource = {
+                type = chromium
+                amount = 3
+                }
+            }
+		}
+	}
+    
+    focus = {
+		id = persian_mineral_extraction_improvements
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = persian_lut_desert_mineral_project }
+		relative_position_id = persian_lut_desert_mineral_project
+		x = 0
+		y = 1
+		cost = 10
+        
+        ai_will_do = {
+			factor = 3
+		}
+        
+		completion_reward = {
+			add_ideas = resource1
+		}
+	}
     
     focus = {
 		id = persian_western_factory
 		icon = GFX_goal_generic_construct_civ_factory
         prerequisite = { focus = persian_german_trade }
-		x = 26
+		x = 24
 		y = 3
 		cost = 10
         
@@ -1962,6 +1917,60 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = persian_factory_westernization
+		icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = persian_western_factory }
+		relative_position_id = persian_western_factory
+		x = 0
+		y = 1
+		cost = 10
+        
+        ai_will_do = {
+			factor = 3
+		}
+        
+		completion_reward = {
+			add_ideas = factory_westernization
+		}
+	}
+    
+    focus = {
+		id = persian_assembly_research
+		icon = GFX_goal_generic_construct_civilian
+        prerequisite = { focus = persian_factory_westernization }
+		relative_position_id = persian_factory_westernization
+		x = 0
+		y = 1
+		cost = 10
+        
+        ai_will_do = {
+			factor = 3
+		}
+        
+		completion_reward = {
+			add_ideas = assembly_research
+		}
+	}
+    
+    focus = {
+		id = persian_production_improvements
+		icon = GFX_goal_generic_production
+        prerequisite = { focus = persian_assembly_research }
+		relative_position_id = persian_assembly_research
+		x = 0
+		y = 1
+		cost = 10
+        
+        ai_will_do = {
+			factor = 3
+		}
+        
+		completion_reward = {
+			add_ideas = production_improvements
+		}
+	}
     
     focus = {
 		id = persian_political_correctness
@@ -1970,7 +1979,7 @@ focus_tree = {
         mutually_exclusive = { focus = persian_eastern_neutrality }
         mutually_exclusive = { focus = persian_militarism }
         mutually_exclusive = { focus = persian_volunteer_corps }
-		x = 28
+		x = 26
 		y = 1
 		cost = 10
         
@@ -2003,7 +2012,7 @@ focus_tree = {
 		id = persian_indoctrination
 		icon = GFX_goal_generic_propaganda
         prerequisite = { focus = persian_political_correctness }
-		x = 28
+		x = 26
 		y = 2
 		cost = 10
         
@@ -2020,7 +2029,7 @@ focus_tree = {
 		id = persian_political_commissars
 		icon = GFX_goal_generic_forceful_treaty
         prerequisite = { focus = persian_indoctrination }
-		x = 28
+		x = 26
 		y = 3
 		cost = 10
         
@@ -2055,7 +2064,7 @@ focus_tree = {
 		id = persian_minister_of_industry
 		icon = GFX_goal_generic_soviet_construction
         prerequisite = { focus = persian_political_commissars }
-		x = 28
+		x = 26
 		y = 4
 		cost = 10
         
@@ -2075,7 +2084,7 @@ focus_tree = {
         mutually_exclusive = { focus = persian_political_correctness }
         mutually_exclusive = { focus = persian_eastern_neutrality }
         mutually_exclusive = { focus = persian_volunteer_corps }
-		x = 30
+		x = 28
 		y = 1
 		cost = 10
         
@@ -2108,7 +2117,7 @@ focus_tree = {
 		id = persian_military_youth
 		icon = GFX_goal_generic_more_territorial_claims
         prerequisite = { focus = persian_militarism }
-		x = 30
+		x = 28
 		y = 2
 		cost = 10
         
@@ -2142,7 +2151,7 @@ focus_tree = {
 		id = persian_paramilitarism
 		icon = GFX_goal_generic_military_sphere
         prerequisite = { focus = persian_military_youth }
-		x = 30
+		x = 28
 		y = 3
 		cost = 10
         
@@ -2162,7 +2171,7 @@ focus_tree = {
 		id = persian_german_technology
 		icon = GFX_goal_generic_axis_build_infantry
         prerequisite = { focus = persian_paramilitarism }
-		x = 30
+		x = 28
 		y = 4
 		cost = 10
         
@@ -2194,7 +2203,7 @@ focus_tree = {
         mutually_exclusive = { focus = persian_political_correctness }
         mutually_exclusive = { focus = persian_militarism }
         mutually_exclusive = { focus = persian_eastern_neutrality }
-		x = 32
+		x = 30
 		y = 1
 		cost = 10
         
@@ -2222,7 +2231,7 @@ focus_tree = {
 		id = persian_foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
         prerequisite = { focus = persian_volunteer_corps }
-		x = 32
+		x = 30
 		y = 2
 		cost = 10
         
@@ -2243,7 +2252,7 @@ focus_tree = {
 		id = persian_why_we_fight
 		icon = GFX_goal_generic_propaganda
         prerequisite = { focus = persian_foreign_expeditions }
-		x = 32
+		x = 30
 		y = 3
 		cost = 10
         
@@ -2271,7 +2280,7 @@ focus_tree = {
 		id = persian_anglo_russo_railroad
 		icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = persian_why_we_fight }
-		x = 32
+		x = 30
 		y = 4
 		cost = 10
         

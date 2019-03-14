@@ -8,3 +8,5 @@
  infrastructure_building_slot_flag1:0 "Has not already received an extra building slot from Preliminary Industrial Integration."
  purge_generic_colonial_conscription_decision:0 "Colonial Forced Conscription"
  purge_generic_licenses_decision:0 "War Licenses"
+ byz_triumph_for_balkans:0 "Triumph for the Balkans"
+ byz_triumph_for_balkans_desc:0 "The Balkans have come under our control, and we should reintegrate them into the empire in a glorious ceremony!"

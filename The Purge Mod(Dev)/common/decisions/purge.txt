@@ -70,17 +70,23 @@ political_actions = {
 		visible = {
 			AND = {
 				has_completed_focus = nigerian_petition_for_togoland
-				NOT = { owns_state = 764 }
-				NOT = { owns_state = 765 }
+				NOT = { owns_state = 776 }
+				NOT = { owns_state = 777 }
+				NOT = { owns_state = 778 }
+				NOT = { owns_state = 781 }
 				OR = {
 					AND = {
-						FRA = { controls_state = 764 } 
-						FRA = { controls_state = 765 }
+						FRA = { controls_state = 776 } 
+						FRA = { controls_state = 777 }
+						FRA = { controls_state = 778 } 
+						FRA = { controls_state = 781 }
 						NGA = { is_in_faction_with = FRA }
 					}
 					AND = {
-						ENG = { controls_state = 764 } 
-						ENG = { controls_state = 765 }
+						ENG = { controls_state = 776 } 
+						ENG = { controls_state = 777 }
+						ENG = { controls_state = 778 } 
+						ENG = { controls_state = 781 }
 						NGA = { is_in_faction_with = ENG }
 					}
 				}
@@ -113,23 +119,28 @@ political_actions = {
 		visible = {
 			AND = {
 				has_completed_focus = nigerian_petition_for_french_westafrica
-				NOT = { owns_state = 556 } 
+				NOT = { owns_state = 556 }
+				NOT = { owns_state = 557 }				
                 NOT = { owns_state = 272 }
-                NOT = { owns_state = 767 } 
-                NOT = { owns_state = 766 }
+                NOT = { owns_state = 779 } 
+                NOT = { owns_state = 780 }
+				
 				OR = {
 					AND = {
-						FRA = { controls_state = 556 } 
+						FRA = { controls_state = 556 }
+						FRA = { controls_state = 557 } 						
 						FRA = { controls_state = 272 }
-						FRA = { controls_state = 767 } 
-						FRA = { controls_state = 766 }
+						FRA = { controls_state = 779 } 
+						FRA = { controls_state = 780 }
+						
 						NGA = { is_in_faction_with = FRA }
 					}
 					AND = {
-						ENG = { controls_state = 556 } 
+						ENG = { controls_state = 556 }
+						FRA = { controls_state = 557 } 						
 						ENG = { controls_state = 272 }
-						ENG = { controls_state = 767 } 
-						ENG = { controls_state = 766 }
+						ENG = { controls_state = 779 } 
+						ENG = { controls_state = 780 }
 						NGA = { is_in_faction_with = ENG }
 					}
 				}
@@ -162,20 +173,26 @@ political_actions = {
 		visible = {
 			AND = {
 				has_completed_focus = nigerian_petition_for_gabon
-				NOT = { owns_state = 515 }
-				NOT = { owns_state = 660 } 
-                NOT = { owns_state = 539 }
+				NOT = { owns_state = 660 }
+				NOT = { owns_state = 539 } 
+                NOT = { owns_state = 772 }
+				NOT = { owns_state = 773 } 
+                NOT = { owns_state = 774 }
 				OR = {
 					AND = {
-						FRA = { controls_state = 515 } 
 						FRA = { controls_state = 660 }
-						FRA = { controls_state = 539 } 
+						FRA = { controls_state = 539 }
+						FRA = { controls_state = 772 } 
+						FRA = { controls_state = 773 }
+						FRA = { controls_state = 774 }
 						NGA = { is_in_faction_with = FRA }
 					}
 					AND = {
-						ENG = { controls_state = 515 } 
 						ENG = { controls_state = 660 }
-						ENG = { controls_state = 539 } 
+						ENG = { controls_state = 539 }
+						ENG = { controls_state = 772 } 
+						ENG = { controls_state = 773 }
+						ENG = { controls_state = 774 }
 						NGA = { is_in_faction_with = ENG }
 					}
 				}

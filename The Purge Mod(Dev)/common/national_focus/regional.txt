@@ -11,7 +11,7 @@
 		}
 		
 		offset = {
-		x = 10
+		x = 9
 		y = 0
 			trigger = {
 				tag = PER
@@ -57,22 +57,19 @@
         prerequisite = { focus = regional_influence }
         mutually_exclusive = { focus = military_industry focus = civilian_industry }
         available = {
-            OR = {
-				has_opinion = { target = ENG value > 24 }
-				has_opinion = { target = USA value > 24 } 				
-			} 
-		}
-		relative_position_id = regional_influence		
-        x = 0
-        y = 1
-        cost = 10
-        
-        available = {
+			OR = {
+				ENG_will_support = yes
+				USA_will_support = yes
+			}
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
 		}
+		relative_position_id = regional_influence		
+        x = 0
+        y = 1
+        cost = 10
 
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
@@ -154,7 +151,7 @@
         prerequisite = { focus = regional_influence }
         mutually_exclusive = { focus = naval_industry focus = civilian_industry }
         available = {
-            has_opinion = { target = GER value > 24 } 
+			GER_will_support = yes
 		}
 
 		relative_position_id = naval_industry		
@@ -223,10 +220,15 @@
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = military_industry }
 		
+		available = {
+			GER_will_support = yes
+		}
+		
 		relative_position_id = military_industry		
         x = 0
         y = 1
 		cost = 5
+		
         
 		completion_reward = {
             add_opinion_modifier = { target = GER modifier = GER_early_support}
@@ -273,8 +275,8 @@
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = military_concentration }
         available = {
-            has_opinion = { target = GER value > 49 } 
-        }
+			GER_will_support = yes
+		}
 		relative_position_id = military_concentration
 		x = 0
 		y = 1
@@ -325,8 +327,8 @@
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = military_expertise }
         available = {
-            has_opinion = { target = GER value > 74 } 
-		}		
+			GER_will_support = yes
+		}	
 		relative_position_id = military_expertise
 		x = 0
 		y = 1
@@ -426,8 +428,8 @@
 		prerequisite = { focus = naval_industry }
         available = {
 			OR = {
-				has_opinion = { target = ENG value > 49 }
-				has_opinion = { target = USA value > 49 } 				
+				ENG_will_support = yes
+				USA_will_support = yes
 			}
         }
 		relative_position_id = naval_industry		
@@ -436,10 +438,10 @@
 		cost = 5	
         
 		completion_reward = {
-			if = { limit = { has_opinion = { target = ENG value > 49} }
+			if = { limit = { ENG_will_support = yes }
 				add_opinion_modifier = { target = ENG modifier = UK_early_support}
 			}
-			if = { limit = { has_opinion = { target = ENG value > 49} }
+			if = { limit = { USA_will_support = yes }
 				add_opinion_modifier = { target = USA modifier = US_early_support}
 			}
 			
@@ -487,8 +489,8 @@
 		prerequisite = { focus = naval_concentration }
         available = {
 			OR = {
-				has_opinion = { target = ENG value > 49 }
-				has_opinion = { target = USA value > 49 } 				
+				ENG_will_support = yes
+				USA_will_support = yes
 			}
         }
 		
@@ -498,10 +500,10 @@
 		cost = 5	
         
 		completion_reward = {
-			if = { limit = { has_opinion = { target = ENG value > 49} }
+			if = { limit = { ENG_will_support = yes }
 				add_opinion_modifier = { target = ENG modifier = UK_strong_support}
 			}
-			if = { limit = { has_opinion = { target = ENG value > 49} }
+			if = { limit = { USA_will_support = yes }
 				add_opinion_modifier = { target = USA modifier = US_strong_support}
 			}
             random_owned_controlled_state = {
@@ -549,14 +551,12 @@
 
 		available = {
 			OR = {
-				AND = {
-					is_in_faction_with = ENG
-					has_opinion = { target = ENG value > 74 }
-				}
-				AND = {
-					has_opinion = { target = USA value > 74 }
-					is_in_faction_with = USA
-				}
+				ENG_will_support = yes
+				USA_will_support = yes
+			}
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
 			}
         }
 		
@@ -566,7 +566,7 @@
 		cost = 10	
 		completion_reward = {
 		
-			if = { limit = { has_opinion = { target = ENG value > 49} }
+			if = { limit = { ENG_will_support = yes }
 				add_relation_modifier = {
 					target = ENG
 					modifier = Regional_license
@@ -587,21 +587,21 @@
 				if = { 
 					limit = { has_tech = early_battleship }
 					add_equipment_production = {
-						equipment = {
-							type = battleship_1
-						}
-						requested_factories = 1
-						progress = 0.99
-						amount = 1
-					}
+                        equipment = {
+                            type = battleship_1
+                        }
+                        requested_factories = 1
+                        progress = 1.0
+                        amount = 1
+                    }
 					add_equipment_production = {
-						equipment = {
-							type = battleship_1
-						}
-						requested_factories = 1
-						progress = 0.99
-						amount = 1
-					}
+                        equipment = {
+                            type = battleship_1
+                        }
+                        requested_factories = 1
+                        progress = 1.0
+                        amount = 1
+                    }
 				}
 			}
             custom_effect_tooltip = eng_battleship_loan
@@ -675,7 +675,14 @@
         prerequisite = { focus = regional_influence }
         mutually_exclusive = { focus = naval_industry focus = military_industry }
         available = {
-            has_opinion = { target = SOV value > 24 } 
+            OR = {
+				has_government = neutrality
+				SOV = { has_government = ROOT }
+				SOV_will_support = yes
+			}
+			NOT = {
+				has_war_with = SOV
+			}
 		}
 		relative_position_id = naval_industry		
         x = 2
@@ -1338,10 +1345,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			every_army_leader = {
-				add_defense = 1
-				add_logistics = 1
-			}
 			add_ideas = regional_cheap
 		}
 	}
@@ -1376,12 +1379,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			every_army_leader = {
-				add_defense = 1
-				add_attack = 1
-				add_logistics = 1
-				add_planning = 1
-			}
 			add_ideas = regional_better
 		}
 	}

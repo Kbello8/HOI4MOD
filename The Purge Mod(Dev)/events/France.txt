@@ -414,7 +414,7 @@ country_event = {
 	option = { # Agree
 		name = france.14.a
 		ai_chance = {
-			factor = 50
+			factor = 85
 		}
 		trigger = {
 			has_government = fascism
@@ -653,7 +653,7 @@ country_event = {
 				ideology = fascism
 				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 775 776 777 778 779 780 781 782 786 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -688,17 +688,25 @@ country_event = {
 			IF {
 				limit = { 	
 					AND = { 
-						is_in_faction_with = IRQ 
+						GER = { is_in_faction_with = IRQ }
 						SYR = {is_puppet_of = FRA } 
 					}
 				}
-					IRQ = { annex_country = { target = SYR transfer_troops = yes } }
-				else = {
-					IF {
-						limit = { SYR = { is_puppet_of = FRA } }
-						annex_country = { target = SYR transfer_troops = yes }
+				IRQ = { annex_country = { target = SYR transfer_troops = yes } }
+			}
+			else_if = {
+				limit = { SYR = { is_puppet_of = FRA } }
+				SYR = { drop_cosmetic_tag = yes }
+				SYR = { set_cosmetic_tag = SYR_GER }
+				GER = { puppet = SYR }
+				IF = {
+					limit = {
+						NOT = { has_dlc = "Death or Dishonor" }
 					}
-				
+					set_autonomy = { target = SYR autonomy_state = autonomy_integrated_puppet }
+					else = {
+						set_autonomy = { target = SYR autonomy_state = autonomy_reichskommissariat }
+					}
 				}
 			}
 		
@@ -744,7 +752,7 @@ country_event = {
 	option = { # Agree - Neutrality
 		name = france.14.c
 		ai_chance = {
-			factor = 50
+			factor = 85
 		}
 		trigger = {
 			has_government = neutrality
@@ -1005,6 +1013,23 @@ country_event = {
 		random_other_country = {
 			limit = { original_tag = FRA has_government = neutrality }
 			ROOT = { puppet = PREV }
+			
+			IF {
+				limit = { 	
+					AND = { 
+						is_in_faction_with = IRQ 
+						SYR = {is_puppet_of = FRA } 
+					}
+				}
+					IRQ = { annex_country = { target = SYR transfer_troops = yes } }
+				else = {
+					IF {
+						limit = { SYR = { is_puppet_of = FRA } }
+						SYR = { drop_cosmetic_tag = yes }
+						GER = { puppet = SYR }
+					}
+				}
+			}
 			set_capital = 26
 			set_politics = {
 				ruling_party = neutrality
@@ -1042,7 +1067,7 @@ country_event = {
 	option = { # Conquer everything!
 		name = france.14.b
 		ai_chance = { 
-			factor = 50 
+			factor = 15 
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0

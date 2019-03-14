@@ -1935,11 +1935,6 @@ form_byzantine_empire_category = {
 
 		available = {
 			is_subject = no
-			controls_state = 44
-			controls_state = 82
-			controls_state = 81
-			controls_state = 46
-			controls_state = 77
 			# Greece
 			custom_trigger_tooltip = {
 				tooltip = form_country_greece_required_states_tt
@@ -1980,19 +1975,6 @@ form_byzantine_empire_category = {
 				controls_state = 212
 				controls_state = 211
 			}
-			# Yugoslavia
-			custom_trigger_tooltip = {
-				tooltip = form_country_yugoslavia_required_states_tt
-				controls_state = 102
-				controls_state = 103
-				controls_state = 109
-				controls_state = 104
-				controls_state = 45
-				controls_state = 107
-				controls_state = 105
-				controls_state = 108
-				controls_state = 106
-			}
 		}
 
 		visible = {
@@ -2006,11 +1988,6 @@ form_byzantine_empire_category = {
 			341 = { add_core_of = ROOT }							   
 			hidden_effect = { 341 = { set_state_name = "Constantinople" } }
 			set_province_name = { id = 9833 name = "Constantinople" }
-			44 = { add_core_of = ROOT }
-			82 = { add_core_of = ROOT }
-			81 = { add_core_of = ROOT }
-			46 = { add_core_of = ROOT }
-			77 = { add_core_of = ROOT }
 			# Greece
 			custom_effect_tooltip = form_country_greece_coring_states_tt
 			hidden_effect = {
@@ -2051,19 +2028,7 @@ form_byzantine_empire_category = {
 				212 = { add_core_of = ROOT }
 				211 = { add_core_of = ROOT }
 			}
-			# Yugoslavia
-			custom_effect_tooltip = form_country_yugoslavia_coring_states_tt
-			hidden_effect = {
-				102 = { add_core_of = ROOT }
-				103 = { add_core_of = ROOT }
-				109 = { add_core_of = ROOT }
-				104 = { add_core_of = ROOT }
-				45 = { add_core_of = ROOT }
-				107 = { add_core_of = ROOT }
-				105 = { add_core_of = ROOT }
-				108 = { add_core_of = ROOT }
-				106 = { add_core_of = ROOT }
-			}
+			
 			hidden_effect = {
 				news_event = { id = wtt_news.66 hours = 6 }
 				set_global_flag = form_byzantine_empire_flag
@@ -2112,6 +2077,7 @@ form_byzantine_empire_category = {
 
 		visible = {
 			original_tag = GRE
+			has_global_flag = form_byzantine_empire_flag
 			NOT = { has_global_flag = triumph_for_italy }
 		}
 
@@ -2133,6 +2099,67 @@ form_byzantine_empire_category = {
 				736 = { add_core_of = ROOT }
 				163 = { add_core_of = ROOT }
 				set_global_flag = triumph_for_italy
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	byz_triumph_for_balkans = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			controls_state = 44
+			# Yugoslavia
+			custom_trigger_tooltip = {
+				tooltip = form_country_yugoslavia_required_states_tt
+				controls_state = 102
+				controls_state = 103
+				controls_state = 109
+				controls_state = 104
+				controls_state = 45
+				controls_state = 107
+				controls_state = 105
+				controls_state = 108
+				controls_state = 106
+			}
+		}
+
+		visible = {
+			original_tag = GRE
+			has_global_flag = form_byzantine_empire_flag
+			NOT = { has_global_flag = triumph_for_balkans }
+		}
+
+		complete_effect = {
+			
+			# Yugoslavia
+			custom_effect_tooltip = form_country_yugoslavia_coring_states_tt
+			hidden_effect = {
+				44 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				set_global_flag = triumph_for_balkans
 			}
 		}
 
@@ -2172,6 +2199,7 @@ form_byzantine_empire_category = {
 
 		visible = {
 			original_tag = GRE
+			has_global_flag = form_byzantine_empire_flag
 			NOT = { has_global_flag = triumph_for_middle_east }
 		}
 
@@ -2229,6 +2257,7 @@ form_byzantine_empire_category = {
 
 		visible = {
 			original_tag = GRE
+			has_global_flag = form_byzantine_empire_flag
 			NOT = { has_global_flag = triumph_for_egypt_and_tunis }
 		}
 
