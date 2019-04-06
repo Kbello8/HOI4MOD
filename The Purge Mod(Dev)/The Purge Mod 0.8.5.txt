@@ -960,7 +960,7 @@ Strategic View Adjustments
 	bypass for curtail autonomy
 	minesweeping 1-2
 	
-	0.8.5 - Zan - HOI4 v1.6.1 3/24/2019 MTG	
+	0.8.5 - Zan - HOI4 v1.6.2 3/24/2019 MTG	
 	nigerian unification fix
 	less capitals, more screeners for majors
 	battleship fix in regional tree
@@ -1036,3 +1036,29 @@ Strategic View Adjustments
 	--cores on gre
 	
 	
+	0.8.6 - Zan - HOI4 v1.6.2 4/6/2019 MTG	
+	serbian general staff is ok for central management
+	expand all yugoslav regiments +2% recruitable
+	add faction forming on greater yugoslavia
+	yugoslav air designer focuses cut to 35 days
+	cannot demand slovenia if in faction with yugoslavia
+	apply central / local self management retroactively
+	AI USA buffed(when they go to war)
+	Vllad's Canada implemented
+	Vllad's Australia implemented
+	
+	RAJ
+	-Ishapore Arsenal 35days
+	-British investment focuses(+1 factories)
+	-Industrial Expansion +1 factory
+	-Provincial Elections, Swaraj, Indian National Congress, All India Forward Bloc no longer require being a subject
+	-Seek help from GER / SOV && their respective civil wars bypass if you are not a subject, or are the respective ideology
+	-rebuilding the nation requires civil war
+	-added a hidden event that removes muslim community idea if pakistan exists
+	
+	EGY
+	Import focuses give raw equipment depending on tech
+	-500 fighter 0, or 300 fighter 0 200 cas 1
+	-10k infantry equip 0, or infantry equip 1
+	-3 light cruisers(1936)
+

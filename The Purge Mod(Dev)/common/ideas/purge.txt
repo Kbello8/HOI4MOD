@@ -60,7 +60,66 @@ ideas = {
 				amphibious_invasion = 0.2
 			}
 		}
-	
+		
+		ast_army_of_the_swpa = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_naval_manufacturer_1
+			
+			modifier = {
+				conscription = 0.05
+				enemy_partisan_effect = -0.25
+				non_core_manpower = 0.03
+			}
+		}
+		ast_development = {
+		
+			picture = generic_morale_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -1.0
+			}
+		}
+		
+		ast_oppression = {
+		
+			picture = generic_morale_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -2.0
+			}
+		}
+		
 		manchukuo_autonomy = {
 		
 			picture = generic_morale_bonus

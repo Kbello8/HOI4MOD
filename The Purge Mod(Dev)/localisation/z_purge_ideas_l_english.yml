@@ -225,3 +225,7 @@
  north_american_defense_treaty_idea:0 "North American Defense Treaty"
  us_defense_agreement_idea:0 "US Defense Agreement"
  generic_construction_concern:0 "Construction Company"
+ construction_tech_research:0 "Construction Technology"
+ ast_army_of_the_swpa:0 "Army of the SWPA"
+ ast_development:0 "Australian Development"
+ ast_oppression:0 "Australian Oppression"

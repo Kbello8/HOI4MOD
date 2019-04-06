@@ -2539,6 +2539,7 @@ country_event = {
         AND = {
             original_tag = USA
             USA = { is_ai = yes } 
+			USA = { has_war = yes }
         }
 	}
     
@@ -2546,4 +2547,118 @@ country_event = {
 		name = purge.99.a
          add_timed_idea = { idea = ai_buff days = 365 }
     }
+}
+
+# Raj Muslim Minority
+country_event = { 
+    id = purge.100
+	title = purge.100.t
+	desc = purge.100.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = RAJ
+			PAK = { exists = yes }
+        }
+	}
+    
+	option = {
+		name = purge.100.a
+         remove_ideas = RAJ_marginalized_muslim_community
+		 remove_ideas = RAJ_marginalized_muslim_community_angry
+		 remove_ideas = RAJ_marginalized_muslim_community_happy
+    }
+}
+
+# Completed AST_nz_puppet.
+# Australian national focus.
+country_event = {
+	id = purge.101
+	title = purge.101.t	# Australia requests NZ to submit to Australian Hegemony
+	desc = purge.101.d	#
+	picture = GFX_report_event_ast_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = purge.101.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_government = fascism
+			}
+			modifier = {
+				add = -20
+				is_in_faction_with = JAP
+			}
+		}
+		effect_tooltip = {
+			AST = {
+				puppet = SIA
+			}
+		}
+		hidden_effect = {
+			AST = { 
+				country_event = { id = purge.102 }
+			}
+		}
+	}
+	
+	option = {
+		name = purge.101.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}
+		
+		hidden_effect = {
+			AST = {
+				country_event = { id = purge.103 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = purge.102
+	title = purge.102.t	# NZ submits to Australian Hegemony.
+	desc = purge.102.d	#
+	picture = GFX_report_event_troops_landing
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = purge.102.a
+		puppet = SIA
+		
+		news_event = { id = news.241 }
+	}
+}
+
+country_event = {
+	id = purge.103
+	title = purge.103.t	# NZ rejects Australian as an overlord.
+	desc = purge.103.d	#
+	picture = GFX_report_event_ANZAC_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = purge.103.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SIA
+		}
+	}
 }
