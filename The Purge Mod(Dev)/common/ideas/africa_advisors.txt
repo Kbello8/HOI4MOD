@@ -10,7 +10,7 @@ ideas = {
             
 			allowed = {
 				OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -27,7 +27,7 @@ ideas = {
             
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -44,7 +44,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -63,7 +63,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -82,7 +82,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
             
@@ -102,7 +102,7 @@ ideas = {
             
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -117,7 +117,7 @@ ideas = {
             
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -130,7 +130,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -146,7 +146,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -160,7 +160,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -173,7 +173,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -191,7 +191,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -206,7 +206,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -221,7 +221,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -237,7 +237,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -250,7 +250,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -265,7 +265,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -281,7 +281,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -296,7 +296,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -311,7 +311,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -324,7 +324,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -339,7 +339,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
@@ -352,7 +352,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -367,7 +367,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -382,7 +382,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -397,7 +397,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -412,7 +412,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -427,7 +427,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -442,7 +442,7 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                     original_tag =  ETH
                     original_tag =  LIB
                 }
@@ -460,12 +460,12 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -477,12 +477,12 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -494,12 +494,12 @@ ideas = {
 			
 			allowed = {
                 OR = {
-                    original_tag =  NIG
+                    original_tag =  NGA
                 }
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }

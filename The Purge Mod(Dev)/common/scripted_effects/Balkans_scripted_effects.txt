@@ -1,0 +1,59 @@
+purge_war_fervor_clear_all = {
+	if = {
+		limit = { has_idea = purge_war_fervor_1 }
+		remove_ideas = purge_war_fervor_1
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_2 }
+		remove_ideas = purge_war_fervor_2
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_3 }
+		remove_ideas = purge_war_fervor_3
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_4 }
+		remove_ideas = purge_war_fervor_4
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_5 }
+		remove_ideas = purge_war_fervor_5
+	}
+}
+
+#Important to put HIGHEST first
+purge_war_fervor_level_up = {
+	# level 5 not relevant. Cannot go above.
+	if = {
+		limit = { has_idea = purge_war_fervor_4 }
+		swap_ideas = {
+			remove_idea = purge_war_fervor_4
+			add_idea = purge_war_fervor_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_3 }
+		swap_ideas = {
+			remove_idea = purge_war_fervor_3
+			add_idea = purge_war_fervor_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_2 }
+		swap_ideas = {
+			remove_idea = purge_war_fervor_2
+			add_idea = purge_war_fervor_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = purge_war_fervor_1 }
+		swap_ideas = {
+			remove_idea = purge_war_fervor_1
+			add_idea = purge_war_fervor_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = purge_war_fervor_1 } }
+		add_ideas = purge_war_fervor_1
+	}
+}

@@ -334,20 +334,6 @@ ideas = {
             }
         }
     
-        feb26_idea = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-			
-			research_bonus = {
-				naval_doctrine = 0.05
-			}
-		}
-    
         polish_austerity = {
 			picture = generic_goods_red_bonus
 			removal_cost = -1
@@ -368,17 +354,6 @@ ideas = {
 		
 			modifier = {
 				conscription = 0.01
-			}
-		}
-        
-        angola_purchase = {
-			picture = generic_goods_red_bonus
-			removal_cost = -1
-			
-			allowed = { always = no}
-		
-			modifier = {
-				consumer_goods_factor = 0.40
 			}
 		}
 
@@ -532,71 +507,7 @@ ideas = {
 				join_faction_tension = 1.01
 			}
 		}
-        
-        ccc_focus = {
-            picture = ast_all_in
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				production_speed_buildings_factor = 0.05
-			} 
-        }
-        
-        ccc_focus2 = {
-            picture = ast_all_in
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				production_speed_buildings_factor = 0.05
-                industrial_capacity_factory = 0.05
-			} 
-        }
-        
-        ccc_focus3 = {
-            picture = ast_all_in
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				production_speed_buildings_factor = 0.05
-                industrial_capacity_factory = 0.05
-                conscription = 0.01
-			} 
-        }
-        
-        ccc_military = {
-            picture = warrior_traditions_idea
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-                conscription = 0.02
-			} 
-        }
-        
-        ccc_ccc = {
-            picture = ast_all_in
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				production_speed_buildings_factor = 0.1
-                industrial_capacity_factory = 0.1
-   
-			} 
-        }
+		
         resource1 = {
 			
 			allowed = {
@@ -626,6 +537,82 @@ ideas = {
                 local_resources_factor = 0.05
 			}
 		}
+		
+		us_defense_agreement_idea = {
+            picture = ast_all_in
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			} 
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+        }
+		
+		north_american_defense_treaty_idea = {
+            picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				conscription = 0.03
+			} 
+        }
+		
+		german_tooling_idea = {
+            picture = generic_armor
+
+			allowed = {
+				always = no
+			}
+			research_bonus = {
+				armor = 0.05
+			}
+			equipment_bonus = {
+				light_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				
+			} 
+        }
+		
+		soviet_economy_agreement_idea = {
+           picture = generic_industrial_concern_1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			} 
+        }
+		
+		soviet_tooling_idea = {
+            picture = generic_industrial_concern_2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				training_time_army_factor = -0.2
+				industrial_capacity_factory = 0.08
+			} 
+        }
         
 		####Regional Military
 		
@@ -895,6 +882,125 @@ ideas = {
 			}
 		}
 		
+		eng_incite_rebellion = {
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_aggressive_factor = 0.15
+				justify_war_goal_time = -0.15
+			}
+		}
 		
+		purge_war_fervor_1 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+			}
+		}
+
+		
+		purge_war_fervor_2 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
+			}
+		}
+		
+		purge_war_fervor_3 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+			}
+		}
+		
+		purge_war_fervor_4 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
+			}
+		}
+
+		purge_war_fervor_5 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
     }
 }

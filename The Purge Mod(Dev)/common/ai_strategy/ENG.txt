@@ -51,10 +51,12 @@ ENG_unit_production = {
     #            Area Priority
     ##################################
 	ai_strategy = { type = area_priority id = europe 			                value = 200}
+	ai_strategy = { type = area_priority id = scandinavia 			            value = 200}
     ai_strategy = { type = area_priority id = north_america 			        value = 25}
 	ai_strategy = { type = area_priority id = south_america 	                value = 25}
 	ai_strategy = { type = area_priority id = asia 		                        value = 50}
 	ai_strategy = { type = area_priority id = middle_east 	                    value = 100}
+	ai_strategy = { type = area_priority id = suez 	                    		value = 100}
 	ai_strategy = { type = area_priority id = africa 		                    value = 50}
     ai_strategy = { type = area_priority id = pacific 		                    value = 10}
     ai_strategy = { type = area_priority id = oceania 		                    value = 10}
@@ -109,12 +111,12 @@ defend_poland_against_germany = {
 royal_air_force = {
 	enable = {
 		tag = ENG
-		date > 1937.12.31
+		date > 1939.4.1
 	}
 	abort = {
 		NOT = { 
 			tag = ENG 
-			date > 1937.12.31 
+			date > 1939.4.1 
 		}
 	}
 	
@@ -160,6 +162,12 @@ careful_with_early_invasions = {
 		type = invade
 		id = "GER"			
 		value = -500
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -300
 	}
 }
 
@@ -241,81 +249,50 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 	}
 }
 
-ENG_naval_role_ratios_historical = {
+ENG_the_channel_is_dangerous = {
 	enable = {
-		has_dlc = "Man the Guns"
 		original_tag = ENG
+		has_war_with = GER
 	}
-
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bb
-		value = -90
-	}
-	ai_strategy = {
-		type = dockyard_to_military_factory_ratio
-		value = 20  #aim for a 2-1 ratio on naval factories
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bc
-		value = -10
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier
-		value = -90
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier_light
-		value = 15
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_submarine
-		value = -150
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_screen
-		value = 200
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_escort
-		value = 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_light
-		value = 60
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_heavy
-		value = 00
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 20
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = 10
+		type = naval_avoid_region
+		id = 18 #english channel
+		value = 100
 	}
 }
+
+ENG_lifeline_of_the_empire = {
+	enable = {
+		original_tag = ENG
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 30 # this is extra on top of 50 base
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Operation_torch = {
 	enable = {
@@ -359,73 +336,6 @@ Operation_torch = {
 	ai_strategy = { type = area_priority id = middle_east value = 400}
 }
 
-ENG_naval_role_ratios_anti_submarines = {
-	enable = {
-		has_dlc = "Man the Guns"
-		original_tag = ENG
-		anti_submarine_strategy_required_trigger = yes
-	}
-	abort = {
-		not = { anti_submarine_strategy_required_trigger = yes }
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bb
-		value = -90
-	}
-	ai_strategy = {
-		type = dockyard_to_military_factory_ratio
-		value = 20  #aim for a 2-1 ratio on naval factories
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bc
-		value = -10
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier
-		value = -90
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier_light
-		value = -25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_submarine
-		value = -150
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_screen
-		value = -70
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_escort
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_light
-		value = -25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_heavy
-		value = -10
-	}
-}
-
 
 protect_suez = {
 	enable = {
@@ -461,6 +371,33 @@ protect_suez = {
 	ai_strategy = {
 		type = protect
 		id = "EGY"
+		value = 200
+	}
+}
+
+
+
+#####King's Party Tree
+
+rebellion_stockpile_eng = {
+	enable = {
+		original_tag = ENG
+		has_idea = eng_incite_rebellion
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = save_equipment
+		id = infantry_equipment
+		value = 5500
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = artillery_equipment
+		value = 350
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = support_equipment
 		value = 200
 	}
 }

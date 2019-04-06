@@ -724,7 +724,7 @@ communist_pressure = {
 				production_speed_nuclear_reactor_factor = 0.2
 			}
 			research_bonus = {
-				nuclear = 0.10
+				nuclear = 0.15
 			}
 		}
 
@@ -1293,7 +1293,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				naval_equipment = 0.20
+				naval_equipment = 0.15
 			}
 			
 			traits = { naval_manufacturer }
@@ -1337,7 +1337,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1376,7 +1376,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -1415,7 +1415,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
@@ -1450,7 +1450,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { naval_aircraft_manufacturer }
@@ -1486,7 +1486,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 				
 			}
 			
@@ -1523,10 +1523,34 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 			
 			traits = { electronics_concern }
+		}
+		
+		generic_construction_concern = {
+			
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				NOT = {
+					AND = {
+						tag = MAN
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				construction_tech = 0.20
+				
+			}
+			
+			traits = { construction_company }
 		}
 	}
 
@@ -1594,7 +1618,7 @@ communist_pressure = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = 0.20
+				infantry_weapons = 0.15
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1775,7 +1799,7 @@ communist_pressure = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -1788,7 +1812,7 @@ communist_pressure = {
 			}
 			
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -1801,7 +1825,7 @@ communist_pressure = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }

@@ -29,7 +29,6 @@ ideas = {
                     original_tag =  SWE
                     original_tag =  SWI
                     original_tag =  SAF
-                    original_tag =  CAN
                     original_tag =  AST
                     original_tag =  NZL
                     original_tag =  DEN
@@ -1076,7 +1075,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -1099,7 +1098,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }

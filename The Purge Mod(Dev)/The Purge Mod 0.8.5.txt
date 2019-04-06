@@ -939,4 +939,100 @@ Strategic View Adjustments
 	Byzantium requires BUL & TUR only
 	Triumph for Balkans -> YUG / ALB
 	--Removed cores/requirements on Romania
+
+	0.8.4 - Zan - HOI4 v1.6.0 3/16/2019 MTG	
+	NIG has no advisors, switch to NGA
+	changed fleet compositions, unit caps, germany's tanks
+	IRQ not taking golden square fixed
+	Italy includes AUS and HUN in Novus Imperium if previously in Pact of rome
+	England's imperial conscription applies to all future subjects
+	timed idea for king's party england to do their revolution 730 days
+	massive buff to england decolonizing & commie tree
+	mexico has a commie silent workhorse(exclusive with democratic one)
+	lower air doctrine cost by 10%
+	naval doctrine cost by 20%
+	all doctrines require 75xp for boost instead of 100
+	reduce naval tech which cost experience reduced by 20%
+	eng coordination needs to give heavy ship 1 tech
+	naval air company cas 20% -> 10% ground attack
+	england decolonize bypass' no longer all or nothing
+	use army experience on support equipment upgrades & special forces
+	bypass for curtail autonomy
+	minesweeping 1-2
+	
+	0.8.5 - Zan - HOI4 v1.6.1 3/24/2019 MTG	
+	nigerian unification fix
+	less capitals, more screeners for majors
+	battleship fix in regional tree
+	england strategy to stockpile equipment for their dominion civil war stuff
+	adjusted shadow of calles & fixed the other silent workhorses for MEX
+	removed double infantry advisors for MEX
+	mexico gold shirts & red shirts to have no penalty to leader recruitment
+	add create faction to tur / pol when going not neutral
+	draw closer to X for tur / pol bypass if x does not have "correct" gov't(sov not being commie for example)
+	japan civil war -> purge implementation(for democratic & commie)
+	war fervor == 2% output / level (max 10%)
+	
+	HUN
+	-hungarian monarchy idea gives +.15 non aligned(from .02)
+	-democratic monarchy gives .15 democratic
+	-fascist monarchy gives .15 fascism
+	-czech as puppet, not dominion
+	-add war fervor to the claim focuses(5 in total after claim transylvania)
+	-strengthen fascists / council of peoples boosts: 0.02 -> .15
+	-national army added to army maneuvers
+	
+	CZE
+	-motorization scheme bypass if having motorized, 35 day
+	-Military tech insitute, aeronautical institute +25xp(from 10)
+	-german ally remove manpower requirement
+	-czech fascism focus give +.1 instead of .5, no time limit
+	-czech legion gives purge version of foreign expeditions
+	
+	ROM
+	-add neutral drift to modified sentinals of the motherland(.15)
+	-pzinz tank manufacturer -8% reliability, +20% armor to light tanks
+	-leonidas works 5% -> 10% for all things
+	-galati -> screen & heavy cruiser, -40% range, -30% cost, +15% light attack
+	-braile -> heavy ship. -40% range, -30% cost, +20% heavy attack
+	-royal guard -> 35days
+	-national_army added to royal_guard
+	-fix all parties must end -> remove king carol's lifestyle
+	
+	YUG
+	-fix their cruiser focuses
+	-serbian shipyards + 2 dockyards
+	-supremacy of defense / office: generous officer promotions
+	-bypass on motorize the cavalry
+	-tank conversions 5% -> 40%
+	-limited self government a timed idea for 1095 days
+	--if taking local self management with after taking this focus, get 15% construction instead
+	=if taking central management and NOT have opposition from anyone, 15% output instead
+	-ban slovene nationalist parties - 10% stab
+	-all yugoslav regiments-> +2% recruitable, +0.1% stability / week
+	-new focus: integrate macedonians
+	--requires bulgaria to not exist or be a subject of yugoslavia
+	--35 days, remove macedonian opposition
+	-freedom of religion to +30% stability
+	-greater yugoslavia: war fervor++
+	--claim macedonia: war fervor++
+	--reclaim istria & zara: war fervor++
+	new focus: expand the all-yugoslav regiments(35d)
+	--under non-discriminating officer promotions
+	--requires all yugoslav regiments
+	--cores on bulgaria after 1 year
+	-- +3% organization to all yugoslav regiments
+	new focus: bulgarian steel
+	--requires expand the all-yugoslav regiments
+	-- +18 steel to sofia
+	-- +8 tungsten
+	new focus: expand greater yugoslavia(35d)
+	--under non-discriminating officer promotions
+	--requires greater yugoslavia
+	--claims on greece & albania
+	--war fervor++
+	new focus: proclaim greater yugoslavia
+	--war fervor++
+	--cores on gre
+	
 	

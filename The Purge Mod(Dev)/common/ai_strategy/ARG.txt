@@ -49,7 +49,7 @@ ARG_belligerent_CHL = {
 	ai_strategy = {
 		type = consider_weak
 		id = "USA"
-		value = 500
+		value = 2500
 	}
 	ai_strategy = {
 		type = antagonize

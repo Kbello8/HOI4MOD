@@ -125,7 +125,7 @@ focus_tree = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = GER_atlantikwall
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = GER_west_wall }
@@ -2980,7 +2980,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -2988,7 +2988,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -2996,7 +2996,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -3651,7 +3651,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -3659,7 +3659,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -3667,7 +3667,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -3834,9 +3834,9 @@ focus = {
 					country_event = germany.40
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
-			69 = {
-				add_claim_by = GER
-			}
+				69 = {
+					add_claim_by = GER
+				}
 			}
 			if = {
 				limit = {
@@ -4124,6 +4124,18 @@ focus = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					date < 1942.01.01
+					surrender_progress > 0
+					AND = {
+						has_war_with = ENG
+						ENG = { surrender_progress < 0.2 }
+					}
+				}
+			}
 		}	
 		completion_reward = {
 			if = {
@@ -4216,7 +4228,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -4224,7 +4236,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -4232,7 +4244,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -4871,7 +4883,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -4879,7 +4891,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -4887,7 +4899,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -4933,7 +4945,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -4941,7 +4953,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -4949,7 +4961,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -5001,7 +5013,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -5009,7 +5021,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -5017,7 +5029,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 			}
@@ -5063,7 +5075,7 @@ focus = {
 							has_government = fascism
 						}
 					}
-					add_timed_idea = { idea = fascist_influence days = 730 }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -5071,7 +5083,7 @@ focus = {
 							has_government = communism
 						}
 					}
-					add_timed_idea = { idea = communist_influence days = 730 }
+					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
 				if = {
 					limit = {
@@ -5079,7 +5091,7 @@ focus = {
 							has_government = democratic
 						}
 					}
-					add_timed_idea = { idea = democratic_influence days = 730 }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 				}
 				country_event = { id = generic.1 }
 				if = {
@@ -6183,7 +6195,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = GER_break_the_anglo_french_colonial_hegemony
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		prerequisite = { focus = GER_prepare_for_the_next_blockade }
@@ -6518,14 +6530,7 @@ focus = {
 						NOT = { has_war_with = GER }
 					}					
 				}
-				add_to_faction = ITA
-				ITA = {
-					add_ai_strategy = {
-						type = alliance
-						id = "GER"
-						value = 200
-					}
-				}
+				ITA = { country_event = { id = generic.5 } }
 			}
 			if = {
 				limit = {
@@ -6538,14 +6543,7 @@ focus = {
 					}					
 					NOT = { country_exists = AUS }
 				}
-				add_to_faction = HUN
-				HUN = {
-					add_ai_strategy = {
-						type = alliance
-						id = "GER"
-						value = 200
-					}
-				}
+				HUN = { country_event = { id = generic.5 } }
 			}
 			if = {
 				limit = {
@@ -6559,15 +6557,20 @@ focus = {
 					}		
 					NOT = { country_exists = HUN }			
 				}
-				add_to_faction = AUS
-				AUS = {
-					add_ai_strategy = {
-						type = alliance
-						id = "GER"
-						value = 200
-					}
-				}
+				AUS = { country_event = { id = generic.5 } }
 			}
+			if = {
+                limit = {
+                    BUL = { 
+                        exists = yes
+                        is_subject = no
+                        is_in_faction = no
+                        has_government = neutrality
+                        NOT = { has_war_with = GER }
+                    }
+                }
+                BUL = { country_event = { id = generic.5 } }
+            }
 		}
 	}
 
@@ -6846,7 +6849,8 @@ focus = {
 				target = FRA
 			}
 			add_state_claim = 28
-			add_state_claim = 539
+			add_state_claim = 773
+			add_state_claim = 777
 		}
 	}
 

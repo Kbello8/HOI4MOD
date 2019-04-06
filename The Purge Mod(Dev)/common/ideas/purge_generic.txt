@@ -558,7 +558,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				synth_resources = 0.15
+				synth_resources = 0.155
 			}
 			
 			traits = { generic_refinery_concern }
@@ -877,7 +877,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { generic_CAS_manufacturer }
@@ -930,7 +930,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SAF tag = NZL tag = CAN }
+						OR = { tag = SAF tag = CAN }
 						has_dlc = "Together for Victory"
 					}
 				}
@@ -956,7 +956,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = NZL tag = CAN }
+						OR = { tag = NZL }
 						has_dlc = "Together for Victory"
 					}
 				}

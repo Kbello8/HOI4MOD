@@ -1,0 +1,405 @@
+####Default Naval Ratios
+####Country Specific
+default_naval_ratios_low_fact = {
+	enable = {
+		has_dlc = "Man the Guns"
+		num_of_naval_factories < 15
+	}
+	abort_when_not_enabled = yes
+	
+	##################################
+    #            Navy
+    ##################################
+	ai_strategy = { type = unit_ratio          id = capital_ship       value = 15}
+    ai_strategy = { type = unit_ratio          id = submarine          value = 10}
+    ai_strategy = { type = unit_ratio          id = screen_ship        value = 60}
+    ai_strategy = { type = unit_ratio          id = convoy             value = 15}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 5
+	}
+}
+
+default_naval_ratios = {
+	enable = {
+		has_dlc = "Man the Guns"
+		num_of_naval_factories > 14
+	}
+	
+	##################################
+    #            Navy
+    ##################################
+	ai_strategy = { type = unit_ratio          id = capital_ship       value = 10}
+    ai_strategy = { type = unit_ratio          id = submarine          value = 15}
+    ai_strategy = { type = unit_ratio          id = screen_ship        value = 60}
+    ai_strategy = { type = unit_ratio          id = convoy             value = 15}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 1
+	}
+}
+
+convoy_voy_voy_voy = {
+	enable = {
+		has_dlc = "Man the Guns"
+		convoy_threat > 0.2
+	}
+	abort = {
+		convoy_threat < 0.2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 25
+	}
+}
+
+ill_show_you_mine = {
+	enable = {
+		has_dlc = "Man the Guns"
+		mine_threat > 0.2
+	}
+	abort = {
+		mine_threat < 0.2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -5
+	}
+}
+
+ill_show_you_mine_2 = {
+	enable = {
+		has_dlc = "Man the Guns"
+		mine_threat > 0.5
+	}
+	abort = {
+		mine_threat < 0.5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -5
+	}
+}
+
+dont_build_capitals_if_on_treaty = {
+	enable = {
+		has_naval_treaty_trigger = yes
+		not = {
+			OR = {
+				original_tag = JAP
+				original_tag = ITA
+			}
+		}
+	}
+
+	abort = {
+		not = { has_naval_treaty_trigger = yes }
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -100
+	}
+}
+
+
+####Country Specific
+
+GER_max_kaiser = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = GER
+		GER_naval_interest_trigger = yes
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 5
+	}
+}
+GER_u_boats = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = GER
+		NOT = {GER_naval_interest_trigger = yes }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = unit_ratio          id = capital_ship       value = -5}
+	ai_strategy = { type = unit_ratio          id = screen_ship        value = -20}
+	ai_strategy = { type = unit_ratio          id = submarine          value = 25}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 15
+	}
+}
+
+JAP_sh_bb = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = JAP
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -5
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_shbb
+		value = 5
+	}
+}
+
+pacific_contender = {
+	enable = {
+		has_dlc = "Man the Guns"		
+		OR = {
+			original_tag = JAP
+			original_tag = USA
+			original_tag = AST
+			original_tag = CHI
+			original_tag = ENG
+			original_tag = FRA
+		}
+		num_of_naval_factories > 14
+	}
+	ai_strategy = { type = unit_ratio   id = capital_ship  value = -5}
+	ai_strategy = { type = unit_ratio   id = screen_ship   value = -5}
+	ai_strategy = { type = unit_ratio   id = carrier       value = 10}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -5
+	}
+}
+
+naval_majors_building_boats_is_great = {
+	
+	enable = {
+		OR = {
+			original_tag = ITA
+			original_tag = USA
+			original_tag = ENG
+			original_tag = AST
+		}
+		num_of_civilian_factories_available_for_projects > 15
+	}
+
+	abort = {
+
+	}
+
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 30
+	}
+}

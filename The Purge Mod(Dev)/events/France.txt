@@ -205,7 +205,7 @@ country_event = {
 			any_state = {
 				is_on_continent = europe
 				NOT = { state = 158 }
-				NOT = { state = 114 }						 
+				NOT = { state = 114 }
 				NOT = { state = 50 }
 				NOT = { state = 42 }
 				is_controlled_by = ROOT
@@ -238,6 +238,7 @@ country_event = {
 			}
 		}
 	}
+	
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -365,7 +366,7 @@ country_event = {
 				puppet = SYR
 			}
 			annex_country = { target = FRA transfer_troops = yes }
-		}	
+		}
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {
 			ENG = { set_cosmetic_tag = FRA_UK }
@@ -550,16 +551,6 @@ country_event = {
 					set_state_controller = 25
 					set_state_controller = 20
 					set_state_controller = 33
-					create_country_leader = {
-						name = "Charles de Gaulle"
-						desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-						picture = "Portrait_France_Charles_De_Gaulle.dds"
-						expire = "1965.1.1"
-						ideology = conservatism
-						traits = {
-							
-						}
-					}
 					#tunisia
 					if = {
 						limit = {
@@ -786,7 +777,7 @@ country_event = {
 			limit = { 785 = { owner = { original_tag = FRA } } }
 			set_state_controller = 785
 		}
-		if ={
+		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
 			set_state_controller = 15
 		}
@@ -1108,6 +1099,7 @@ country_event = {
 		has_capitulated = yes
 		#16 = { is_owned_by = FRA }
 	}
+	
 	mean_time_to_happen = {
 		days = 4
 	}
@@ -1194,7 +1186,16 @@ country_event = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
 		hidden_effect =  {
-			retire_country_leader = yes
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
 		}
 		name = france.20.a
 	}
@@ -1648,7 +1649,7 @@ country_event = {
 	desc = france.29.d
 	picture = GFX_report_event_generic_sign_treaty2
 
-	is_triggered_only	= yes
+	is_triggered_only = yes
 
 	option = {
 		name = france.29.a

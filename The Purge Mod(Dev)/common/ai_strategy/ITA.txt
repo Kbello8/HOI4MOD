@@ -60,6 +60,8 @@ ITA_unit_production = {
 	ai_strategy = { type = area_priority id = africa 		                    value = 50}
     ai_strategy = { type = area_priority id = pacific 		                    value = 10}
     ai_strategy = { type = area_priority id = oceania 		                    value = 10}
+	ai_strategy = { type = area_priority id = scandinavia 	                    value = 25}
+	ai_strategy = { type = area_priority id = suez 	                    		value = 200}
 	
 }	
 
@@ -410,66 +412,6 @@ dont_take_claims_on_yug = {
 	}		
 }
 
-ITA_naval_role_ratios_historical = {
-	enable = {
-		has_dlc = "Man the Guns"
-		original_tag = ITA
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bb
-		value = 25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier
-		value = 10
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_submarine
-		value = 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_screen
-		value = 65
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_escort
-		value = 35
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_light
-		value = 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_heavy
-		value = 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 50
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = 70
-	}
-}
 
 ITA_share_borders_with_GER_against_SOV = {
 	enable = {

@@ -401,6 +401,8 @@ form_austria_hungary_category = {
 			39 = { add_core_of = ROOT }
 			163 = { add_core_of = ROOT }
 			736 = { add_core_of = ROOT }
+			764 = { add_core_of = ROOT }
+			82 = { add_core_of = ROOT }			  
 			# Austria
 			custom_effect_tooltip = form_country_austria_coring_states_tt
 			hidden_effect = {
@@ -465,6 +467,8 @@ form_austria_hungary_category = {
 			controls_state = 83
 			controls_state = 76
 			controls_state = 84
+			controls_state = 764
+			controls_state = 82	  
 		}
 
 		visible = {
@@ -489,7 +493,7 @@ form_austria_hungary_category = {
 			163 = { add_core_of = ROOT }
 			736 = { add_core_of = ROOT }
 			764 = { add_core_of = ROOT }
-			82 = { add_core_of = ROOT }		  
+			82 = { add_core_of = ROOT }
 			set_global_flag = reintegrate_the_empire_flag
 		}
 
@@ -544,7 +548,7 @@ form_commonwealth_category = {
 				controls_state = 94
 				controls_state = 95
 				controls_state = 96
-				controls_state = 784						
+				controls_state = 784
 			}
 		}
 
@@ -603,7 +607,7 @@ form_commonwealth_category = {
 			203 = { add_core_of = ROOT }
 			193 = { add_core_of = ROOT }
 			259 = { add_core_of = ROOT }
-			762 = { add_core_of = ROOT }  
+			762 = { add_core_of = ROOT }
 
 
 			hidden_effect = {
@@ -634,21 +638,7 @@ form_united_netherlands_category = {
 				original_tag = BEL
 				original_tag = LUX
 			}
-			OR = {
-				has_dlc = "Waking the Tiger"
-				AND = {
-					has_dlc = "Man the Guns"
-					has_completed_focus = HOL_bring_socialism_south
-				}
-				AND = {
-					has_dlc = "Man the Guns"
-					has_completed_focus = HOL_bring_socialism_south
-				}
-				AND = {
-					has_dlc = "Man the Guns"
-					has_completed_focus = HOL_revive_the_buffer_state_proposal
-				}
-			}
+			has_dlc = "Waking the Tiger"
 		}
 
 		available = {
@@ -676,6 +666,7 @@ form_united_netherlands_category = {
 				original_tag = LUX
 			}
 			NOT = { has_global_flag = form_united_netherlands_flag }
+			NOT = { has_global_flag = HOL_benelux_formed }												 
 		}
 
 		complete_effect = {
@@ -996,7 +987,7 @@ form_european_union_category = {
 				original_tag = ITA
 				original_tag = GER
 				original_tag = WGR
-				original_tag = ENG					  
+				#original_tag = ENG					  
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -1097,15 +1088,7 @@ form_european_union_category = {
 				original_tag = ITA
 				original_tag = GER
 			}
-			OR = {
-				has_government = democratic
-				AND = {
-					original_tag = ENG
-					has_government = fascism
-					has_completed_focus = ENG_organize_the_blackshirts
-					has_country_leader = { ruling_only = yes name = "Oswald Mosley" }
-				}		
-			}
+			has_government = democratic
 			NOT = { has_global_flag = form_european_union_flag }
 			is_major = yes
 		}

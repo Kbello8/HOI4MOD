@@ -582,26 +582,27 @@
 			
             add_ideas = uk_coordination 
 			hidden_effect = { 
+				set_technology = { early_ship_hull_heavy = 1}
 				set_technology = { early_battleship = 1}
-				
-				if = { 
-					limit = { has_tech = early_battleship }
-					add_equipment_production = {
-                        equipment = {
-                            type = battleship_1
-                        }
-                        requested_factories = 1
-                        progress = 1.0
-                        amount = 1
-                    }
-					add_equipment_production = {
-                        equipment = {
-                            type = battleship_1
-                        }
-                        requested_factories = 1
-                        progress = 1.0
-                        amount = 1
-                    }
+				ROOT = {
+					if = { limit = { has_tech = early_battleship }
+						add_equipment_production = {
+						equipment = {
+							type = battleship_1
+						}
+						requested_factories = 1
+						progress = 1.0
+						amount = 1
+						}
+						add_equipment_production = {
+							equipment = {
+								type = battleship_1
+							}
+							requested_factories = 1
+							progress = 1.0
+							amount = 1
+						}
+					}
 				}
 			}
             custom_effect_tooltip = eng_battleship_loan
@@ -799,7 +800,14 @@
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = civilian_concentration }
         available = {
-            has_opinion = { target = SOV value > 49 } 
+            OR = {
+				has_government = neutrality
+				SOV = { has_government = ROOT }
+				SOV_will_support = yes
+			}
+			NOT = {
+				has_war_with = SOV
+			}
         }
 		
 		relative_position_id = civilian_concentration
@@ -852,7 +860,14 @@
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = civilian_expertise }
         available = {
-            has_opinion = { target = SOV value > 74 } 
+            OR = {
+				has_government = neutrality
+				SOV = { has_government = ROOT }
+				SOV_will_support = yes
+			}
+			NOT = {
+				has_war_with = SOV
+			}
 		}		
 		
 		relative_position_id = civilian_expertise

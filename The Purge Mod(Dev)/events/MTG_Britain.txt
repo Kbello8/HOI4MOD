@@ -254,6 +254,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -487,7 +493,10 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = { news_event = { id = mtg_news.62 days = 1 } }
 	}
+	
+
 }
 
 # Abdication Crisis Edward VIII - Marriage happens
@@ -661,6 +670,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}							
 	}
 }
 
@@ -703,6 +718,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -746,6 +767,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -786,6 +813,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -828,6 +861,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -869,6 +908,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -907,6 +952,12 @@ country_event = {
 		}
 		country_event = { id = mtg_britain.14 days = 40 random = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
+		if = {
+			limit = {
+				has_idea = ENG_support_for_the_king_idea
+			}
+			remove_ideas = ENG_support_for_the_king_idea
+		}
 	}
 }
 
@@ -1362,6 +1413,24 @@ country_event = {
 		ENG = { set_autonomy = { target = PAK autonomy_state = autonomy_colony } }
 		PAK = {
 			add_ideas = ENG_guided_by_britain_raj_1
+		}
+		if = {
+			limit = {
+				has_idea = RAJ_marginalized_muslim_community_angry
+			}
+			swap_ideas = {
+				add_idea = RAJ_marginalized_muslim_community_happy
+				remove_idea = RAJ_marginalized_muslim_community_angry
+			}
+		}
+		if = {
+			limit = {
+				has_idea = RAJ_marginalized_muslim_community
+			}
+			swap_ideas = {
+				add_idea = RAJ_marginalized_muslim_community_happy
+				remove_idea = RAJ_marginalized_muslim_community
+			}
 		}
 	}
 }
@@ -3621,20 +3690,22 @@ country_event = {
 	desc = mtg_britain.55.d
 	picture = GFX_report_event_ger_civil_war
 
-	fire_only_once = yes
+	# Is now fired through mission failure instead, for clarity to the player
 
-	trigger = {
-		tag = ENG
-		has_completed_focus = ENG_concessions_to_the_trade_unions
-		NOT = { has_completed_focus = ENG_decolonization }
-		has_government = communism
-		has_country_flag = ENG_switched_to_communism_civil_war_flag
-		NOT = { has_country_flag = ENG_switched_to_communism_civil_war_timer_flag }
-	}
+	#trigger = {
+	#	tag = ENG
+	#	has_completed_focus = ENG_concessions_to_the_trade_unions
+	#	NOT = { has_completed_focus = ENG_decolonization }
+	#	has_government = communism
+	#	has_country_flag = ENG_switched_to_communism_civil_war_flag
+	#	NOT = { has_country_flag = ENG_switched_to_communism_civil_war_timer_flag }
+	#}
 	
-	mean_time_to_happen = {
-		days = 2
-	}
+	#mean_time_to_happen = {
+	#	days = 2
+	#}
+													
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -4512,6 +4583,7 @@ country_event = {
 		remove_from_tech_sharing_group = commonwealth_research
 		set_country_flag = ENG_already_left_faction_flag
 		ENG = { country_event = { id = mtg_britain.67 } }
+		hidden_effect = { news_event = { id = mtg_news.63 days = 1 } }
 	}
 }
 
@@ -5266,6 +5338,24 @@ country_event = {
 							owner = PAK
 						}
 					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = RAJ_marginalized_muslim_community_angry
+				}
+				swap_ideas = {
+					add_idea = RAJ_marginalized_muslim_community_happy
+					remove_idea = RAJ_marginalized_muslim_community_angry
+				}
+			}
+			if = {
+				limit = {
+					has_idea = RAJ_marginalized_muslim_community
+				}
+				swap_ideas = {
+					add_idea = RAJ_marginalized_muslim_community_happy
+					remove_idea = RAJ_marginalized_muslim_community
 				}
 			}
 			set_country_flag = RAJ_pakistani_civil_war_flag

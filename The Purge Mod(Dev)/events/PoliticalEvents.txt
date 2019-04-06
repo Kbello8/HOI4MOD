@@ -14,6 +14,7 @@ country_event = {
 	trigger = {
 		NOT = { has_government = communism }
 		communism > 0.6
+		NOT = { communism > 0.7 }
 		check_has_focus_tree_to_switch_to_communism = yes
 	}
 
@@ -332,6 +333,7 @@ country_event = {
 	trigger = {
 		NOT = { has_government = fascism }
 		fascism > 0.6
+		NOT = { fascism > 0.7 }
 		check_has_focus_tree_to_switch_to_fascism = yes
 	}
 
@@ -676,6 +678,7 @@ country_event = {
 	trigger = {
 		NOT = { has_government = democratic }
 		democratic > 0.6
+		NOT = { democratic > 0.7 }
 		check_has_focus_tree_to_switch_to_democratic = yes
 	}
 
@@ -874,8 +877,7 @@ country_event = {
 			ruling_party = fascism
 			elections_allowed = no
 		}
-		add_stability = 0.1
-		add_war_support = 0.1
+
 	}
 }
 
@@ -949,8 +951,6 @@ country_event = {
 			elections_allowed = no
 		}
 		
-		add_stability = 0.1
-		add_war_support = 0.1
 	}
 }
 
@@ -1021,8 +1021,6 @@ country_event = {
 			ruling_party = democratic
 			elections_allowed = yes
 		}
-		add_stability = 0.1
-		add_war_support = 0.1
 	}
 }
 
@@ -1125,10 +1123,10 @@ country_event = {
 				tag = CHI
 			}			
 		}
-		 
-					 
-						   
-   
+		not = {
+			original_tag = USA
+			has_dlc = "Man the Guns"
+		}
 		has_civil_war = no
 		check_has_focus_tree_to_switch_to_communism = yes
 	}

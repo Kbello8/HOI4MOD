@@ -439,7 +439,6 @@ ideas = {
 			}
 			
 			modifier = {
-				military_leader_cost_factor = 0.5 
 				max_command_power = 25
 				communism_drift = 0.1
 				army_core_attack_factor = 0.1
@@ -465,7 +464,6 @@ ideas = {
 			}
 			
 			modifier = {
-				military_leader_cost_factor = 0.5
 				max_command_power = 25
 				fascism_drift = 0.1
 				army_morale_factor = 0.15
@@ -910,6 +908,7 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus = MEX_focus_exile_calles
+					NOT = { has_idea = MEX_alberto_pani }
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -936,6 +935,8 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus = MEX_focus_jefe_maximo
+					NOT = { has_idea = MEX_alberto_pani }
+					NOT = { has_idea = MEX_bartolome_garcia_correa }
 				}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -1015,6 +1016,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
+				
 			}
 			
 			available = {
@@ -1023,10 +1025,11 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus = MEX_focus_agricultural_credit_bank
+					NOT = { has_idea = MEX_bartolome_garcia_correa }
 				}
 			}
 			
-			traits = { captain_of_industry }
+			traits = { captain_of_industry silent_workhorse}
 		}
 		
 		MEX_pablo_gonzalez = {
@@ -1075,7 +1078,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_superior_firepower = 0.10
+				cat_superior_firepower = 0.15
 			}
 			
 			traits = { superior_firepower_expert }
@@ -1092,7 +1095,7 @@ ideas = {
 			picture = generic_political_advisor_south_america_1
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -1107,7 +1110,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -1376,7 +1379,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.10
+				armor = 0.20
 			}
 			
 			traits = { tank_manufacturer }
@@ -1397,7 +1400,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			
 			traits = { heavy_tank_manufacturer }
@@ -1418,7 +1421,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			
 			traits = { fast_tank_manufacturer }
@@ -1442,7 +1445,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -1469,7 +1472,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
@@ -1490,7 +1493,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
@@ -1516,7 +1519,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1550,7 +1553,7 @@ ideas = {
 			
 			research_bonus = {
 				industry = 0.05
-				synth_resources = 0.1
+				synth_resources = 0.15
 			}
 			
 			modifier = {
@@ -1579,11 +1582,11 @@ ideas = {
 			
 			research_bonus = {
 				industry = 0.05
-				synth_resources = 0.1
+				synth_resources = 0.15
 			}
 			
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
+				production_speed_infrastructure_factor = 0.3
 			}
 			
 			traits = { refinery_concern }
@@ -1607,7 +1610,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 				
 			}
 			
@@ -1632,7 +1635,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 
 			modifier = {
@@ -1660,7 +1663,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			equipment_bonus = {
@@ -1683,7 +1686,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = 0.20
 			}
 			
 			equipment_bonus = {
@@ -1705,7 +1708,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = 0.20
 			}
 			
 			traits = { motorized_equipment_manufacturer }

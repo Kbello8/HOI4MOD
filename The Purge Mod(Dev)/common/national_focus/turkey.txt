@@ -1195,6 +1195,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = cl_tech
+				category = ca_tech
 			}
 			#1x50% research bonus to Light Cruisers
 		}
@@ -1315,14 +1316,16 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = cl_tech
+				category = ca_tech			   
 			}
 			add_tech_bonus = {
-				name = TUR_strike_force
+				name = capital_ships_bonus
 				bonus = 1.0
 				uses = 1
-				category = ca_tech
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
 			}
-			#1x50% research bonus to Light Cruisers & 1x50% bonus to Heavy Cruisers
 		}
 	}
 
@@ -1664,6 +1667,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			set_rule = { can_create_factions = yes }
 			add_ideas = TUR_authoritarianism_focus
             add_ideas = national_army
 			#Reduction in Democratic Support
@@ -1734,6 +1738,10 @@ focus_tree = {
 		prerequisite = { focus = TUR_go_right }
 		available = {
 			country_exists = GER
+			GER = { has_government = fascism }
+		}
+		bypass = {
+			GER = { NOT = { has_government = fascism } }
 		}
 
 		x = 32
@@ -1845,6 +1853,10 @@ focus_tree = {
 		prerequisite = { focus = TUR_go_left }
 		available = {
 			country_exists = SOV
+			SOV = { has_government = communism }
+		}
+		bypass = {
+			SOV = { NOT = { has_government = communism } }
 		}
 		x = 30
 		y = 4
@@ -1954,6 +1966,10 @@ focus_tree = {
 		prerequisite = { focus = TUR_liberalism }
 		available = {
 			country_exists = ENG
+			ENG = { has_government = democratic }
+		}
+		bypass = {
+			ENG = { NOT = { has_government = democratic } }
 		}
 
 		x = 37

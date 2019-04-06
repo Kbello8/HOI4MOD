@@ -45,6 +45,38 @@ CHI_dont_waste_on_offensive_air_early = {
 	}
 }
 
+CHI_armored_production = {
+	enable = {
+		original_tag = CHI
+		ai_wants_divisions > 0 #Decreasing the amount of tanks the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 1 #Decreasing the amount of tanks the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 1
+	}
+}
+
+CHI_highered_armored_production = {
+	enable = {
+		original_tag = CHI
+		num_of_military_factories > 109
+	}
+	abort = {
+		num_of_military_factories < 110
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 2
+	}
+}
+
 CHI_prio_military_even_at_peace = {
 	enable = {
 		original_tag = CHI
@@ -97,6 +129,24 @@ CHI_some_safer_places_to_build = {
         value = 300
     }
 }
+
+CHI_you_should_be_prepared_for_war = {
+
+	enable = {
+		is_literally_china = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}
+
+
+
+
+
 
 leave_comintern = {
 	enable = {

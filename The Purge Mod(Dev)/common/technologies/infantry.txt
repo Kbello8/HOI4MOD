@@ -439,6 +439,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1936
 		folder = {
 			name = infantry_folder
@@ -494,6 +497,9 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1939
 		folder = {
 			name = infantry_folder
@@ -532,6 +538,9 @@ technologies = {
 		
 
 		research_cost = 2.0
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1943
 		folder = {
 			name = infantry_folder
@@ -586,6 +595,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1936
 		folder = {
 			name = infantry_folder
@@ -624,6 +636,9 @@ technologies = {
 		
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1939
 		folder = {
 			name = infantry_folder
@@ -656,6 +671,9 @@ technologies = {
 		}
 
 		research_cost = 2.0
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1943
 		folder = {
 			name = infantry_folder
@@ -705,6 +723,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1936
 		folder = {
 			name = infantry_folder
@@ -734,6 +755,9 @@ technologies = {
 
 
 		research_cost = 1.5
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1939
 		folder = {
 			name = infantry_folder
@@ -756,6 +780,9 @@ technologies = {
 		}
 
 		research_cost = 2.0
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1943
 		folder = {
 			name = infantry_folder
@@ -797,6 +824,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1938
 		folder = {
 			name = infantry_folder
@@ -833,6 +863,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -864,6 +897,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -898,6 +934,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1942
 		folder = {
 			name = infantry_folder
@@ -931,6 +970,9 @@ technologies = {
 		}
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1942
 		folder = {
 			name = infantry_folder
@@ -960,6 +1002,9 @@ technologies = {
 		special_forces_no_supply_grace = 48
 
 		research_cost = 2
+		xp_research_type = army
+		xp_research_cost = 75
+		xp_research_bonus = 1.00
 		start_year = 1944
 		folder = {
 			name = infantry_folder

@@ -11,7 +11,6 @@ default_unit_ratio = {
 				original_tag = ITA
 				original_tag = USA
 				original_tag = JAP
-				
             }
         }
 	}
@@ -26,14 +25,6 @@ default_unit_ratio = {
     ai_strategy = { type = role_ratio          id = motorized          value = 20}
     ai_strategy = { type = role_ratio          id = armor              value = 30}
     ai_strategy = { type = role_ratio          id = infantry           value = 50}
-
-    ##################################
-    #            Navy
-    ##################################
-	ai_strategy = { type = unit_ratio          id = capital_ship       value = 10}
-    ai_strategy = { type = unit_ratio          id = submarine          value = 5}
-    ai_strategy = { type = unit_ratio          id = screen_ship        value = 30}
-    ai_strategy = { type = unit_ratio          id = convoy             value = 5}
 
     ##################################
     #            Air
@@ -56,6 +47,8 @@ default_unit_ratio = {
 	ai_strategy = { type = area_priority id = africa 		                    value = 100}
     ai_strategy = { type = area_priority id = pacific 		                    value = 100}
     ai_strategy = { type = area_priority id = oceania 		                    value = 100}
+	ai_strategy = { type = area_priority id = scandinavia 	                    value = 100}
+	ai_strategy = { type = area_priority id = suez 	                    		value = 100}
 }
 
 more_marines = {
@@ -137,7 +130,6 @@ high_industry_armor = {
         num_of_military_factories < 50
     }
     ai_strategy = { type = equipment_production_factor          id = armor              value = 15}
-	ai_strategy = { type = equipment_variant_production_factor  id = medium_tank_equipment value = 50}
 }
 
 has_moderns_forget_medium = {
@@ -148,36 +140,13 @@ has_moderns_forget_medium = {
 
     }
 	ai_strategy = { type = equipment_variant_production_factor  id = medium_tank_equipment value = -25}
-}
-
-
-naval_majors_building_boats_is_great = {
-	
-	enable = {
-		OR = {
-			original_tag = ITA
-			original_tag = USA
-			original_tag = ENG
-			original_tag = AST
-		}
-		num_of_civilian_factories_available_for_projects > 15
-	}
-
-	abort = {
-
-	}
-
-	ai_strategy = {
-		type = dockyard_to_military_factory_ratio
-		value = 30  #aim for a 2-1 ratio on naval factories
-	}
+	ai_strategy = { type = equipment_variant_production_factor  id = modern_tank_equipment value = 25}
 }
 
 stop_with_the_light_armor = {
 	enable = {
 		NOT = { 
 			OR = {
-				original_tag = GER
 				original_tag = ITA
 				original_tag = JAP
 			}			
@@ -203,25 +172,30 @@ infantry_limit = {
 	enable = {
 		AND = {
 			has_army_manpower = { size > 500000 }
-			has_equipment = { infantry_equipment < 10000 }
+			has_equipment = { infantry_equipment < 5000 }
+			has_equipment = { artillery_equipment < 1000 }
+			has_equipment = { support_equipment < 500 }
 		}
 	}
 	abort = {
 		NOT = {
 			AND = {
 				has_army_manpower = { size > 500000 }
-				has_equipment = { infantry_equipment < 10000 }
+				has_equipment = { infantry_equipment < 5000 }
+				has_equipment = { artillery_equipment < 1000 }
+				has_equipment = { support_equipment < 500 }
 			}
 		}
 	}
-	ai_strategy = { type = build_army id = infantry                              value = -100 }
-	ai_strategy = { type = build_army id = garrison                              value = -100 }
-	ai_strategy = { type = build_army id = suppression                           value = -100 }
-	ai_strategy = { type = build_army id = cavalry                               value = -100 }
-	ai_strategy = { type = build_army id = mountaineers                          value = -100 }
-	ai_strategy = { type = build_army id = marines                          	 value = -100 }
-	ai_strategy = { type = build_army id = paratroopers                          value = -100 }
-	ai_strategy = { type = build_army id = motorized                          	 value = -100 }
+	ai_strategy = { type = build_army id = infantry                              value = -1000 }
+	ai_strategy = { type = build_army id = garrison                              value = -1000 }
+	ai_strategy = { type = build_army id = suppression                           value = -1000 }
+	ai_strategy = { type = build_army id = cavalry                               value = -1000 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -1000 }
+	ai_strategy = { type = build_army id = marines                          	 value = -1000 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -1000 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -1000 }
+	ai_strategy = { type = force_build_armies									 value = -1000 }
 }
 
 puds_division_limit = {
@@ -249,16 +223,17 @@ puds_division_limit = {
 		}
 		
 	}
-	ai_strategy = { type = build_army id = infantry                              value = -100 }
-	ai_strategy = { type = build_army id = cavalry                               value = -100 }
-	ai_strategy = { type = build_army id = mountaineers                          value = -100 }
-	ai_strategy = { type = build_army id = marines                          	 value = -100 }
-	ai_strategy = { type = build_army id = paratroopers                          value = -100 }
-	ai_strategy = { type = build_army id = motorized                          	 value = -100 }
-	ai_strategy = { type = build_army id = armor                          	     value = -100 }
-	ai_strategy = { type = build_army id = anti_armor                          	 value = -100 }
-	ai_strategy = { type = build_army id = garrison                              value = -100 }
-	ai_strategy = { type = build_army id = suppression                           value = -100 }
+	ai_strategy = { type = build_army id = infantry                              value = -1000 }
+	ai_strategy = { type = build_army id = cavalry                               value = -1000 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -1000 }
+	ai_strategy = { type = build_army id = marines                          	 value = -1000 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -1000 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -1000 }
+	ai_strategy = { type = build_army id = armor                          	     value = -1000 }
+	ai_strategy = { type = build_army id = anti_armor                          	 value = -1000 }
+	ai_strategy = { type = build_army id = garrison                              value = -1000 }
+	ai_strategy = { type = build_army id = suppression                           value = -1000 }
+	ai_strategy = { type = force_build_armies									 value = -1000 }
 }
 
 maj_division_limit = {
@@ -286,16 +261,17 @@ maj_division_limit = {
 		}
 		
 	}
-	ai_strategy = { type = build_army id = infantry                              value = -100 }
-	ai_strategy = { type = build_army id = cavalry                               value = -100 }
-	ai_strategy = { type = build_army id = mountaineers                          value = -100 }
-	ai_strategy = { type = build_army id = marines                          	 value = -100 }
-	ai_strategy = { type = build_army id = paratroopers                          value = -100 }
-	ai_strategy = { type = build_army id = motorized                          	 value = -100 }
-	ai_strategy = { type = build_army id = armor                          	     value = -100 }
-	ai_strategy = { type = build_army id = anti_armor                          	 value = -100 }
-	ai_strategy = { type = build_army id = garrison                              value = -100 }
-	ai_strategy = { type = build_army id = suppression                           value = -100 }
+	ai_strategy = { type = build_army id = infantry                              value = -1000 }
+	ai_strategy = { type = build_army id = cavalry                               value = -1000 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -1000 }
+	ai_strategy = { type = build_army id = marines                          	 value = -1000 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -1000 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -1000 }
+	ai_strategy = { type = build_army id = armor                          	     value = -1000 }
+	ai_strategy = { type = build_army id = anti_armor                          	 value = -1000 }
+	ai_strategy = { type = build_army id = garrison                              value = -1000 }
+	ai_strategy = { type = build_army id = suppression                           value = -1000 }
+	ai_strategy = { type = force_build_armies									 value = -1000 }
 }
 
 massive_division_limit = {
@@ -312,19 +288,19 @@ massive_division_limit = {
 			original_tag = SOV
 			original_tag = MAN
 		}
-		
 	}
 	abort = {
 		has_army_manpower = { size < 8000000 }
 	}
-	ai_strategy = { type = build_army id = infantry                              value = -100 }
-	ai_strategy = { type = build_army id = cavalry                               value = -100 }
-	ai_strategy = { type = build_army id = mountaineers                          value = -100 }
-	ai_strategy = { type = build_army id = marines                          	 value = -100 }
-	ai_strategy = { type = build_army id = paratroopers                          value = -100 }
-	ai_strategy = { type = build_army id = motorized                          	 value = -100 }
-	ai_strategy = { type = build_army id = armor                          	     value = -100 }
-	ai_strategy = { type = build_army id = anti_armor                          	 value = -100 }
-	ai_strategy = { type = build_army id = garrison                              value = -100 }
-	ai_strategy = { type = build_army id = suppression                           value = -100 }
+	ai_strategy = { type = build_army id = infantry                              value = -1000 }
+	ai_strategy = { type = build_army id = cavalry                               value = -1000 }
+	ai_strategy = { type = build_army id = mountaineers                          value = -1000 }
+	ai_strategy = { type = build_army id = marines                          	 value = -1000 }
+	ai_strategy = { type = build_army id = paratroopers                          value = -1000 }
+	ai_strategy = { type = build_army id = motorized                          	 value = -1000 }
+	ai_strategy = { type = build_army id = armor                          	     value = -1000 }
+	ai_strategy = { type = build_army id = anti_armor                          	 value = -1000 }
+	ai_strategy = { type = build_army id = garrison                              value = -1000 }
+	ai_strategy = { type = build_army id = suppression                           value = -1000 }
+	ai_strategy = { type = force_build_armies									 value = -1000 }
 }

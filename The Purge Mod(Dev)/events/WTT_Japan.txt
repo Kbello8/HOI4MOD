@@ -708,7 +708,7 @@ country_event = {
 	}
 	
 	option = {
-		name = wtt_japan.109.a
+		name = wtt_japan.109.a #accept
 		ai_chance = {
 			base = 10
 		}
@@ -719,7 +719,7 @@ country_event = {
 	}
 
 	option = {
-		name = wtt_japan.109.b
+		name = wtt_japan.109.b #refuse
 		ai_chance = {
 			base = 0
 		}
@@ -739,7 +739,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = wtt_japan.109.a
+		name = wtt_japan.109.a ##accept
 		ai_chance = {
 			base = 10
 		}
@@ -760,7 +760,7 @@ country_event = {
 	}
 
 	option = {
-		name = wtt_japan.109.b
+		name = wtt_japan.109.b ##refuse
 		ai_chance = {
 			base = 0
 		}
@@ -796,6 +796,27 @@ country_event = {
 			event_target:ITA_fascism = {
 				give_guarantee = event_target:JAP_initiator
 				give_guarantee = event_target:GER_fascism
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_literally_china = yes
+				}
+				event_target:ITA_fascism = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -500
+					}
+				}
+				event_target:GER_fascism = {
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -500
+					}
+				}
 			}
 		}
 	}
@@ -859,8 +880,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = wtt_japan.114.a
-		
+		name = wtt_japan.114.a	
 			if = {
 				limit = {
 					MAN = { is_subject_of = ROOT }
@@ -883,10 +903,41 @@ country_event = {
 				MAN = { remove_ideas = MAN_kwantung_veto }
 			}
 			add_popularity = { ideology = democratic popularity = 0.1 }
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = fascism
-				size = 0.5
+			if = {
+				limit = {
+					ROOT = { democratic < 0.26 }
+				}
+				ROOT = {
+					start_civil_war = {
+						ruling_party = democratic
+						ideology = fascism
+						size = 0.75
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						ROOT = { democratic > 0.25 }
+						ROOT = { democratic < 0.51 }
+					}
+				}
+				ROOT = {
+					start_civil_war = {
+						ruling_party = democratic
+						ideology = fascism
+						size = 0.5
+					}
+				}
+			}
+			else = {
+				ROOT = {
+					start_civil_war = {
+						ruling_party = democratic
+						ideology = fascism
+						size = 0.25
+					}
+				}
 			}
 		if = {
 			limit = {
@@ -1261,9 +1312,6 @@ country_event = {
 	# We accept their surrender.
 	option = {
 		name = wtt_japan.126.a
-		ai_chance = {
-			factor = 1
-		}
 		effect_tooltip = {
 			if = {
 				limit = {
@@ -1452,9 +1500,6 @@ country_event = {
 	# No surrender! We want total victory!
 	option = {
 		name = wtt_japan.126.b
-			   
-			 
-   
 		FROM = {
 			country_event = { id = wtt_japan.128 }
 		}

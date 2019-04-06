@@ -1662,11 +1662,13 @@ focus_tree = {
 				factor = 0
 				OR = {
 					date < 1940.1.1
-					OR = {
-						GER = { controls_state = 16 }
-						any_country = {
-							is_in_faction_with = GER
-							controls_state = 16
+					NOT = {
+						OR = {
+							GER = { controls_state = 16 }
+							any_country = {
+								is_in_faction_with = GER
+								controls_state = 16
+							}
 						}
 					}
 				}

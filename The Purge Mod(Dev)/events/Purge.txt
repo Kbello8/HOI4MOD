@@ -2404,3 +2404,146 @@ country_event = {
          add_timed_idea = { idea = ai_buff days = 180 }
     }
 }
+
+
+
+# English Conscription add
+country_event = { 
+    id = purge.95
+	title = purge.95.t
+	desc = purge.95.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		is_subject_of = ENG
+		ENG = { has_idea = ENG_imperial_conscription_idea }
+	}
+	
+	immediate = {
+		add_ideas = ENG_imperial_conscription_subject_idea
+	}
+    
+	option = {
+		name = purge.94.a
+    }
+}
+
+# English Conscription remove
+country_event = { 
+    id = purge.96
+	title = purge.96.t
+	desc = purge.96.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { is_subject_of = ENG }
+		has_idea = ENG_imperial_conscription_subject_idea
+	}
+	
+	immediate = {
+		remove_ideas = ENG_imperial_conscription_subject_idea
+	}
+    
+	option = {
+		name = purge.96.a
+    }
+}
+
+# Yugo central management retro
+country_event = { 
+    id = purge.97
+	title = purge.97.t
+	desc = purge.97.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		original_tag = YUG
+		has_idea = YUG_idea_central_management
+		NOT = { has_idea = YUG_idea_croatian_opposition }
+		NOT = { has_idea = YUG_idea_macedonian_opposition }
+		NOT = { has_idea = YUG_idea_slovene_nationalism }
+		NOT = { has_idea = YUG_idea_slovene_nationalism_2 }
+	}
+	
+	immediate = {
+		remove_ideas = YUG_idea_central_management
+		add_ideas = YUG_idea_central_management_2
+	}
+    
+	option = {
+		name = purge.97.a
+    }
+}
+
+# Yugo self government retro
+country_event = { 
+    id = purge.98
+	title = purge.98.t
+	desc = purge.98.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		original_tag = YUG
+		has_idea = YUG_idea_local_self_management
+		has_completed_focus = YUG_limited_self_government
+	}
+	
+	immediate = {
+		remove_ideas = YUG_idea_local_self_management
+		add_ideas = YUG_idea_local_self_management_2
+	}
+    
+	option = {
+		name = purge.98.a
+    }
+}
+
+# AI BUFF - USA
+country_event = { 
+    id = purge.99
+	title = purge.99.t
+	desc = purge.99.d
+	picture = GFX_news_event_057
+    
+    fire_only_once = yes 
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	
+	trigger = {
+        AND = {
+            original_tag = USA
+            USA = { is_ai = yes } 
+        }
+	}
+    
+	option = {
+		name = purge.99.a
+         add_timed_idea = { idea = ai_buff days = 365 }
+    }
+}

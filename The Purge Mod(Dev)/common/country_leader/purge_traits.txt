@@ -392,10 +392,10 @@ leader_traits = {
 	generic_coastal_defence_naval_manufacturer = {
 		random = no
 		equipment_bonus = {
-			carrier = {
-				build_cost_ic = -0.3 naval_range = -0.5
-			}
-			capital_ship = {
+			#carrier = {
+			#	build_cost_ic = -0.3 naval_range = -0.5
+			#}
+			heavy_cruiser = {
 				build_cost_ic = -0.3 naval_range = -0.5
 			}
 			screen_ship = {
