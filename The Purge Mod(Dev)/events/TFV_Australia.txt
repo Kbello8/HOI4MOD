@@ -23,7 +23,6 @@ country_event = {
 		
 		effect_tooltip = {
 			AST = {
-				puppet = MAL
 				set_autonomy = { target = MAL autonomy_state = autonomy_integrated_puppet }
 			}
 		}
@@ -58,8 +57,7 @@ country_event = {
 	option = {
 		name = tfv_australia.2.a
 		
-		puppet = MAL
-		
+		set_autonomy = { target = MAL autonomy_state = autonomy_integrated_puppet }
 		news_event = { hours = 6 id = news.238 }
 	}
 }
@@ -100,7 +98,7 @@ country_event = {
 		
 		effect_tooltip = {
 			AST = {
-				puppet = INS
+				set_autonomy = { target = INS autonomy_state = autonomy_integrated_puppet }
 			}
 		}
 		
@@ -139,7 +137,7 @@ country_event = {
 	option = {
 		name = tfv_australia.11.a
 		
-		puppet = INS
+		set_autonomy = { target = INS autonomy_state = autonomy_integrated_puppet }
 		
 		news_event = { id = news.240 hours = 6 }
 	}
@@ -411,7 +409,7 @@ country_event = {
 			}
 			white_peace = HOL
 		}
-		puppet = INS
+		set_autonomy = { target = INS autonomy_state = autonomy_integrated_puppet }
 	}
 }
 
@@ -592,7 +590,7 @@ country_event = {
 
 		effect_tooltip = {
 			AST = {
-				puppet = MAL
+				set_autonomy = { target = MAL autonomy_state = autonomy_integrated_puppet }
 			}
 		}
 		hidden_effect = {
@@ -628,7 +626,7 @@ country_event = {
 	option = {
 		name = tfv_australia.71.a
 		
-		puppet = MAL
+		set_autonomy = { target = MAL autonomy_state = autonomy_integrated_puppet }
 		
 		news_event = { id = news.242 hours = 6 }
 	}
@@ -672,7 +670,7 @@ country_event = {
 						MAL = { is_puppet_of = AST }
 					}
 					JAP = {
-						puppet = MAL
+						set_autonomy = { target = MAL autonomy_state = autonomy_integrated_puppet }
 					}
 					
 					else = {
@@ -737,7 +735,7 @@ country_event = {
 				MAL = { is_puppet_of = AST }
 			}
 			JAP = {
-				puppet = MAL
+				set_autonomy = { target = MAL autonomy_state = autonomy_integrated_puppet }
 			}
 			
 			else = {
