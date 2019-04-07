@@ -532,13 +532,6 @@ ideas = {
 			cost = 100
 
 			traits = { silent_workhorse }
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_policy_of_appeasement
-				}
-			}
 		}
 
 		AST_jack_beasley = {
@@ -788,7 +781,7 @@ high_command = {
 				has_completed_focus = AST_australian_army_catering_corps
 			}
 
-		traits = { army_logistics_2 }
+		traits = { army_logistics_3 }
 		
 		ai_will_do = {
 			factor = 1
@@ -929,7 +922,7 @@ high_command = {
 
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 			
 			traits = { industrial_concern }
@@ -948,7 +941,7 @@ high_command = {
 			}
 			
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.25
 			}
 
 			cost = 75
@@ -1041,7 +1034,7 @@ high_command = {
 
 			
 			research_bonus = {
-				support_tech = 0.10
+				support_tech = 0.20
 			}
 			
 			traits = { support_equipment_manufacturer }
@@ -1061,7 +1054,7 @@ high_command = {
 
 			
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_weapons = 0.2
 			}
 			
 			traits = { infantry_equipment_manufacturer }

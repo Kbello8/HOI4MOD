@@ -3688,7 +3688,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_state_core = 523
-			add_state_core = 727
+			add_state_core = 737
 			custom_effect_tooltip = AST_homeland_defense_tt
 			hidden_effect = {
 				every_owned_state =	{
@@ -3828,14 +3828,6 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				has_autonomy_state = autonomy_dominion
-			}
-			if = {
-				limit = { has_government = fascism }
-				has_autonomy_state = autonomy_satellite
-			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		

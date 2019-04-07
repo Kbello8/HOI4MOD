@@ -58,6 +58,17 @@ country_event = {
 				}
 				transfer_state = 658
 			}
+			if = {
+				limit = {
+					765 = {
+						OR = {
+							is_controlled_by = EGY
+                            is_controlled_by = ENG
+						}
+					}
+				}
+				transfer_state = 765
+			}
 		}
 	}
 }

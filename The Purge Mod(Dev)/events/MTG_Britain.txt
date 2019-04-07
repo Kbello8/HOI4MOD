@@ -289,7 +289,6 @@ country_event = {
 			}
 			dismantle_faction = yes
 		}
-		remove_from_tech_sharing_group = commonwealth_research
 		effect_tooltip = {
 			if = {
 				limit = {
@@ -4599,7 +4598,6 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_britain.67.a
-		remove_from_tech_sharing_group = commonwealth_research
 		effect_tooltip = {
 			FROM = {
 				leave_faction = yes

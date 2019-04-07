@@ -2561,7 +2561,7 @@ country_event = {
     mean_time_to_happen = {
 		days = 2
 	}
-	
+	hidden = yes
 	trigger = {
         AND = {
             original_tag = RAJ
@@ -2661,4 +2661,109 @@ country_event = {
 			target = SIA
 		}
 	}
+}
+
+# Canada Defense Retro
+country_event = { 
+    id = purge.104
+	title = purge.104.t
+	desc = purge.104.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 10
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		original_tag = CAN
+		OR = { 
+			AND = {
+				has_idea = CAN_defence_of_canada_regulations_democratic
+				NOT = { has_government = democratic }
+			}
+			AND = {
+				has_idea = CAN_defence_of_canada_regulations_communism
+				NOT = { has_government = communism }
+			}
+			AND = {
+				has_idea = CAN_defence_of_canada_regulations_fascism
+				NOT = { has_government = fascism }
+			}
+		}
+		
+	}
+	
+	immediate = {
+		if = { 
+			limit = { 
+				AND = {
+					has_idea = CAN_defence_of_canada_regulations_democratic
+					has_government = fascism
+				}
+			}
+			remove_ideas = CAN_defence_of_canada_regulations_democratic
+			add_ideas = CAN_defence_of_canada_regulations_fascism
+		}
+		
+		if = { 
+			limit = { 
+				AND = {
+					has_idea = CAN_defence_of_canada_regulations_democratic
+					has_government = communism
+				}
+			}
+			remove_ideas = CAN_defence_of_canada_regulations_democratic
+			add_ideas = CAN_defence_of_canada_regulations_communism
+		}
+		
+		if = { 
+			limit = { 
+				AND = {
+					has_idea = CAN_defence_of_canada_regulations_communism
+					has_government = fascism
+				}
+			}
+			remove_ideas = CAN_defence_of_canada_regulations_communism
+			add_ideas = CAN_defence_of_canada_regulations_fascism
+		}
+		
+		if = { 
+			limit = { 
+				AND = {
+					has_idea = CAN_defence_of_canada_regulations_communism
+					has_government = democratic
+				}
+			}
+			remove_ideas = CAN_defence_of_canada_regulations_communism
+			add_ideas = CAN_defence_of_canada_regulations_democratic
+		}
+		
+		if = { 
+			limit = { 
+				AND = {
+					has_idea = CAN_defence_of_canada_regulations_fascism
+					has_government = democratic
+				}
+			}
+			remove_ideas = CAN_defence_of_canada_regulations_fascism
+			add_ideas = CAN_defence_of_canada_regulations_democratic
+		}
+		
+		if = { 
+			limit = { 
+				AND = {
+					has_idea = CAN_defence_of_canada_regulations_fascism
+					has_government = communism
+				}
+			}
+			remove_ideas = CAN_defence_of_canada_regulations_fascism
+			add_ideas = CAN_defence_of_canada_regulations_communism
+		}
+	}
+    
+	option = {
+		name = purge.104.a
+    }
 }
