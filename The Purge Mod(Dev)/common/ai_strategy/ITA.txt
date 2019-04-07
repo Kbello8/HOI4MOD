@@ -397,13 +397,7 @@ dont_take_claims_on_yug = {
 		has_war = no
 	}
 
-	abort = {
-		OR = {
-			NOT = { country_exists = YUG }
-			date > 1940.1.1
-			has_war = yes
-		}
-	}
+	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = ignore_claim

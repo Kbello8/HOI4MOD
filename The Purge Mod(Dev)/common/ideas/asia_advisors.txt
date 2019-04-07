@@ -108,6 +108,99 @@ ideas = {
 			traits = { silent_workhorse }
 	
 			ai_will_do = {
+				factor = 20
+			}
+		}
+		
+		asia_financial_expert = {
+        
+            picture = generic_political_advisor_asia_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  XSM
+                    original_tag =  BHU
+                    original_tag =  GXC
+                    original_tag =  MEN
+                    original_tag =  MON
+                    original_tag =  NEP
+                    original_tag =  PHI
+                    original_tag =  MAN
+                    original_tag =  SHX
+                    original_tag =  SIA
+                    original_tag =  TIB
+                    original_tag =  SIK
+                    original_tag =  YUN
+                    original_tag =  INS
+                    original_tag =  JAP
+                }
+			}
+			
+			traits = { financial_expert }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		asia_propaganda_expert = {
+        
+            picture = generic_political_advisor_asia_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  XSM
+                    original_tag =  BHU
+                    original_tag =  GXC
+                    original_tag =  MEN
+                    original_tag =  MON
+                    original_tag =  NEP
+                    original_tag =  PHI
+                    original_tag =  MAN
+                    original_tag =  SHX
+                    original_tag =  SIA
+                    original_tag =  TIB
+                    original_tag =  SIK
+                    original_tag =  YUN
+                    original_tag =  INS
+                    original_tag =  JAP
+                }
+			}
+			
+			traits = { propaganda_expert }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		asia_economist = {
+        
+            picture = generic_political_advisor_asia_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  XSM
+                    original_tag =  BHU
+                    original_tag =  GXC
+                    original_tag =  MEN
+                    original_tag =  MON
+                    original_tag =  NEP
+                    original_tag =  PHI
+                    original_tag =  MAN
+                    original_tag =  SHX
+                    original_tag =  SIA
+                    original_tag =  TIB
+                    original_tag =  SIK
+                    original_tag =  YUN
+                    original_tag =  INS
+                    original_tag =  JAP
+                }
+			}
+			
+			traits = { economist }
+	
+			ai_will_do = {
 				factor = 2
 			}
 		}

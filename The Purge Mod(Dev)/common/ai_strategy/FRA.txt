@@ -187,7 +187,7 @@ Hitler_is_a_mean_dude_FRA = {
 			NOT = { has_government = fascism }
 		}
 		GER = { has_government = fascism }
-		GER = { has_added_tension_amount > 15 }
+		GER = { has_added_tension_amount > 10 }
 	}
 	abort = {
 		NOT = { GER = { has_government = fascism } }

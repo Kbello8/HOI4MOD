@@ -1851,13 +1851,7 @@ ideas = {
 		ENG_philip_kerr = {
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = { has_completed_focus = ENG_no_further_appeasement }
-					has_government = democratic
-				}
+				NOT = { has_government = neutrality } 
 			}
 			
 			allowed = {

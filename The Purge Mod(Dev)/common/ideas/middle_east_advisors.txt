@@ -83,7 +83,7 @@ ideas = {
 			traits = { silent_workhorse }
 	
 			ai_will_do = {
-				factor = 2
+				factor = 20
 			}
 		}
         
@@ -104,6 +104,78 @@ ideas = {
 			}
             
 			traits = { prince_of_terror }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		middle_east_financial_expert = {
+        
+            picture = generic_political_advisor_arab_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  EGY
+                    original_tag =  SYR
+                    original_tag =  IRQ
+                    original_tag =  PER
+                    original_tag =  SAU
+                    original_tag =  YEM
+                    original_tag =  OMA
+                    original_tag =  AFG
+                }
+			}
+			
+			traits = { financial_expert }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		middle_east_propaganda_expert = {
+        
+            picture = generic_political_advisor_arab_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  EGY
+                    original_tag =  SYR
+                    original_tag =  IRQ
+                    original_tag =  PER
+                    original_tag =  SAU
+                    original_tag =  YEM
+                    original_tag =  OMA
+                    original_tag =  AFG
+                }
+			}
+			
+			traits = { propaganda_expert }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		middle_east_economist = {
+        
+            picture = generic_political_advisor_arab_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  EGY
+                    original_tag =  SYR
+                    original_tag =  IRQ
+                    original_tag =  PER
+                    original_tag =  SAU
+                    original_tag =  YEM
+                    original_tag =  OMA
+                    original_tag =  AFG
+                }
+			}
+			
+			traits = { economist }
 	
 			ai_will_do = {
 				factor = 2

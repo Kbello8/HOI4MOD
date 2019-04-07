@@ -140,6 +140,129 @@ ideas = {
 			traits = { silent_workhorse }
 	
 			ai_will_do = {
+				factor = 20
+			}
+		}
+		
+		europe_financial_expert = {
+        
+            picture = generic_political_advisor_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    original_tag =  POL
+                    original_tag =  USA
+                }
+			}
+			
+			traits = { financial_expert }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		europe_propaganda_expert = {
+        
+            picture = generic_political_advisor_europe_3
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    original_tag =  POL
+                    original_tag =  USA
+                }
+			}
+			
+			traits = { propaganda_expert }
+	
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		europe_economist = {
+        
+            picture = generic_political_advisor_europe_1
+			
+			allowed = {
+                OR = {
+                    original_tag =  ALB
+                    original_tag =  AUS
+                    original_tag =  BEL
+                    original_tag =  BUL
+                    original_tag =  CZE
+                    original_tag =  EST
+                    original_tag =  HUN
+                    original_tag =  GRE
+                    original_tag =  HOL
+                    original_tag =  IRE
+                    original_tag =  LAT
+                    original_tag =  LIT
+                    original_tag =  NOR
+                    original_tag =  ROM
+                    original_tag =  POR
+                    original_tag =  SPR
+                    original_tag =  SWE
+                    original_tag =  SWI
+                    original_tag =  SAF
+                    original_tag =  AST
+                    original_tag =  NZL
+                    original_tag =  DEN
+                    original_tag =  FIN
+                    original_tag =  POL
+                    original_tag =  USA
+                }
+			}
+			
+			traits = { economist }
+	
+			ai_will_do = {
 				factor = 2
 			}
 		}

@@ -333,7 +333,7 @@ Operation_torch = {
             }
 		}
 	}
-	ai_strategy = { type = area_priority id = middle_east value = 400}
+	ai_strategy = { type = area_priority id = suez value = 400}
 }
 
 
