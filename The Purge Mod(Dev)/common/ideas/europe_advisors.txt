@@ -190,6 +190,7 @@ ideas = {
 					OR = {
 						original_tag =  USA
 						original_tag =  GER
+						original_tag =  CAN
 					}
 				}
 			}

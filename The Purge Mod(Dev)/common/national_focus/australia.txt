@@ -3286,7 +3286,7 @@ focus_tree = {
 			333 = { add_extra_state_shared_building_slots = 2 }
 			336 = { add_extra_state_shared_building_slots = 2 }
 			523 = { add_extra_state_shared_building_slots = 2 }
-			727 = { add_extra_state_shared_building_slots = 2 }
+			737 = { add_extra_state_shared_building_slots = 2 }
 			add_state_core = 721
 			add_state_core = 635
 			add_state_core = 734
@@ -3298,7 +3298,7 @@ focus_tree = {
 			add_state_core = 333
 			add_state_core = 336
 			add_state_core = 523
-			add_state_core = 727
+			add_state_core = 737
 		}
 	}
 
