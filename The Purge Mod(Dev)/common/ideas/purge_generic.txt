@@ -559,7 +559,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				synth_resources = 0.155
+				synth_resources = 0.15
 			}
 			
 			traits = { generic_refinery_concern }
@@ -585,7 +585,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = 0.05
+				infantry_weapons = 0.1
 			}
 			
 			traits = { generic_quality_inf_manufacturer }
@@ -606,7 +606,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = 0.05
+				infantry_weapons = 0.1
 			}
 			
 			traits = { generic_cheap_inf_manufacturer }
@@ -627,7 +627,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				artillery = 0.05
+				artillery = 0.1
 			}
 			
 			traits = { generic_reliable_art_manufacturer }
@@ -647,7 +647,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				artillery = 0.05
+				artillery = 0.1
 			}
 			
 			traits = { generic_powerful_art_manufacturer }
@@ -667,7 +667,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				artillery = 0.05
+				artillery = 0.1
 			}
 			
 			traits = { generic_light_art_manufacturer }
@@ -687,7 +687,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				motorized_equipment = 0.05
+				motorized_equipment = 0.1
 			}
 			
 			traits = { generic_reliable_mot_manufacturer }
@@ -707,7 +707,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				motorized_equipment = 0.05
+				motorized_equipment = 0.1
 			}
 			
 			traits = { generic_heavy_mot_manufacturer }
@@ -736,7 +736,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.1
 			}
 			
 			traits = { generic_coastal_defence_naval_manufacturer }
@@ -763,7 +763,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.1
 			}
 			
 			traits = { generic_raiding_fleet_naval_manufacturer }
@@ -790,7 +790,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.1
 			}
 			
 			traits = { generic_atlantic_fleet_naval_manufacturer }
@@ -817,7 +817,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.1
 			}
 			
 			traits = { generic_pacific_fleet_naval_manufacturer }
@@ -844,7 +844,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.1
 			}
 			
 			traits = { generic_convoy_escort_naval_manufacturer }
@@ -915,7 +915,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				armor = 0.05
+				armor = 0.1
 			}
 			
 			traits = { generic_fast_tank_manufacturer }
@@ -941,7 +941,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				armor = 0.05
+				armor = 0.1
 			}
 			
 			traits = { generic_medium_tank_manufacturer }
@@ -973,7 +973,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				armor = 0.05
+				armor = 0.1
 			}
 			
 			traits = { generic_heavy_tank_manufacturer }

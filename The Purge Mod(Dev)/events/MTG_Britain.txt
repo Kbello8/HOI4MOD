@@ -2031,6 +2031,9 @@ country_event = {
 		custom_effect_tooltip = ENG_democratic_civil_war_tt
 		hidden_effect = {
 			RAJ = { retire_country_leader = yes }
+			If = { limit = { MAL = { is_subject_of = AST } }
+				AST = { annex_country = { target = MAL transfer_troops = yes } }
+			}
 		}
 		hidden_effect = { news_event = { id = mtg_news.41 days = 1 } }
 		division_template = {
@@ -3708,6 +3711,9 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			If = { limit = { MAL = { is_subject_of = AST } }
+				AST = { annex_country = { target = MAL transfer_troops = yes } }
+			}
 			if = {
 				limit = {
 					has_country_leader = {

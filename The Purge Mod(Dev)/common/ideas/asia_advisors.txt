@@ -133,6 +133,7 @@ ideas = {
                     original_tag =  YUN
                     original_tag =  INS
                     original_tag =  JAP
+					original_tag =  RAJ
                 }
 			}
 			
@@ -164,6 +165,7 @@ ideas = {
                     original_tag =  YUN
                     original_tag =  INS
                     original_tag =  JAP
+					original_tag =  RAJ
                 }
 			}
 			
@@ -195,6 +197,7 @@ ideas = {
                     original_tag =  YUN
                     original_tag =  INS
                     original_tag =  JAP
+					original_tag =  RAJ
                 }
 			}
 			

@@ -673,6 +673,18 @@ ideas = {
 				industrial_capacity_factory = 0.08
 			} 
         }
+		
+		purge_recovering_from_civil_war = {
+            picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+			} 
+        }
         
 		####Regional Military
 		

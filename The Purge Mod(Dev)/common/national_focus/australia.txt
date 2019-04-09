@@ -2910,8 +2910,7 @@ focus_tree = {
 	focus = {
 		id = AST_fund_australian_defense_research
 		icon = GFX_focus_research
-		prerequisite = { focus = AST_rationing_and_recycling }
-		prerequisite = { focus = AST_classify_aliens }
+		prerequisite = { focus = AST_rationing_and_recycling focus = AST_classify_aliens  }
 		x = 1
 		y = 4
 		relative_position_id = AST_establish_advisory_war_council
@@ -3134,10 +3133,10 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
-					AST = { owns_state = 636 }
-					AST = { owns_state = 643 }
-					AST = { owns_state = 639 }
-					AST = { owns_state = 725 }
+					AST = { controls_state = 636 }
+					AST = { controls_state = 643 }
+					AST = { controls_state = 639 }
+					AST = { controls_state = 725 }
 				}
 				ENG = { exists = no }
 			}
@@ -3177,7 +3176,7 @@ focus_tree = {
 			
 			OR = {
 				AND = {
-					AST = { owns_state = 721 }
+					AST = { controls_state = 721 }
 				}
 				POR = { exists = no }
 			}
@@ -3219,9 +3218,9 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
-					AST = { owns_state = 635 }
-					AST = { owns_state = 734 }
-					AST = { owns_state = 641 }
+					AST = { controls_state = 635 }
+					AST = { controls_state = 734 }
+					AST = { controls_state = 641 }
 				}
 				FRA = { exists = no }
 			}
@@ -3253,16 +3252,16 @@ focus_tree = {
 		}
 
 		available = {
-			AST = { owns_state = 721 }
-			AST = { owns_state = 635 }
-			AST = { owns_state = 734 }
-			AST = { owns_state = 641 }
-			AST = { owns_state = 636 }
-			AST = { owns_state = 643 }
-			AST = { owns_state = 639 }
-			AST = { owns_state = 725 }
-			AST = { owns_state = 333 }
-			AST = { owns_state = 336 }
+			AST = { controls_state = 721 }
+			AST = { controls_state = 635 }
+			AST = { controls_state = 734 }
+			AST = { controls_state = 641 }
+			AST = { controls_state = 636 }
+			AST = { controls_state = 643 }
+			AST = { controls_state = 639 }
+			AST = { controls_state = 725 }
+			AST = { controls_state = 333 }
+			AST = { controls_state = 336 }
 			AST = {has_government = democratic }
 		}
 		

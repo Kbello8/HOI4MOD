@@ -1862,8 +1862,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		#planning max bonus increase
-		max_planning = 0.1
+		category_front_line = {
+			max_organisation = 5
+		}
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -2077,7 +2078,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
-		max_planning = 0.15
+		max_planning = 0.25
 
 		enable_tactic = tactic_overwhelming_fire
 		
@@ -2460,6 +2461,10 @@ technologies = {
 		category_army = {
 			soft_attack = 0.05
 		}
+		category_special_forces = {
+			attack = 0.05 
+			defense = 0.1
+		}
 		
 		path = {
 			leads_to_tech = night_assault_tactics 
@@ -2616,7 +2621,10 @@ technologies = {
 		xp_research_bonus = 1.00
 		land_reinforce_rate = 0.02
 		supply_consumption_factor = -0.05
-		
+		category_special_forces = {
+			attack = 0.1 
+			defense = 0.1
+		}
 		recon = { 
 			recon = 2 
 		} 

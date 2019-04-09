@@ -288,6 +288,7 @@ communist_pressure = {
 			modifier = {
 				communism_drift = 0.1
 				research_speed_factor = 0.025
+				autonomy_gain = -0.35
 			}
 		}
 		# from decision
@@ -308,6 +309,7 @@ communist_pressure = {
 			modifier = {
 				fascism_drift = 0.1
 				experience_gain_army = 0.1
+				autonomy_gain = -0.35
 			}
 		}
 		# from decision
@@ -329,6 +331,7 @@ communist_pressure = {
 			modifier = {
 				democratic_drift = 0.1
 				stability_factor = 0.1
+				autonomy_gain = -0.35
 			}
 		}
 		
@@ -348,6 +351,7 @@ communist_pressure = {
 			modifier = {
 				neutrality_drift = 0.1
 				mobilization_speed = 0.15
+				autonomy_gain = -0.35
 			}
 		}		# Generic Focus Ideas
 

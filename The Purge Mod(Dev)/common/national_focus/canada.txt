@@ -3080,6 +3080,15 @@ focus_tree = {
 			FRA = { owns_state = 310 }
 		}
 		
+		bypass = {
+			OR = {
+				FRA = { exists = no }
+				CAN = { controls_state = 730 }
+				CAN = { controls_state = 694 }
+				CAN = { controls_state = 310 }
+			}
+		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3109,6 +3118,13 @@ focus_tree = {
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 			DEN = { has_capitulated = yes }
 			DEN = { owns_state = 101 }
+		}
+		
+		bypass = {
+			OR = {
+				DEN = { exists = no }
+				CAN = { controls_state = 101 }
+			}
 		}
 		
 		cancel_if_invalid = yes
