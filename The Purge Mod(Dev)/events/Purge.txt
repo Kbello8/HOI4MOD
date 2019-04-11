@@ -2569,11 +2569,14 @@ country_event = {
         }
 	}
     
+	immediate = {
+		remove_ideas = RAJ_marginalized_muslim_community
+		remove_ideas = RAJ_marginalized_muslim_community_angry
+		remove_ideas = RAJ_marginalized_muslim_community_happy
+	}
 	option = {
 		name = purge.100.a
-         remove_ideas = RAJ_marginalized_muslim_community
-		 remove_ideas = RAJ_marginalized_muslim_community_angry
-		 remove_ideas = RAJ_marginalized_muslim_community_happy
+         
     }
 }
 
@@ -2765,5 +2768,125 @@ country_event = {
     
 	option = {
 		name = purge.104.a
+    }
+}
+
+## Justify Wargoal - firestarter
+country_event = { 
+    id = purge.105
+	title = purge.105.t
+	desc = purge.105.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	hidden = yes
+	trigger = {
+        AND = {
+            NOT = { ROOT = { has_government = democratic } }
+			AND = {
+				OR = {
+					ROOT = { has_government = fascism }
+					ROOT = { has_government = communism }
+				}
+				NOT = { any_enemy_country = { is_major = yes } }
+			}
+			NOT = { ROOT = { has_idea = firestarter } }
+			NOT = { ROOT = { has_idea = world_in_flames } }
+			threat > 0.69
+        }
+	}
+    
+	immediate = {
+		ROOT = {add_ideas = firestarter}
+	}
+	option = {
+		name = purge.105.a 
+    }
+}
+
+# Justify Wargoal - world_in_flames
+country_event = { 
+    id = purge.106
+	title = purge.106.t
+	desc = purge.106.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	hidden = yes
+	trigger = {
+        AND = {
+			AND = {
+				OR = {
+					ROOT = { has_government = fascism }
+					ROOT = { has_government = communism }
+				}
+				NOT = { any_enemy_country = { is_major = yes } }
+			}
+			NOT = { ROOT = { has_idea = world_in_flames } }
+			threat > 0.99
+        }
+	}
+    
+	immediate = {
+		if = { limit = { ROOT = { has_idea = firestarter } }
+			ROOT = {remove_ideas = firestarter}
+		}
+		ROOT = {add_ideas = world_in_flames}
+	}
+	option = {
+		name = purge.106.a 
+    }
+}
+
+# Justify Wargoal - !firestarter
+country_event = { 
+    id = purge.107
+	title = purge.107.t
+	desc = purge.107.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	hidden = yes
+	trigger = {
+		ROOT = { has_idea = firestarter } 
+		threat < 0.7
+	}
+    
+	immediate = {
+			ROOT = {remove_ideas = firestarter}
+	}
+	option = {
+		name = purge.107.a 
+    }
+}
+
+# Justify Wargoal - !world_in_flames
+country_event = { 
+    id = purge.108
+	title = purge.108.t
+	desc = purge.108.d
+	picture = GFX_news_event_057
+    
+    mean_time_to_happen = {
+		days = 2
+	}
+	hidden = yes
+	trigger = {
+		ROOT = { has_idea = world_in_flames } 
+		threat < 0.95
+	}
+    
+	immediate = {
+		ROOT = {remove_ideas = world_in_flames}
+		ROOT = {add_ideas = firestarter}
+	}
+	option = {
+		name = purge.108.a 
     }
 }

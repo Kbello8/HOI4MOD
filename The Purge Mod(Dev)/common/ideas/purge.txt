@@ -38,6 +38,38 @@ ideas = {
 				production_speed_buildings_factor = 1.0
 			}
 		}
+		
+		firestarter = {
+			allowed = {
+				always = yes
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.5 
+			}
+		}
+		
+		world_in_flames = {
+			allowed = {
+				always = yes
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.7 
+			}
+		}
 	}
 
     country = {

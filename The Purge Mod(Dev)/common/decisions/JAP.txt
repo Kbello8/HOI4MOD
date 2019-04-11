@@ -595,6 +595,8 @@ foreign_politics = {
 					controls_state = 525
 					controls_state = 527
 				}
+				owns_state = 525
+				owns_state = 527
 				NOT = {
 					any_state = {
 						is_core_of = CHI

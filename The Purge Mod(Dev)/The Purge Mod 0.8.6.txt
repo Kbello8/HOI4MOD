@@ -1076,8 +1076,36 @@ Strategic View Adjustments
 	financial expert: -5% consumer goods
 	propaganda expert: +10% war support
 	
-	
 	existing advisor changes:
 	smooth talking charmer: -10% resources to market
 	ideological_crusader: cheaper ideological influences
 	compassionate gentleman: 500 weekly manpower
+	
+	0.8.6.2 - Zan - HOI4 v1.6.2 4/10/2019 MTG	
+	RAJ ideology switch fixed(requires taking seek help from GER / SOV, or Independent)
+	Political Civil War tinkered with
+	generics 5% -> 10%, 20% -> 15%
+	bypass wartime preparations for CAN
+	-> if FRA doesnt exist
+	-> if DEN doesnt exist
+	-> if CAN controls the territory
+	
+	AST-> all owns_state requirements changed to controls for allies tree
+	-fund australian defense requires rationing & recycling OR classify aliens
+	
+	grandbattle plan infiltration assault & infiltration in depth: +10% special forces atk/defense
+	grandbattle plan tech -> +5 org to all frontline(removed 10% planning bonus)
+	assault concentration-> +10% planning bonus
+	
+	nation building decisions now have -0.35 autonomy
+	
+	if MAL is subject of AST and ENG has civil war, AST will annex MAL
+	
+	commie get -70% justify time if at war with major
+	
+	non-democratic get -50% justify time at 70% world tension, unless at war with major && fascist/commie
+	everyone gets -70% justify time at 100% world tension
+	-fascists keep their -80% when at war with a major instead
+	
+	added check that JAP owns korea to their white peace decision
+	eng should properly release sudan with self government focus

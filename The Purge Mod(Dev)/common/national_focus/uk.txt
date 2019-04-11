@@ -3179,8 +3179,6 @@ focus_tree = {
 			add_manpower = 100000
 			if = {
 				limit = {
-					has_full_control_of_state = 767
-					has_full_control_of_state = 551
 					has_full_control_of_state = 549
 				}
 				release = SUD

@@ -2462,7 +2462,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		category_special_forces = {
-			attack = 0.05 
+			soft_attack = 0.05 
 			defense = 0.1
 		}
 		
@@ -2622,7 +2622,7 @@ technologies = {
 		land_reinforce_rate = 0.02
 		supply_consumption_factor = -0.05
 		category_special_forces = {
-			attack = 0.1 
+			soft_attack = 0.1 
 			defense = 0.1
 		}
 		recon = { 
